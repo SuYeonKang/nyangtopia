@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>냥토피아</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <script src="js/nyangtopia.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo_main.png" alt="logo">
+                </a>
+            </h1>
+            <ul>
+                <li>
+                    <a href="login.html">로그인</a>
+                </li>
+                <li>
+                    <a href="membership.html">회원가입</a>
+                </li>
+                <li>
+                    <a href="cart.html">장바구니</a>
+                </li>
+            </ul>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="introduce.html">냥토피아</a>
+                        <ol>
+                            <li><a href="introduce.html">About Us</a></li>
+                            <li><a href="guide.html">이용안내</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="drink.html">카페메뉴</a>
+                        <ol>
+                            <li><a href="drink.html">음료</a></li>
+                            <li><a href="dessert.html">디저트</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="sticker_tape.html">소품가게</a>
+                        <ol>
+                            <li><a href="sticker_tape.html">스티커,마스킹테이프</a></li>
+                            <li><a href="post_memo.html">엽서,떡메모지</a></li>
+                            <li><a href="etc_product.html">기타소품</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="catFood.html">고양이가게</a>
+                        <ol>
+                            <li><a href="catFood.html">수제간식</a></li>
+                            <li><a href="catToy.html">장난감</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="recruitment.html">고양이가족</a>
+                        <ol>
+                            <li><a href="recruitment.html">집사구해요</a></li>
+                            <li><a href="stayCat.html">임보냥</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="notice.html">고객센터</a>
+                        <ol>
+                            <li><a href="notice.html">공지사항</a></li>
+                            <li><a href="FAQ.html">FAQ</a></li>
+                            <li><a href="adopt_apply.html">입양신청</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="login.html">나의공간</a>
+                        <ol>
+                            <li><a href="login.html">로그인</a></li>
+                            <li><a href="cart.html">장바구니</a></li>
+                            <li><a href="deliver.html">주문,배송조회</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header Fin -->
+
+    <section class="shop">
+        <a href="sticker_tape.html">다른상품 더보기</a>
+        <img src="images/tape2_3.png" alt="dagoTape">
+        <h2>
+            지렁이네 대략적 고양이 마스킹테이프 3종 중 택1
+        </h2>
+        <form>
+            <fieldset>
+                <ul>
+                    <li>
+                        <div>
+                            <select name="option select">
+                                <option value="">길쭉냥</option>
+                                <option value="">낙서대고</option>
+                                <option value="">대고의 하루</option>
+                            </select>
+                        </div>
+                        <label for="plus">수량</label>
+                        <input type="button" value="-">
+                        <input type="text" value="1" readonly>
+                        <input type="button" id="plus" value="+">
+                    </li>
+                    <li>
+                        <label for="purchasePrice">총 구매금액</label>
+                        <input type="text" id="purchasePrice" value="3,000 원" readonly>
+                    </li>
+                </ul>
+                <input type="submit" value="구매하기">
+                <a href="cart.html">장바구니</a>
+            </fieldset>
+        </form>
+    </section>
+
+    <section class="shopDetail">
+        <h2>detail</h2>
+        <p>대략적으로 그려져서 대략적 고양이라는 이름을 가지게 된 고양이들!</p>
+        <img src="images/tape2_2.png" alt="dagoTape02">
+        <img src="images/tape2_3.png" alt="dagoTape03">
+        <p>대충 그린 것 같아서 더 귀여운 고양이들을 마스킹 테이프로 만나보세요.</p>
+        <img src="images/tape2_4.png" alt="dagoTape04">
+        <strong>길쭉냥</strong>
+        <img src="images/tape2_1.png" alt="dagoTape01">
+        <strong>낙서대고</strong>
+        <img src="images/tape2_5.png" alt="dagoTape05">
+        <strong>대고의 하루</strong>
+        <img src="images/tape2_6.png" alt="dagoTape06">
+        <ul>
+            <li>브랜드 : 지렁이네</li>
+            <li>사이즈 : 폭 15mm, 총 길이 10m</li>
+            <li>수량 : 각 1개</li>
+            <li>재질 : 종이</li>
+            <li>제조국 : 대한민국</li>
+            <li>판매사 : (주)냥토피아</li>
+        </ul>
+    </section>
+
+    <footer>
+        <div>
+            <a href="personal_Info.html" target="_blank">개인정보처리방침</a>
+            <a href="TOS.html" target="_blank">이용약관</a>
+            <p>
+                (주)냥토피아 고객센터 :
+                <a href="tel:0324301021">032)430-1021</a>
+                <br>
+                문의 : 월~금 09:00 ~ 18:00(토,일,공휴일 휴무)
+            </p>
+            <span>사업자등록번호 121-23-45621</span>
+            <span>통신판매업신고 제 2020-10</span>
+            <p>Copyright ⓒ 2020.Nyangtopia All rights reserved.</p>
+        </div>
+        <ul>
+            <li><a href="https://www.instagram.com/" target="_blank">instagram</a></li>
+            <li><a href="https://ko-kr.facebook.com/" target="_blank">facebook</a></li>
+            <li><a href="https://twitter.com/?lang=ko" target="_blank">twitter</a></li>
+            <li><a href="#" class="kakao">kakaoTalk</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

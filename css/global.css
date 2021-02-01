@@ -1,0 +1,405 @@
+html,body{
+    height: 100%;
+}
+body{
+    padding-top: 185px;
+}
+header{
+    font-family: 'MapoFlowerIsland';
+    background: url('../images/header_bg.png') no-repeat left top;
+    background-size: cover;
+    z-index: 100;
+    position: fixed; width: 100%; left: 0; top : 0;
+}
+header a,
+footer a{
+    text-decoration: none;
+    color: #222222;
+}
+footer{
+    font-family: 'Noto Sans KR';
+    background: url('../images/footer_bg.png') no-repeat left top;
+    background-size: cover;
+}
+
+
+@media screen and (min-width: 1280px){
+    header{
+        min-height: 205px;
+    }
+    header div{
+        max-width: 1600px; margin: 0 auto;
+    }
+    header div{
+        position: relative;
+    }
+    header h1{
+        margin: 0 auto; width: 6%;
+    }
+    header h1 a{
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    header h1 a img{
+        width: 100%;
+    }
+    header div > ul{
+        position: absolute; right: 0; top: 15px;
+        width: 40%; max-width: 670px;
+        text-align: right;
+    }
+    header div > ul li{
+        display: inline-block;
+        background: url('../images/logo_mini.png') no-repeat left;
+        background-size: 35px;
+    }
+    header div > ul li:not(:first-child){
+        margin-left: 2.63%;
+    }
+    header div > ul li a{
+        padding-left: 40px;
+        line-height: 40px;
+        font-size: 18px; 
+        box-sizing: border-box;
+    }
+    header div nav ul::after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    header div nav ul > li{
+        float: left; width: 10%;
+        display: block; position: relative;
+    }
+    header div nav ul > li:not(:first-child){
+        margin-left: 5%;
+    }
+    header div nav ul > li > a{
+        display: block;
+        text-align: center; line-height: 55px;
+        font-size: 20px;
+    }
+    header div nav ul > li > a:hover{
+        background: url('../images/btn_bg.png') no-repeat center;
+        background-size: contain;
+    }
+    header div nav ul > li ol{
+        position: absolute; top: 55px; left: 0; width: 100%;
+        background: url('../images/hoverBG.png') no-repeat top;
+        background-size: contain;
+        padding: 0px 10px;
+        transition-duration: 0.5s; transition-timing-function: ease-in;
+        opacity: 0;
+    }
+    header div nav ul li > ol li:not(:last-child){
+        background: url('../images/hoverLine.png') no-repeat center bottom;
+        background-size: 80%; padding-bottom: 20px;
+    }
+    header div nav ul li > ol li a{
+        display: block;
+        font-size: 16px; 
+        line-height: 55px;
+        text-align: center;
+        transition-duration: 0.5s; transition-timing-function: ease-in;
+    }
+    header div nav ul > li:hover ol{
+        padding: 30px 10px; opacity: 1;
+    }
+    /* header Fin */
+
+    footer::after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    footer div{
+        font-size: 14px; width: 21%;
+        margin-left: 15.78%;
+        padding-top: 50px; float: left;
+    }
+    footer div a:not(:last-of-type),
+    footer div p:not(:nth-of-type(2)),
+    footer div span{
+        margin-bottom: 40px;
+    }
+    footer div a:nth-of-type(2),
+    footer div span:nth-of-type(2){
+        margin-left: 1.57%;
+    }
+    footer div a:not(:last-of-type){
+        display: inline-block;
+    }
+    footer div p{
+        line-height: 20px;
+    }
+    footer div p:last-of-type{
+        margin-bottom: 65px;
+    }
+    footer div span{
+        display: inline-block;
+    }
+    footer > ul{
+        width: 15%; margin-left: 72.63%;
+        padding-top: 140px;
+    }
+    footer > ul li{
+        margin-left: 1.57%;
+        display: inline-block;
+    }
+    footer > ul li a{
+        text-indent: -9999px; display: block;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 50px; height: 50px;
+        background-size: 100%;
+    }
+    footer > ul li:first-of-type a{
+        background-image: url('../images/insta.png');
+    }
+    footer > ul li:nth-of-type(2) a{
+        background-image: url('../images/facebook.png');
+    }
+    footer > ul li:nth-of-type(3) a{
+        background-image: url('../images/twitter.png');
+    }
+    footer > ul li:last-of-type a{
+        background-image: url('../images/kakao.png');
+    }
+
+    /* slider */
+    /* layout */
+    .bx-wrapper{
+        border: none;
+    }
+
+    /* pager */
+    .sliderContainer{
+        position: relative;
+    }
+    .sliderContainer > ol.sliderPager{
+        position: absolute;
+        bottom: 50px; left: 0; width: 100%; text-align: center;
+    }
+    .sliderContainer > ol.sliderPager li{
+        display: inline-block; vertical-align: middle;
+    }
+    .sliderContainer > ol.sliderPager li .active,
+    .sliderContainer > ol.sliderPager li a:hover{
+        background: url('../images/indicator.png') no-repeat top;
+        background-size: cover;
+        width: 20px; height: 20px;
+    }
+    .sliderContainer > ol.sliderPager li a{
+        text-decoration: none; display: block;
+        background-color: #fff; border-radius: 5px;
+        width: 10px; height: 10px; text-indent: -9999px;
+    }
+    .sliderContainer > ol.sliderPager li a:not(:first-of-type){
+        margin-left: 0.52%;
+    }
+    /* controler */
+    .bx-controls .bx-controls-direction a{
+       width:34px; height: 64px;
+    }
+    .bx-controls .bx-controls-direction .bx-prev{
+        background: url('../images/controls.png') no-repeat 0px 0px;
+    }
+    .bx-controls .bx-controls-direction .bx-next{
+        background: url('../images/controls.png') no-repeat -42px 0px;  
+    }
+    .bx-wrapper{
+        box-shadow: none;
+    }
+    .bx-wrapper .bx-prev{
+        left: 100px;
+    }
+    .bx-wrapper .bx-next{
+        right: 100px;
+    }
+    /* slider Fin */
+}
+/* desktoop Fin */
+
+@media screen and (min-width:768px) and (max-width:1279px){
+    header{
+        min-height: 150px;
+        max-width: 1024px;
+    }
+    header div{
+        position: relative;
+    }
+    header h1{
+        margin: 0 auto; width: 6%;
+    }
+    header h1 a{
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    header h1 a img{
+        width: 100%;
+    }
+    header div > ul{
+        position: absolute; right: 10px; top: 0;
+        width: 40%; max-width: 300px;
+        text-align: right;
+    }
+    header div > ul li{
+        display: inline-block;
+    }
+    header div > ul li:not(:first-child){
+        margin-left: 2%;
+    }
+    header div > ul li a{
+        line-height: 40px;
+        font-size: 14px; 
+        box-sizing: border-box;
+    }
+    header div nav ul::after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    header div nav ul > li{
+        float: left; width: 10%;
+        display: block; position: relative;
+    }
+    header div nav ul > li:not(:first-child){
+        margin-left: 5%;
+    }
+    header div nav ul > li > a{
+        display: block;
+        text-align: center; line-height: 55px;
+        font-size: 16px;
+    }
+    header div nav ul > li > a:active{
+        background: url('../images/btn_bg.png') no-repeat center;
+        background-size: contain;
+    }
+    header div nav ul > li ol{
+        position: absolute; top: 55px; left: 0; width: 100%;
+        background: url('../images/hoverBG.png') no-repeat top;
+        background-size: contain;
+        padding: 0px 10px;
+        transition-duration: 0.5s; transition-timing-function: ease-in;
+        opacity: 0;
+    }
+    header div nav ul li > ol li:not(:last-child){
+        background: url('../images/hoverLine.png') no-repeat center bottom;
+        background-size: 80%; padding-bottom: 20px;
+    }
+    header div nav ul li > ol li a{
+        display: block;
+        font-size: 14px; 
+        line-height: 55px;
+        text-align: center;
+        transition-duration: 0.5s; transition-timing-function: ease-in;
+    }
+    header div nav ul > li:active ol{
+        padding: 30px 10px; opacity: 1;
+    }
+    /* header Fin */
+
+    footer::after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    footer div{
+        font-size: 14px; width: 40%;
+        margin-left: 5%;
+        padding-top: 80px; float: left;
+    }
+    footer div a:not(:last-of-type),
+    footer div p:not(:nth-of-type(2)),
+    footer div span{
+        margin-bottom: 40px;
+    }
+    footer div a:nth-of-type(2),
+    footer div span:nth-of-type(2){
+        margin-left: 1.57%;
+    }
+    footer div a:not(:last-of-type){
+        display: inline-block;
+    }
+    footer div p{
+        line-height: 20px;
+    }
+    footer div p:last-of-type{
+        margin-bottom: 65px;
+    }
+    footer div span{
+        display: inline-block;
+    }
+    footer > ul{
+        width: 40%; margin-left: 72.63%;
+        padding-top: 140px;
+    }
+    footer > ul li{
+        margin-left: 1.57%;
+        display: inline-block;
+    }
+    footer > ul li a{
+        text-indent: -9999px; display: block;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 50px; height: 50px;
+        background-size: 100%;
+    }
+    footer > ul li:first-of-type a{
+        background-image: url('../images/insta.png');
+    }
+    footer > ul li:nth-of-type(2) a{
+        background-image: url('../images/facebook.png');
+    }
+    footer > ul li:nth-of-type(3) a{
+        background-image: url('../images/twitter.png');
+    }
+    footer > ul li:last-of-type a{
+        background-image: url('../images/kakao.png');
+    }
+
+    /* slider */
+    /* layout */
+    .bx-wrapper{
+        border: none;
+    }
+
+    /* pager */
+    .sliderContainer{
+        position: relative;
+    }
+    .sliderContainer > ol.sliderPager{
+        position: absolute;
+        bottom: 50px; left: 0; width: 100%; text-align: center;
+    }
+    .sliderContainer > ol.sliderPager li{
+        display: inline-block; vertical-align: middle;
+    }
+    .sliderContainer > ol.sliderPager li .active,
+    .sliderContainer > ol.sliderPager li a:hover{
+        background: url('../images/indicator.png') no-repeat top;
+        background-size: cover;
+        width: 20px; height: 20px;
+    }
+    .sliderContainer > ol.sliderPager li a{
+        text-decoration: none; display: block;
+        background-color: #fff; border-radius: 5px;
+        width: 10px; height: 10px; text-indent: -9999px;
+    }
+    .sliderContainer > ol.sliderPager li a:not(:first-of-type){
+        margin-left: 0.52%;
+    }
+    /* controler */
+    .bx-controls .bx-controls-direction a{
+       width:34px; height: 64px;
+    }
+    .bx-controls .bx-controls-direction .bx-prev{
+        background: url('../images/controls.png') no-repeat 0px 0px;
+    }
+    .bx-controls .bx-controls-direction .bx-next{
+        background: url('../images/controls.png') no-repeat -42px 0px;  
+    }
+    .bx-wrapper{
+        box-shadow: none;
+    }
+    .bx-wrapper .bx-prev{
+        left: 100px;
+    }
+    .bx-wrapper .bx-next{
+        right: 100px;
+    }
+    /* slider Fin */
+}
+/* tablet Fin */

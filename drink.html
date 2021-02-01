@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>냥토피아</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/nyangtopia.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo_main.png" alt="logo">
+                </a>
+            </h1>
+            <ul>
+                <li>
+                    <a href="login.html">로그인</a>
+                </li>
+                <li>
+                    <a href="membership.html">회원가입</a>
+                </li>
+                <li>
+                    <a href="cart.html">장바구니</a>
+                </li>
+            </ul>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="introduce.html">냥토피아</a>
+                        <ol>
+                            <li><a href="introduce.html">About Us</a></li>
+                            <li><a href="guide.html">이용안내</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="drink.html">카페메뉴</a>
+                        <ol>
+                            <li><a href="drink.html">음료</a></li>
+                            <li><a href="dessert.html">디저트</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="sticker_tape.html">소품가게</a>
+                        <ol>
+                            <li><a href="sticker_tape.html">스티커,마스킹테이프</a></li>
+                            <li><a href="post_memo.html">엽서,떡메모지</a></li>
+                            <li><a href="etc_product.html">기타소품</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="catFood.html">고양이가게</a>
+                        <ol>
+                            <li><a href="catFood.html">수제간식</a></li>
+                            <li><a href="catToy.html">장난감</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="recruitment.html">고양이가족</a>
+                        <ol>
+                            <li><a href="recruitment.html">집사구해요</a></li>
+                            <li><a href="stayCat.html">임보냥</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="notice.html">고객센터</a>
+                        <ol>
+                            <li><a href="notice.html">공지사항</a></li>
+                            <li><a href="FAQ.html">FAQ</a></li>
+                            <li><a href="adopt_apply.html">입양신청</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="login.html">나의공간</a>
+                        <ol>
+                            <li><a href="login.html">로그인</a></li>
+                            <li><a href="cart.html">장바구니</a></li>
+                            <li><a href="deliver.html">주문,배송조회</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header Fin -->
+
+    <section class="drink tab">
+        <h2>커피, 차, 그 외 음료</h2>
+        <ul>
+            <li data-tabMenu="coffee" class="active">Coffee (6)</li>
+            <li data-tabMenu="nonCoffee">Non Coffee (3)</li>
+            <li data-tabMenu="ade">Ade (2)</li>
+            <li data-tabMenu="tea">Tea (5)</li>
+            <li data-tabMenu="season">Seoson (2)</li>
+        </ul>
+        <div id="coffee" class="tabPage active">
+            <ul>
+                <li>
+                    아메리카노(Hot/Ice)
+                    <div>
+                        <p>진하게 로스팅한 커피 원두에서
+                            에스프레소를 추출하여 원두 풍미를
+                            느낄 수 있는 에스프레소 음료.</p>
+                        <span>6,000원</span>
+                        <input type="button" value="성분 및 알레르기 정보" class="btn_detail" data-detailName="ame">
+                    </div>
+                    <div id="ame" class="detailContainer">
+                        <p>
+                            열랑(Kcal) : 10Kcal
+                            당류(g) : 0g
+                            단백질(g) : 1g
+                            포화지방(g) : 0g
+                            나트륨(mg) : 0mg
+                            카페인(mg) : 103mg
+                        
+                            알레르기 성분 : 없음</p>
+                        <button class="btn_close">X</button>
+                    </div>
+                </li>
+                <li>
+                    카페라떼(Hot/Ice)
+                    <div>
+                        <p>풍부하고 진한 농도의 에스프레소와
+                            스팀밀크 위에 부드러운 우유거품을
+                            살짝 올려준 에스프레소 음료.</p>
+                        <span>6,500원</span>
+                        <input type="button" value="성분 및 알레르기 정보">
+                    </div>
+                    <div class="detailContainer">
+                        <p>
+                            열랑(Kcal) : 175Kcal
+                            당류(g) : 12g
+                            단백질(g) : 8g
+                            포화지방(g) : 6g
+                            나트륨(mg) : 140mg
+                            카페인(mg) : 103mg
+                                                    
+                            알레르기 성분 : 우유</p>
+                    </div>
+                </li>
+                <li>
+                    카페모카(Hot/Ice)
+                    <div>
+                        <p>진한 초콜릿 모카시럽과 에스프레소를 스팀밀크와
+                            혼합하여 부드러운 휘핑크림을 올린
+                            달콤한 에스프레소 음료.</p>
+                        <span>6,500원</span>
+                        <input type="button" value="성분 및 알레르기 정보">
+                    </div>
+                    <div class="detailContainer">
+                        <p>열랑(Kcal) : 270Kcal
+                            당류(g) : 27g
+                            단백질(g) : 8g
+                            포화지방(g) : 15g
+                            나트륨(mg) : 133mg
+                            카페인(mg) : 99mg
+
+                            알레르기 성분 : 우유,대두</p>
+                    </div>
+                </li>
+                <li>
+                    아인슈페너(Hot/Ice)
+                    <div>
+                        <p>에스프레소에 물을 넣어 희석한 후 부드러운 크림을 더해
+                            깊은 풍미를 즐길 수 있는 음료.</p>
+                        <span>6,500원</span>
+                        <input type="button" value="성분 및 알레르기 정보">
+                    </div>
+                    <div class="detailContainer">
+                        <p>열랑(Kcal) : 103Kcal
+                            당류(g) : 13g
+                            단백질(g) : 1g
+                            포화지방(g) : 2g
+                            나트륨(mg) : 5mg
+                            카페인(mg) : 103mg
+
+                            알레르기 성분 : 우유,대두</p>
+                    </div>
+                </li>
+                <li>
+                    연유라떼(Hot/Ice)
+                    <div>
+                        <p>베트남풍 연유의 달콤한 맛과
+                            에스프레소가 절묘하게 어우러져
+                            누구나 쉽게 즐길 수 있는 부드러운
+                            커피 음료.</p>
+                        <span>7,000원</span>
+                        <input type="button" value="성분 및 알레르기 정보">
+                    </div>
+                    <div class="detailContainer">
+                        <p>
+                            열랑(Kcal) : 336Kcal
+                            당류(g) : 41g
+                            단백질(g) : 11g
+                            포화지방(g) : 7g
+                            나트륨(mg) : 165mg
+                            카페인(mg) : 103mg
+
+                            알레르기 성분 : 우유</p>
+                    </div>
+                </li>
+                <li>
+                    카푸치노(Only Hot)
+                    <div>
+                        <p>에스프레소에 우유 거품을
+                            풍부하게 올리고 시나몬파우더를
+                            첨가하여 커피의 풍부함을
+                            즐길 수 있는 음료.</p>
+                        <span>6,500원</span>
+                        <input type="button" value="성분 및 알레르기 정보">
+                    </div>
+                    <div class="detailContainer">
+                        <p>
+                            열랑(Kcal) : 134Kcal
+                            당류(g) : 9g
+                            단백질(g) : 6g
+                            포화지방(g) : 5g
+                            나트륨(mg) : 101mg
+                            카페인(mg) : 103mg
+
+                            알레르기 성분 : 우유</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="nonCoffee" class="tabPage">
+            <ul>
+                <li>
+                    그린티라떼(Hot/Ice)
+                    <div>
+                        <p>100% 국내산 녹차와 우유를 블렌딩해 풍성한 우유거품을 올린 부담없이 즐길 수 있는 음료.</p>
+                        <span>7,000원</span>
+                        <input type="button" value="성분 및 알레르기 정보">
+                    </div>
+                    <div>
+                        <p>
+                            열랑(Kcal) : 189Kcal
+                            당류(g) : 25g
+                            단백질(g) : 6g
+                            포화지방(g) : 4g
+                            나트륨(mg) : 101mg
+
+                            알레르기 성분 : 우유</p>
+                    </div>
+                </li>
+                <li>
+                    초코라떼(Hot/Ice)
+                    <div>
+                        <p>진한 모카시럽과 부드러운 우유, 달콤한 휘핑크림의 삼박자가 조화를 이루는 음료.</p>
+                        <span>7,000원</span>
+                        <input type="button" value="성분 및 알레르기 정보">
+                    </div>
+                    <div>
+                        <p>열랑(Kcal) : 339Kcal
+                            당류(g) : 30g
+                            단백질(g) : 9g
+                            포화지방(g) : 16g
+                            나트륨(mg) : 151mg
+
+                            알레르기 성분 : 우유,대두</p>
+                    </div>
+                </li>
+                <li>
+                    딸기라떼(Only Ice)
+                    <div>
+                        <p>100% 국내산 생딸기를 갈아 부드러운 우유와 블렌딩해 딸기 아이스크림을 올린 음료. </p>
+                        <span>8,000원</span>
+                        <input type="button" value="성분 및 알레르기 정보">
+                    </div>
+                    <div>
+                        <p>
+                            열랑(Kcal) : 130Kcal
+                            당류(g) : 17g
+                            단백질(g) : 5g
+                            포화지방(g) : 2g
+                            나트륨(mg) : 85mg
+
+                            알레르기 성분 : 우유</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="ade" class="tabPage">
+            <ul>
+                <li>
+                    오렌지에이드(Only Ice)
+                    <div>
+                        <p>달콤한 오렌지를 그대로 갈아 탄산수와 믹스한 누구나 좋아하는 상큼한 스파클링 음료.</p>
+                        <span>8,000원</span>
+                        <input type="button" value="성분 및 알레르기 정보">
+                    </div>
+                    <div>
+                        <p>
+                            열랑(Kcal) : 135Kcal
+                            당류(g) : 33g
+                            단백질(g) : 1g
+                            포화지방(g) : 0g
+                            나트륨(mg) : 40mg
+                        
+                            알레르기 성분 : 없음</p>
+                    </div>
+                </li>
+                <li>
+                    자몽에이드(Only Ice)
+                    <div>
+                        <p>자몽을 그대로 갈아넣어 쌉싸름한 맛과 달콤한 맛을 동시에 느낄 수 있는 스파클링 음료.</p>
+                        <span>8,000원</span>
+                        <input type="button" value="성분 및 알레르기 정보">
+                    </div>
+                    <div>
+                        <p>
+                            열랑(Kcal) : 124Kcal
+                            당류(g) : 29g
+                            단백질(g) : 1g
+                            포화지방(g) : 0g
+                            나트륨(mg) : 13mg
+                        
+                            알레르기 성분 : 없음</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="tea" class="tabPage">
+            <ul>
+                <li>
+                    아이스티 레몬(Only Ice)
+                    <div>
+                        <p>물과 얼음을 가득 넣어 시원하고 입안 가득 상큼한 레몬향이 퍼지는 새콤달콤한 음료.</p>
+                        <span>6,500원</span>
+                        <input type="button" value="성분 및 알레르기 정보">
+                    </div>
+                    <div>
+                        <p>
+                            열랑(Kcal) : 178Kcal
+                            당류(g) : 43g
+                            단백질(g) : 0g
+                            포화지방(g) : 0g
+                            나트륨(mg) : 16mg
+                            카페인(mg) : 14mg
+
+                            알레르기 성분 : 대두</p>
+                    </div>
+                </li>
+                <li>
+                    히비스커스(Hot/Ice)
+                    <div>
+                        <p>핑크빛 파파야와 달콤하고 향긋한 복숭아 향미가 블렌딩된 유기농 히비스커스티.</p>
+                        <span>7,000원</span>
+                        <input type="button" value="성분 및 알레르기 정보">
+                    </div>
+                    <div>
+                        <p>
+                            열랑(Kcal) : 3Kcal
+                            당류(g) : 0g
+                            단백질(g) : 1g
+                            포화지방(g) : 0g
+                            나트륨(mg) : 0mg
+                        
+                            알레르기 성분 : 없음</p>
+                    </div>
+                </li>
+                <li>
+                    얼그레이(Hot/Ice)
+                    <div>
+                        <p>클래식하면서 우아한 시트러스 과일향과 수레국화의 향긋한 향이 특징인 얼그레이 계열의 홍차.</p>
+                        <span>7,000원</span>
+                        <input type="button" value="성분 및 알레르기 정보">
+                    </div>
+                    <div>
+                        <p>
+                            열랑(Kcal) : 0Kcal
+                            당류(g) : 0g
+                            단백질(g) : 0g
+                            포화지방(g) : 0g
+                            나트륨(mg) : 0mg
+                            카페인(mg) : 25mg
+                        
+                            알레르기 성분 : 없음</p>
+                    </div>
+                </li>
+                <li>
+                    카모마일(Hot/Ice)
+                    <div>
+                        <p>카페인이 없어 누구나 편안하게 즐길 수 있으며 달콤한 숙면에 도움이 되는 허브티.</p>
+                        <span>7,000원</span>
+                        <input type="button" value="성분 및 알레르기 정보">
+                    </div>
+                    <div>
+                        <p>
+                            열랑(Kcal) : 0Kcal
+                            당류(g) : 0g
+                            단백질(g) : 0g
+                            포화지방(g) : 0g
+                            나트륨(mg) : 0mg
+                        
+                            알레르기 성분 : 없음</p>
+                    </div>
+                </li>
+                <li>
+                    아이스티 복숭아(Only Ice)
+                    <div>
+                        <p>시원한 얼음물이 홍차의 깊은 맛, 풍부한 복숭아 향과 함께 어우러진 달콤한 음료.</p>
+                        <span>6,500원</span>
+                        <input type="button" value="성분 및 알레르기 정보">
+                    </div>
+                    <div>
+                        <p>
+                            열랑(Kcal) : 185Kcal
+                            당류(g) : 44g
+                            단백질(g) : 0g
+                            포화지방(g) : 0g
+                            나트륨(mg) : 9mg
+                            카페인(mg) : 11mg
+
+                            알레르기 성분 : 복숭아</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="season" class="tabPage">
+            <ul>
+                <li>
+                    딸기쥬스(겨울)
+                    <div>
+                        <p>국내산 딸기 과육을 그대로 넣어 새콤하고 달콤한 딸기 본연의 맛을 느낄 수 있는 겨울한정 음료.</p>
+                        <span>8,000원</span>
+                        <input type="button" value="성분 및 알레르기 정보">
+                    </div>
+                    <div>
+                        <p>
+                            열랑(Kcal) : 260Kcal
+                            당류(g) : 59g
+                            단백질(g) : 2g
+                            포화지방(g) : 0g
+                            나트륨(mg) : 4mg
+                        
+                            알레르기 성분 : 없음</p>
+                    </div>
+                </li>
+                <li>
+                    수박쥬스(여름)
+                    <div>
+                        <p>국내산 수박을 엄선하여 씨를 제거하고 그대로 갈아 달콤하고 시원한 여름한정 음료.</p>
+                        <span>8,000원</span>
+                        <input type="button" value="성분 및 알레르기 정보">
+                    </div>
+                    <div>
+                        <p>
+                            열랑(Kcal) : 90Kcal
+                            당류(g) : 18g
+                            단백질(g) : 2g
+                            포화지방(g) : 0g
+                            나트륨(mg) : 30mg
+                        
+                            알레르기 성분 : 없음</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- section Fin -->
+
+    <footer>
+        <div>
+            <a href="personal_Info.html" target="_blank">개인정보처리방침</a>
+            <a href="TOS.html" target="_blank">이용약관</a>
+            <p>
+                (주)냥토피아 고객센터 :
+                <a href="tel:0324301021">032)430-1021</a>
+                <br>
+                문의 : 월~금 09:00 ~ 18:00(토,일,공휴일 휴무)
+            </p>
+            <span>사업자등록번호 121-23-45621</span>
+            <span>통신판매업신고 제 2020-10</span>
+            <p>Copyright ⓒ 2020.Nyangtopia All rights reserved.</p>
+        </div>
+        <ul>
+            <li><a href="https://www.instagram.com/" target="_blank">instagram</a></li>
+            <li><a href="https://ko-kr.facebook.com/" target="_blank">facebook</a></li>
+            <li><a href="https://twitter.com/?lang=ko" target="_blank">twitter</a></li>
+            <li><a href="#" class="kakao">kakaoTalk</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

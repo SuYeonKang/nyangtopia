@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>냥토피아</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <script src="js/nyangtopia.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="popup" id="merrynyangPopup">
+        <button class="btn_close">close</button>
+        <figure>
+            <img src="images/post1_1.png" alt="merrynyang">
+            <figcaption>
+                <dl>
+                    <dt>
+                        융잡화점                        
+                    </dt>
+                    <dd>
+                        메리냥라운드 엽서
+                    </dd>
+                    <dd>
+                        <a href="cart.html">
+                            장바구니
+                        </a>
+                        <a href="post01.html">
+                            상세보기
+                        </a>
+                    </dd>
+                </dl>
+            </figcaption>
+        </figure>
+        <form>
+            <div>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <select name="option select">
+                                <option value="">메리냥라운드 엽서</option>
+                            </select>
+                            <button>-</button>
+                            <input type="text" value="1" readonly>
+                            <button>+</button>
+                        </li>
+                        <li>
+                            <label for="purchasePrice01">총 구매금액</label>
+                            <input type="text" id="purchasePrice01" value="1,000 원" readonly>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="구매하기">
+            </div>
+        </form>
+    </div>
+    <div class="popup" id="sokamonoPopup">
+        <button class="btn_close">close</button>
+        <figure>
+            <img src="images/post2_1.png" alt="sokamono">
+            <figcaption>
+                <dl>
+                    <dt>
+                        소카모노                        
+                    </dt>
+                    <dd>
+                        숲속의 고양이 엽서
+                    </dd>
+                    <dd>
+                        <a href="cart.html">
+                            장바구니
+                        </a>
+                        <a href="post02.html">
+                            상세보기
+                        </a>
+                    </dd>
+                </dl>
+            </figcaption>
+        </figure>
+        <form>
+            <div>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <select name="option select">
+                                <option value="">숲속의 고양이 엽서</option>
+                            </select>
+                            <button>-</button>
+                            <input type="text" value="1" readonly>
+                            <button>+</button>
+                        </li>
+                        <li>
+                            <label for="purchasePrice02">총 구매금액</label>
+                            <input type="text" id="purchasePrice02" value="5,000 원" readonly>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="구매하기">
+            </div>
+        </form>
+    </div>
+    <div class="popup" id="catcafePopup">
+        <button class="btn_close">close</button>
+        <figure>
+            <img src="images/post3_1.jpg" alt="catcafe">
+            <figcaption>
+                <dl>
+                    <dt>
+                        고양이다방                        
+                    </dt>
+                    <dd>
+                        정사각 엽서
+                    </dd>
+                    <dd>
+                        <a href="cart.html">
+                            장바구니
+                        </a>
+                        <a href="post03.html">
+                            상세보기
+                        </a>
+                    </dd>
+                </dl>
+            </figcaption>
+        </figure>
+        <form>
+            <div>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <select name="option select">
+                                <option value="">고양이다방 정사각엽서</option>
+                            </select>
+                            <button>-</button>
+                            <input type="text" value="1" readonly>
+                            <button>+</button>
+                        </li>
+                        <li>
+                            <label for="purchasePrice03">총 구매금액</label>
+                            <input type="text" id="purchasePrice03" value="24,000 원" readonly>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="구매하기">
+            </div>
+        </form>
+    </div>
+    <div class="popup" id="thanksTodayPopup">
+        <button class="btn_close">close</button>
+        <figure>
+            <img src="images/memo1_1.jpg" alt="thanksToday">
+            <figcaption>
+                <dl>
+                    <dt>
+                        파운드캣                        
+                    </dt>
+                    <dd>
+                        오늘 고마운 하루 떡메모지
+                    </dd>
+                    <dd>
+                        <a href="cart.html">
+                            장바구니
+                        </a>
+                        <a href="memo01.html">
+                            상세보기
+                        </a>
+                    </dd>
+                </dl>
+            </figcaption>
+        </figure>
+        <form>
+            <div>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <select name="option select">
+                                <option value="">오늘 고마운 하루 떡메모지</option>
+                            </select>
+                            <button>-</button>
+                            <input type="text" value="1" readonly>
+                            <button>+</button>
+                        </li>
+                        <li>
+                            <label for="purchasePrice04">총 구매금액</label>
+                            <input type="text" id="purchasePrice04" value="3,500 원" readonly>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="구매하기">
+            </div>
+        </form>
+    </div>
+    <div class="popup" id="springFlowerPopup">
+        <button class="btn_close">close</button>
+        <figure>
+            <img src="images/memo2_1.png" alt="springFlower">
+            <figcaption>
+                <dl>
+                    <dt>
+                        파운드캣                        
+                    </dt>
+                    <dd>
+                        봄꽃 떡메모지 3종 중 택1
+                    </dd>
+                    <dd>
+                        <a href="cart.html">
+                            장바구니
+                        </a>
+                        <a href="memo02.html">
+                            상세보기
+                        </a>
+                    </dd>
+                </dl>
+            </figcaption>
+        </figure>
+        <form>
+            <div>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <select name="option select">
+                                <option value="">귀여운 코코아</option>
+                                <option value="">나른한 카카오</option>
+                                <option value="">장난꾸러기 치이즈</option>
+                            </select>
+                            <button>-</button>
+                            <input type="text" value="1" readonly>
+                            <button>+</button>
+                        </li>
+                        <li>
+                            <label for="purchasePrice05">총 구매금액</label>
+                            <input type="text" id="purchasePrice05" value="3,000 원" readonly>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="구매하기">
+            </div>
+        </form>
+    </div>
+    <div class="popup" id="dongjuPopup">
+        <button class="btn_close">close</button>
+        <figure>
+            <img src="images/memo3_1.jpg" alt="dongju">
+            <figcaption>
+                <dl>
+                    <dt>
+                        우리일쌍                        
+                    </dt>
+                    <dd>
+                        동주와 고양이 감성 떡메모지 4종 중 택1
+                    </dd>
+                    <dd>
+                        <a href="cart.html">
+                            장바구니
+                        </a>
+                        <a href="memo03.html">
+                            상세보기
+                        </a>
+                    </dd>
+                </dl>
+            </figcaption>
+        </figure>
+        <form>
+            <div>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <select name="option select">
+                                <option value="">밀크 아이보리</option>
+                                <option value="">달구경</option>
+                                <option value="">베이비핑크</option>
+                                <option value="">케일</option>
+                            </select>
+                            <button>-</button>
+                            <input type="text" value="1" readonly>
+                            <button>+</button>
+                        </li>
+                        <li>
+                            <label for="purchasePrice06">총 구매금액</label>
+                            <input type="text" id="purchasePrice06" value="2,000 원" readonly>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="구매하기">
+            </div>
+        </form>
+    </div>
+    <div class="popup" id="springDayPopup">
+        <button class="btn_close">close</button>
+        <figure>
+            <img src="images/memo4_1.jpg" alt="springDay">
+            <figcaption>
+                <dl>
+                    <dt>
+                        몬난둥이네                        
+                    </dt>
+                    <dd>
+                        포근한 봄날 떡메모지 5종 중 택1
+                    </dd>
+                    <dd>
+                        <a href="cart.html">
+                            장바구니
+                        </a>
+                        <a href="memo04.html">
+                            상세보기
+                        </a>
+                    </dd>
+                </dl>
+            </figcaption>
+        </figure>
+        <form>
+            <div>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <select name="option select">
+                                <option value="">그림그린다냥</option>
+                                <option value="">턱시도냥</option>
+                                <option value="">샴x카오스냥</option>
+                                <option value="">책읽냥</option>
+                                <option value="">치즈냥</option>
+                            </select>
+                            <button>-</button>
+                            <input type="text" value="1" readonly>
+                            <button>+</button>
+                        </li>
+                        <li>
+                            <label for="purchasePrice07">총 구매금액</label>
+                            <input type="text" id="purchasePrice07" value="2,500 원" readonly>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="구매하기">
+            </div>
+        </form>
+    </div>
+    <div class="popup" id="checkListPopup">
+        <button class="btn_close">close</button>
+        <figure>
+            <img src="images/memo5_1.jpg" alt="checkList">
+            <figcaption>
+                <dl>
+                    <dt>
+                        서이스튜디오                        
+                    </dt>
+                    <dd>
+                        체크리스트 고양이 떡메모지
+                    </dd>
+                    <dd>
+                        <a href="cart.html">
+                            장바구니
+                        </a>
+                        <a href="memo05.html">
+                            상세보기
+                        </a>
+                    </dd>
+                </dl>
+            </figcaption>
+        </figure>
+        <form>
+            <div>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <select name="option select">
+                                <option value="">체크리스트 고양이 떡메모지</option>
+                            </select>
+                            <button>-</button>
+                            <input type="text" value="1" readonly>
+                            <button>+</button>
+                        </li>
+                        <li>
+                            <label for="purchasePrice08">총 구매금액</label>
+                            <input type="text" id="purchasePrice08" value="2,000 원" readonly>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="구매하기">
+            </div>
+        </form>
+    </div>
+    
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo_main.png" alt="logo">
+                </a>
+            </h1>
+            <ul>
+                <li>
+                    <a href="login.html">로그인</a>
+                </li>
+                <li>
+                    <a href="membership.html">회원가입</a>
+                </li>
+                <li>
+                    <a href="cart.html">장바구니</a>
+                </li>
+            </ul>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="introduce.html">냥토피아</a>
+                        <ol>
+                            <li><a href="introduce.html">About Us</a></li>
+                            <li><a href="guide.html">이용안내</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="drink.html">카페메뉴</a>
+                        <ol>
+                            <li><a href="drink.html">음료</a></li>
+                            <li><a href="dessert.html">디저트</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="sticker_tape.html">소품가게</a>
+                        <ol>
+                            <li><a href="sticker_tape.html">스티커,마스킹테이프</a></li>
+                            <li><a href="post_memo.html">엽서,떡메모지</a></li>
+                            <li><a href="etc_product.html">기타소품</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="catFood.html">고양이가게</a>
+                        <ol>
+                            <li><a href="catFood.html">수제간식</a></li>
+                            <li><a href="catToy.html">장난감</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="recruitment.html">고양이가족</a>
+                        <ol>
+                            <li><a href="recruitment.html">집사구해요</a></li>
+                            <li><a href="stayCat.html">임보냥</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="notice.html">고객센터</a>
+                        <ol>
+                            <li><a href="notice.html">공지사항</a></li>
+                            <li><a href="FAQ.html">FAQ</a></li>
+                            <li><a href="adopt_apply.html">입양신청</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="login.html">나의공간</a>
+                        <ol>
+                            <li><a href="login.html">로그인</a></li>
+                            <li><a href="cart.html">장바구니</a></li>
+                            <li><a href="deliver.html">주문,배송조회</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header Fin -->
+
+    <section class="postandMemo tab">
+        <h2>엽서, 떡메모지</h2>
+        <ul>
+            <li data-tabMenu="post" class="active">PostCard (3)</li>
+            <li data-tabMenu="memo">MemoPad (5)</li>
+        </ul>
+        <ul id="post" class="active tabPage">
+            <li id="merrynyang">
+                <img src="images/post1_1.png" alt="merrynyanground">
+                융잡화점 메리냥라운드 엽서
+                <small>1,000원</small>
+                <button>상세보기</button>
+            </li>
+            <li id="sokamono">
+                <img src="images/post2_1.png" alt="sokamono">
+                소카모노 숲속의 고양이 엽서
+                <small>5,000원</small>
+                <button>상세보기</button>
+            </li>
+            <li id="catcafe">
+                <img src="images/post3_1.jpg" alt="catcafe">
+                고양이다방 정사각 엽서
+                <small>24,000원</small>
+                <button>상세보기</button>
+            </li>
+        </ul>
+        <ul id="memo" class="tabPage">
+            <li id="thanksToday">
+                <img src="images/memo1_1.jpg" alt="thanksToday">
+                파운드캣 오늘 고마운 하루 떡메모지
+                <small>3,500원</small>
+                <button>상세보기</button>
+            </li>
+            <li id="springFlower">
+                <img src="images/memo2_1.png" alt="springFlower">
+                파운드캣 봄꽃 떡메모지
+                <small>3,000원</small>
+                <button>상세보기</button>
+            </li>
+            <li id="dongju">
+                <img src="images/memo3_1.jpg" alt="dongju">
+                동주와 고양이 감성 떡메모지
+                <small>2,000원</small>
+                <button>상세보기</button>
+            </li>
+            <li id="springDay">
+                <img src="images/memo4_1.jpg" alt="springDay">
+                몬난둥이네 포근한 봄날 떡메모지
+                <small>2,500원</small>
+                <button>상세보기</button>
+            </li>
+            <li id="checkList">
+                <img src="images/memo5_1.jpg" alt="checkList">
+                서이스튜디오 체크리스트 고양이 떡메모지
+                <small>2,000원</small>
+                <button>상세보기</button>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <div>
+            <a href="personal_Info.html" target="_blank">개인정보처리방침</a>
+            <a href="TOS.html" target="_blank">이용약관</a>
+            <p>
+                (주)냥토피아 고객센터 :
+                <a href="tel:0324301021">032)430-1021</a>
+                <br>
+                문의 : 월~금 09:00 ~ 18:00(토,일,공휴일 휴무)
+            </p>
+            <span>사업자등록번호 121-23-45621</span>
+            <span>통신판매업신고 제 2020-10</span>
+            <p>Copyright ⓒ 2020.Nyangtopia All rights reserved.</p>
+        </div>
+        <ul>
+            <li><a href="https://www.instagram.com/" target="_blank">instagram</a></li>
+            <li><a href="https://ko-kr.facebook.com/" target="_blank">facebook</a></li>
+            <li><a href="https://twitter.com/?lang=ko" target="_blank">twitter</a></li>
+            <li><a href="#" class="kakao">kakaoTalk</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>냥토피아</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <script src="js/nyangtopia.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="popup" id="catBakeryPopup">
+        <button class="btn_close">close</button>
+        <figure>
+            <img src="images/stk1_1.png" alt="catBakeryImg">
+            <figcaption>
+                <dl>
+                    <dt>
+                        고양이빵집                        
+                    </dt>
+                    <dd>
+                        대충 그린 고양이 스티커
+                    </dd>
+                    <dd>
+                        <a href="cart.html">
+                            장바구니
+                        </a>
+                        <a href="stk01.html">
+                            상세보기
+                        </a>
+                    </dd>
+                </dl>
+            </figcaption>
+        </figure>
+        <form>
+            <div>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <select name="option select">
+                                <option value="">대충 그린 고양이 스티커</option>
+                            </select>
+                            <button>-</button>
+                            <input type="text" value="1" readonly>
+                            <button>+</button>
+                        </li>
+                        <li>
+                            <label for="purchasePrice01">총 구매금액</label>
+                            <input type="text" id="purchasePrice01" value="2,600 원" readonly>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="구매하기">
+            </div>
+        </form>
+    </div>
+    <div class="popup" id="catGirlPopup">
+        <button class="btn_close">close</button>
+        <figure>
+            <img src="images/stk2_1.png" alt="catAndGirlImg">
+            <figcaption>
+                <dl>
+                    <dt>
+                        달 작가                       
+                    </dt>
+                    <dd>
+                        고양이와 소녀 빈티지 다꾸 스티커
+                    </dd>
+                    <dd>
+                        <a href="cart.html">
+                            장바구니
+                        </a>
+                        <a href="stk02.html">
+                            상세보기
+                        </a>
+                    </dd>
+                </dl>
+            </figcaption>
+        </figure>
+        <form>
+            <div>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <select name="option select">
+                                <option value="">고양이와 소녀 빈티지 다꾸 스티커</option>
+                            </select>
+                            <button>-</button>
+                            <input type="text" value="1" readonly>
+                            <button>+</button>
+                        </li>
+                        <li>
+                            <label for="purchasePrice02">총 구매금액</label>
+                            <input type="text" id="purchasePrice02" value="2,500 원" readonly>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="구매하기">
+            </div>
+        </form>
+    </div>
+    <div class="popup" id="catRemovablePopup">
+        <button class="btn_close">close</button>
+        <figure>
+            <img src="images/stk3_1.png" alt="removablePieceStickerImg">
+            <figcaption>
+                <dl>
+                    <dt>
+                        고양이빵집                        
+                    </dt>
+                    <dd>
+                        옷입은 고양이 리무버블 스티커
+                    </dd>
+                    <dd>
+                        <a href="cart.html">
+                            장바구니
+                        </a>
+                        <a href="stk03.html">
+                            상세보기
+                        </a>
+                    </dd>
+                </dl>
+            </figcaption>
+        </figure>
+        <form>
+            <div>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <select name="option select">
+                                <option value="">옷입은 고양이 리무버블 스티커</option>
+                            </select>
+                            <button>-</button>
+                            <input type="text" value="1" readonly>
+                            <button>+</button>
+                        </li>
+                        <li>
+                            <label for="purchasePrice03">총 구매금액</label>
+                            <input type="text" id="purchasePrice03" value="2,600 원" readonly>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="구매하기">
+            </div>
+        </form>
+    </div>
+    <div class="popup" id="poundcatPopup">
+        <button class="btn_close">close</button>
+        <figure>
+            <img src="images/stk4_1.jpg" alt="removablePieceStickerImg">
+            <figcaption>
+                <dl>
+                    <dt>
+                        파운드캣                        
+                    </dt>
+                    <dd>
+                        고양이 투명스티커 3종 중 택 1
+                    </dd>
+                    <dd>
+                        <a href="cart.html">
+                            장바구니
+                        </a>
+                        <a href="stk04.html">
+                            상세보기
+                        </a>
+                    </dd>
+                </dl>
+            </figcaption>
+        </figure>
+        <form>
+            <div>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <select name="option select">
+                                <option value="">파운드캣 다이어리 투명스티커</option>
+                                <option value="">파운드캣 초밥 투명스티커</option>
+                                <option value="">파운드캣 마카롱 스티커</option>
+                            </select>
+                            <button>-</button>
+                            <input type="text" value="1" readonly>
+                            <button>+</button>
+                        </li>
+                        <li>
+                            <label for="purchasePrice04">총 구매금액</label>
+                            <input type="text" id="purchasePrice04" value="2,000 원" readonly>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="구매하기">
+            </div>
+        </form>
+    </div>
+    <div class="popup" id="mindwavePopup">
+        <button class="btn_close">close</button>
+        <figure>
+            <img src="images/stk5_1.jpg" alt="mindwaveStickerImg">
+            <figcaption>
+                <dl>
+                    <dt>
+                        마인드웨이브                        
+                    </dt>
+                    <dd>
+                        도도한 고양이 씰 스티커
+                    </dd>
+                    <dd>
+                        <a href="cart.html">
+                            장바구니
+                        </a>
+                        <a href="stk05.html">
+                            상세보기
+                        </a>
+                    </dd>
+                </dl>
+            </figcaption>
+        </figure>
+        <form>
+            <div>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <select name="option select">
+                                <option value="">도도한 고양이 씰 스티커</option>
+                            </select>
+                            <button>-</button>
+                            <input type="text" value="1" readonly>
+                            <button>+</button>
+                        </li>
+                        <li>
+                            <label for="purchasePrice05">총 구매금액</label>
+                            <input type="text" id="purchasePrice05" value="2,500 원" readonly>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="구매하기">
+            </div>
+        </form>
+    </div>
+    <div class="popup" id="poundcatTapePopup">
+        <button class="btn_close">close</button>
+        <figure>
+            <img src="images/tape1_1.png" alt="poundcatTapeImg">>
+            <figcaption>
+                <dl>
+                    <dt>
+                        파운드캣                        
+                    </dt>
+                    <dd>
+                        뒹굴뒹굴 마스킹테이프 8종 중 택 1
+                    </dd>
+                    <dd>
+                        <a href="cart.html">
+                            장바구니
+                        </a>
+                        <a href="tape01.html">
+                            상세보기
+                        </a>
+                    </dd>
+                </dl>
+            </figcaption>
+        </figure>
+        <form>
+            <div>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <select name="option select">
+                                <option value="">공굴리기 코코아</option>
+                                <option value="">공굴리기 카카오</option>
+                                <option value="">공굴리기 레몬카카오</option>
+                                <option value="">공굴리기 치이즈</option>
+                                <option value="">식빵고양이 코코아</option>
+                                <option value="">식빵고양이 카카오</option>
+                                <option value="">식빵고양이 레몬카카오</option>
+                                <option value="">식빵고양이 치이즈</option>
+                            </select>
+                            <button>-</button>
+                            <input type="text" value="1" readonly>
+                            <button>+</button>
+                        </li>
+                        <li>
+                            <label for="purchasePrice06">총 구매금액</label>
+                            <input type="text" id="purchasePrice06" value="3,000 원" readonly>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="구매하기">
+            </div>
+        </form>
+    </div>
+    <div class="popup" id="dagoTapePopup">
+        <button class="btn_close">close</button>
+        <figure>
+            <img src="images/tape2_3.png" alt="dagoTapeImg">
+            <figcaption>
+                <dl>
+                    <dt>
+                        지렁이네                        
+                    </dt>
+                    <dd>
+                        대략적 고양이 마스킹테이프 3종 중 택1
+                    </dd>
+                    <dd>
+                        <a href="cart.html">
+                            장바구니
+                        </a>
+                        <a href="tape02.html">
+                            상세보기
+                        </a>
+                    </dd>
+                </dl>
+            </figcaption>
+        </figure>
+        <form>
+            <div>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <select name="option select">
+                                <option value="">길쭉냥</option>
+                                <option value="">낙서대고</option>
+                                <option value="">대고의 하루</option>
+                            </select>
+                            <button>-</button>
+                            <input type="text" value="1" readonly>
+                            <button>+</button>
+                        </li>
+                        <li>
+                            <label for="purchasePrice07">총 구매금액</label>
+                            <input type="text" id="purchasePrice07" value="3,000 원" readonly>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="구매하기">
+            </div>
+        </form>
+    </div>
+    <div class="popup" id="mbhyTapePopup">
+        <button class="btn_close">close</button>
+        <figure>
+            <img src="images/tape3_1.JPG" alt="mbhyTapeImg">
+            <figcaption>
+                <dl>
+                    <dt>
+                        김메주와 고양이들                        
+                    </dt>
+                    <dd>
+                        먼봉휴요 마스킹테이프 3종 중 택1
+                    </dd>
+                    <dd>
+                        <a href="cart.html">
+                            장바구니
+                        </a>
+                        <a href="tape03.html">
+                            상세보기
+                        </a>
+                    </dd>
+                </dl>
+            </figcaption>
+        </figure>
+        <form>
+            <div>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <select name="option select">
+                                <option value="">조르륵</option>
+                                <option value="">일러스트</option>
+                                <option value="">I♥MBHY</option>
+                            </select>
+                            <button>-</button>
+                            <input type="text" value="1" readonly>
+                            <button>+</button>
+                        </li>
+                        <li>
+                            <label for="purchasePrice08">총 구매금액</label>
+                            <input type="text" id="purchasePrice08" value="4,500 원" readonly>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="구매하기">
+            </div>
+        </form>
+    </div>
+    <div class="popup" id="catuncleTapePopup">
+        <button class="btn_close">close</button>
+        <figure>
+            <img src="images/tape4_1.png" alt="catuncleTapeImg">
+            <figcaption>
+                <dl>
+                    <dt>
+                        고양이삼촌                        
+                    </dt>
+                    <dd>
+                        냥냥 마스킹테이프 2종 중 택 1
+                    </dd>
+                    <dd>
+                        <a href="cart.html">
+                            장바구니
+                        </a>
+                        <a href="tape04.html">
+                            상세보기
+                        </a>
+                    </dd>
+                </dl>
+            </figcaption>
+        </figure>
+        <form>
+            <div>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <select name="option select">
+                                <option value="">빵고양이</option>
+                                <option value="">놀러와</option>
+                            </select>
+                            <button>-</button>
+                            <input type="text" value="1" readonly>
+                            <button>+</button>
+                        </li>
+                        <li>
+                            <label for="purchasePrice09">총 구매금액</label>
+                            <input type="text" id="purchasePrice09" value="4,500 원" readonly>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="구매하기">
+            </div>
+        </form>
+    </div>
+    <div class="popup" id="cutecatTapePopup">   
+        <button class="btn_close">close</button>
+        <figure>
+            <img src="images/tape5_1.png" alt="cutecatTapeImg">
+            <figcaption>
+                <dl>
+                    <dt>
+                        냥냥프로젝트                        
+                    </dt>
+                    <dd>
+                        귀여운 고양이 마스킹테이프 3종 중 택 1
+                    </dd>
+                    <dd>
+                        <a href="cart.html">
+                            장바구니
+                        </a>
+                        <a href="tape05.html">
+                            상세보기
+                        </a>
+                    </dd>
+                </dl>
+            </figcaption>
+        </figure>
+        <form>
+            <div>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <select name="option select">
+                                <option value="">바나핑크</option>
+                                <option value="">보리블루</option>
+                                <option value="">라봉오렌지</option>
+                            </select>
+                            <button>-</button>
+                            <input type="text" value="1" readonly>
+                            <button>+</button>
+                        </li>
+                        <li>
+                            <label for="purchasePrice10">총 구매금액</label>
+                            <input type="text" id="purchasePrice10" value="2,500 원" readonly>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="구매하기">
+            </div>
+        </form>
+    </div>
+    <!-- popup Fin -->
+
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo_main.png" alt="logo">
+                </a>
+            </h1>
+            <ul>
+                <li>
+                    <a href="login.html">로그인</a>
+                </li>
+                <li>
+                    <a href="membership.html">회원가입</a>
+                </li>
+                <li>
+                    <a href="cart.html">장바구니</a>
+                </li>
+            </ul>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="introduce.html">냥토피아</a>
+                        <ol>
+                            <li><a href="introduce.html">About Us</a></li>
+                            <li><a href="guide.html">이용안내</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="drink.html">카페메뉴</a>
+                        <ol>
+                            <li><a href="drink.html">음료</a></li>
+                            <li><a href="dessert.html">디저트</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="sticker_tape.html">소품가게</a>
+                        <ol>
+                            <li><a href="sticker_tape.html">스티커,마스킹테이프</a></li>
+                            <li><a href="post_memo.html">엽서,떡메모지</a></li>
+                            <li><a href="etc_product.html">기타소품</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="catFood.html">고양이가게</a>
+                        <ol>
+                            <li><a href="catFood.html">수제간식</a></li>
+                            <li><a href="catToy.html">장난감</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="recruitment.html">고양이가족</a>
+                        <ol>
+                            <li><a href="recruitment.html">집사구해요</a></li>
+                            <li><a href="stayCat.html">임보냥</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="notice.html">고객센터</a>
+                        <ol>
+                            <li><a href="notice.html">공지사항</a></li>
+                            <li><a href="FAQ.html">FAQ</a></li>
+                            <li><a href="adopt_apply.html">입양신청</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="login.html">나의공간</a>
+                        <ol>
+                            <li><a href="login.html">로그인</a></li>
+                            <li><a href="cart.html">장바구니</a></li>
+                            <li><a href="deliver.html">주문,배송조회</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header Fin -->
+
+    <section class="stickerandTape tab">
+        <h2>스티커, 마스킹테이프</h2>
+        <ul>
+            <li data-tabMenu="sticker" class="active">Sticker (5)</li>
+            <li data-tabMenu="maskingTape">MaskingTape (5)</li>
+        </ul>
+        <ul id="sticker" class="tabPage active">
+            <li id="catBakery">
+                <img src="images/stk1_1.png" alt="catBakeryImg">
+                고양이빵집 대충 그린 고양이 스티커
+                <small>2,600원</small>
+                <button>상세보기</button>
+                <!-- 돋보기 아이콘 -->
+            </li>
+            <li id="catGirl">
+                <img src="images/stk2_1.png" alt="catGirlImg">
+                고양이와 소녀 빈티지 다꾸 스티커
+                <small>2,500원</small>
+                <button>상세보기</button>
+            </li>
+            <li id="catRemovable">
+                <img src="images/stk3_1.png" alt="catRemovableImg">
+                옷입은 고양이 리무버블 조각스티커
+                <small>2,600원</small>
+                <button>상세보기</button>
+            </li>
+            <li id="poundcat">
+                <img src="images/stk4_1.jpg" alt="poudcatImg">
+                파운드캣 투명스티커
+                <small>2,000원</small>
+                <button>상세보기</button>
+            </li>
+            <li id="mindwave">
+                <img src="images/stk5_2.jpg" alt="mindwaveStickerImg">
+                마인드웨이브 도도한 고양이 씰 스티커
+                <small>2,500원</small>
+                <button>상세보기</button>
+            </li>
+        </ul>
+        <ul id="maskingTape" class="tabPage">
+            <li id="poundcatTape">
+                <img src="images/tape1_1.png" alt="poundcatTapeImg">
+                파운드캣 뒹굴뒹굴 다꾸 마스킹테이프
+                <small>3,000원</small>
+                <button>상세보기</button>
+            </li>
+            <li id="dagoTape">
+                <img src="images/tape2_3.png" alt="dagoTapeImg">
+                지렁이네 대략적 고양이 마스킹테이프
+                <small>3,000원</small>
+                <button>상세보기</button>
+            </li>
+            <li id="mbhyTape">
+                <img src="images/tape3_1.JPG" alt="mbhyTapeImg">
+                먼봉휴요 마스킹테이프
+                <small>4,500원</small>
+                <button>상세보기</button>
+            </li>
+            <li id="catuncleTape">
+                <img src="images/tape4_1.png" alt="catuncleTapeImg">
+                고양이삼촌 냥냥 마스킹테이프
+                <small>4,500원</small>
+                <button>상세보기</button>
+            </li>
+            <li id="cutecatTape">
+                <img src="images/tape5_1.png" alt="cutecatTapeImg">
+                냥냥프로젝트 귀여운 고양이 마스킹테이프
+                <small>2,500원</small>
+                <button>상세보기</button>
+            </li>
+        </ul>
+    </section>
+    <!-- section Fin -->
+
+    <footer>
+        <div>
+            <a href="personal_Info.html" target="_blank">개인정보처리방침</a>
+            <a href="TOS.html" target="_blank">이용약관</a>
+            <p>
+                (주)냥토피아 고객센터 :
+                <a href="tel:0324301021">032)430-1021</a>
+                <br>
+                문의 : 월~금 09:00 ~ 18:00(토,일,공휴일 휴무)
+            </p>
+            <span>사업자등록번호 121-23-45621</span>
+            <span>통신판매업신고 제 2020-10</span>
+            <p>Copyright ⓒ 2020.Nyangtopia All rights reserved.</p>
+        </div>
+        <ul>
+            <li><a href="https://www.instagram.com/" target="_blank">instagram</a></li>
+            <li><a href="https://ko-kr.facebook.com/" target="_blank">facebook</a></li>
+            <li><a href="https://twitter.com/?lang=ko" target="_blank">twitter</a></li>
+            <li><a href="#" class="kakao">kakaoTalk</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
