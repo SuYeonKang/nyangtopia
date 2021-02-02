@@ -145,7 +145,8 @@ $(document).ready(function(){
 
     drink();
 
-    popup();
+    popup('moon');
+    popup('chaos');
 
     accordionTab();
 
@@ -160,10 +161,10 @@ function kakaotalkAlert(){
 }
 
 function tabPage(){
-    $(".tab ul li").click(function(){
+    $(".tab > .tabMenu > li").click(function(){
         var activeMenu = $(this).attr("data-tabMenu");
 
-        $(".tab ul li").removeClass("active");
+        $(".tab > .tabMenu > li").removeClass("active");
         $(this).addClass("active");
 
         $(".tabPage").removeClass("active");
@@ -187,377 +188,374 @@ function drink(){
 
 
 
-function popup(){
-    $("#catBakery button").click(function(e){
-        e.preventDefault();
-        $("#catBakeryPopup").fadeIn(400);
+function popup(btnPopupName){
+    $('#'+btnPopupName).click(function(){
+        $("#"+btnPopupName+'Popup').fadeIn(400);
     });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#catBakeryPopup").fadeOut(400);
+    $(".btn_close").click(function(){
+        $(".popup").fadeOut(400);
     });
+    // $("#catGirl button").click(function(e){
+    //     e.preventDefault();
+    //     $("#catGirlPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#catGirlPopup").fadeOut(400);
+    // });
 
-    $("#catGirl button").click(function(e){
-        e.preventDefault();
-        $("#catGirlPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#catGirlPopup").fadeOut(400);
-    });
+    // $("#catRemovable button").click(function(e){
+    //     e.preventDefault();
+    //     $("#catRemovablePopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#catRemovablePopup").fadeOut(400);
+    // });
 
-    $("#catRemovable button").click(function(e){
-        e.preventDefault();
-        $("#catRemovablePopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#catRemovablePopup").fadeOut(400);
-    });
-
-    $("#poundcat button").click(function(e){
-        e.preventDefault();
-        $("#poundcatPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#poundcatPopup").fadeOut(400);
-    });
+    // $("#poundcat button").click(function(e){
+    //     e.preventDefault();
+    //     $("#poundcatPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#poundcatPopup").fadeOut(400);
+    // });
     
-    $("#mindwave button").click(function(e){
-        e.preventDefault();
-        $("#mindwavePopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#mindwavePopup").fadeOut(400);
-    });
+    // $("#mindwave button").click(function(e){
+    //     e.preventDefault();
+    //     $("#mindwavePopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#mindwavePopup").fadeOut(400);
+    // });
 
-    $("#poundcatTape button").click(function(e){
-        e.preventDefault();
-        $("#poundcatTapePopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#poundcatTapePopup").fadeOut(400);
-    });
+    // $("#poundcatTape button").click(function(e){
+    //     e.preventDefault();
+    //     $("#poundcatTapePopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#poundcatTapePopup").fadeOut(400);
+    // });
 
-    $("#dagoTape button").click(function(e){
-        e.preventDefault();
-        $("#dagoTapePopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#dagoTapePopup").fadeOut(400);
-    });
+    // $("#dagoTape button").click(function(e){
+    //     e.preventDefault();
+    //     $("#dagoTapePopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#dagoTapePopup").fadeOut(400);
+    // });
 
-    $("#mbhyTape button").click(function(e){
-        e.preventDefault();
-        $("#mbhyTapePopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#mbhyTapePopup").fadeOut(400);
-    });
+    // $("#mbhyTape button").click(function(e){
+    //     e.preventDefault();
+    //     $("#mbhyTapePopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#mbhyTapePopup").fadeOut(400);
+    // });
 
-    $("#catuncleTape button").click(function(e){
-        e.preventDefault();
-        $("#catuncleTapePopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#catuncleTapePopup").fadeOut(400);
-    });
+    // $("#catuncleTape button").click(function(e){
+    //     e.preventDefault();
+    //     $("#catuncleTapePopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#catuncleTapePopup").fadeOut(400);
+    // });
 
-    $("#cutecatTape button").click(function(e){
-        e.preventDefault();
-        $("#cutecatTapePopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#cutecatTapePopup").fadeOut(400);
-    });
-
-
-
-    $("#merrynyang button").click(function(e){
-        e.preventDefault();
-        $("#merrynyangPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#merrynyangPopup").fadeOut(400);
-    });
-
-    $("#sokamono button").click(function(e){
-        e.preventDefault();
-        $("#sokamonoPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#sokamonoPopup").fadeOut(400);
-    });
-
-    $("#catcafe button").click(function(e){
-        e.preventDefault();
-        $("#catcafePopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#catcafePopup").fadeOut(400);
-    });
-
-    $("#thanksToday button").click(function(e){
-        e.preventDefault();
-        $("#thanksTodayPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#thanksTodayPopup").fadeOut(400);
-    });
-
-    $("#springFlower button").click(function(e){
-        e.preventDefault();
-        $("#springFlowerPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#springFlowerPopup").fadeOut(400);
-    });
-
-    $("#dongju button").click(function(e){
-        e.preventDefault();
-        $("#dongjuPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#dongjuPopup").fadeOut(400);
-    });
-
-    $("#springDay button").click(function(e){
-        e.preventDefault();
-        $("#springDayPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#springDayPopup").fadeOut(400);
-    });
-
-    $("#checkList button").click(function(e){
-        e.preventDefault();
-        $("#checkListPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#checkListPopup").fadeOut(400);
-    });
+    // $("#cutecatTape button").click(function(e){
+    //     e.preventDefault();
+    //     $("#cutecatTapePopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#cutecatTapePopup").fadeOut(400);
+    // });
 
 
 
-    $("#moon button").click(function(e){
-        e.preventDefault();
-        $("#embroideryBagPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#embroideryBagPopup").fadeOut(400);
-    });
+    // $("#merrynyang button").click(function(e){
+    //     e.preventDefault();
+    //     $("#merrynyangPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#merrynyangPopup").fadeOut(400);
+    // });
+
+    // $("#sokamono button").click(function(e){
+    //     e.preventDefault();
+    //     $("#sokamonoPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#sokamonoPopup").fadeOut(400);
+    // });
+
+    // $("#catcafe button").click(function(e){
+    //     e.preventDefault();
+    //     $("#catcafePopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#catcafePopup").fadeOut(400);
+    // });
+
+    // $("#thanksToday button").click(function(e){
+    //     e.preventDefault();
+    //     $("#thanksTodayPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#thanksTodayPopup").fadeOut(400);
+    // });
+
+    // $("#springFlower button").click(function(e){
+    //     e.preventDefault();
+    //     $("#springFlowerPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#springFlowerPopup").fadeOut(400);
+    // });
+
+    // $("#dongju button").click(function(e){
+    //     e.preventDefault();
+    //     $("#dongjuPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#dongjuPopup").fadeOut(400);
+    // });
+
+    // $("#springDay button").click(function(e){
+    //     e.preventDefault();
+    //     $("#springDayPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#springDayPopup").fadeOut(400);
+    // });
+
+    // $("#checkList button").click(function(e){
+    //     e.preventDefault();
+    //     $("#checkListPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#checkListPopup").fadeOut(400);
+    // });
+
+
+
+    // $("#moon button").click(function(e){
+    //     e.preventDefault();
+    //     $("#embroideryBagPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#embroideryBagPopup").fadeOut(400);
+    // });
     
-    $("#wonder button").click(function(e){
-        e.preventDefault();
-        $("#stripeBagPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#stripeBagPopup").fadeOut(400);
-    });
+    // $("#wonder button").click(function(e){
+    //     e.preventDefault();
+    //     $("#stripeBagPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#stripeBagPopup").fadeOut(400);
+    // });
 
-    $("#loveSeason button").click(function(e){
-        e.preventDefault();
-        $("#flowerBagPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#flowerBagPopup").fadeOut(400);
-    });
+    // $("#loveSeason button").click(function(e){
+    //     e.preventDefault();
+    //     $("#flowerBagPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#flowerBagPopup").fadeOut(400);
+    // });
 
-    $("#creamLong button").click(function(e){
-        e.preventDefault();
-        $("#creamLongPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#creamLongPopup").fadeOut(400);
-    });
+    // $("#creamLong button").click(function(e){
+    //     e.preventDefault();
+    //     $("#creamLongPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#creamLongPopup").fadeOut(400);
+    // });
 
-    $("#creamSmall button").click(function(e){
-        e.preventDefault();
-        $("#creamSmallPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#creamSmallPopup").fadeOut(400);
-    });
-
-
-
-    $("#fish button").click(function(e){
-        e.preventDefault();
-        $("#fishPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#fishPopup").fadeOut(400);
-    });
-
-    $("#duck button").click(function(e){
-        e.preventDefault();
-        $("#duckPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#duckPopup").fadeOut(400);
-    });
-
-    $("#chicken button").click(function(e){
-        e.preventDefault();
-        $("#chickenPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#chickenPopup").fadeOut(400);
-    });
-
-    $("#salmon button").click(function(e){
-        e.preventDefault();
-        $("#salmonPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#salmonPopup").fadeOut(400);
-    });
+    // $("#creamSmall button").click(function(e){
+    //     e.preventDefault();
+    //     $("#creamSmallPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#creamSmallPopup").fadeOut(400);
+    // });
 
 
 
-    $("#fishingRod button").click(function(e){
-        e.preventDefault();
-        $("#fishingRodPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#fishingRodPopup").fadeOut(400);
-    });
+    // $("#fish button").click(function(e){
+    //     e.preventDefault();
+    //     $("#fishPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#fishPopup").fadeOut(400);
+    // });
 
-    $("#feathers button").click(function(e){
-        e.preventDefault();
-        $("#feathersPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#feathersPopup").fadeOut(400);
-    });
+    // $("#duck button").click(function(e){
+    //     e.preventDefault();
+    //     $("#duckPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#duckPopup").fadeOut(400);
+    // });
 
-    $("#woolBall button").click(function(e){
-        e.preventDefault();
-        $("#woolBallPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#woolBallPopup").fadeOut(400);
-    });
+    // $("#chicken button").click(function(e){
+    //     e.preventDefault();
+    //     $("#chickenPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#chickenPopup").fadeOut(400);
+    // });
 
-
-
-    $("#chaos button").click(function(e){
-        e.preventDefault();
-        $("#chaosPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#chaosPopup").fadeOut(400);
-    });
-
-    $("#threeColor button").click(function(e){
-        e.preventDefault();
-        $("#threeColorPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#threeColorPopup").fadeOut(400);
-    });
-
-    $("#cheese button").click(function(e){
-        e.preventDefault();
-        $("#cheesePopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#cheesePopup").fadeOut(400);
-    });
-
-    $("#milkCow button").click(function(e){
-        e.preventDefault();
-        $("#milkCowPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#milkCowPopup").fadeOut(400);
-    });
-
-    $("#tuxedo button").click(function(e){
-        e.preventDefault();
-        $("#tuxedoPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#tuxedoPopup").fadeOut(400);
-    });
-
-    $("#persian button").click(function(e){
-        e.preventDefault();
-        $("#persianPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#persianPopup").fadeOut(400);
-    });
+    // $("#salmon button").click(function(e){
+    //     e.preventDefault();
+    //     $("#salmonPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#salmonPopup").fadeOut(400);
+    // });
 
 
-    $("#koreanCheese button").click(function(e){
-        e.preventDefault();
-        $("#koreanCheesePopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#koreanCheesePopup").fadeOut(400);
-    });
 
-    $("#koreanTuxedo button").click(function(e){
-        e.preventDefault();
-        $("#koreanTuxedoPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#koreanTuxedoPopup").fadeOut(400);
-    });
+    // $("#fishingRod button").click(function(e){
+    //     e.preventDefault();
+    //     $("#fishingRodPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#fishingRodPopup").fadeOut(400);
+    // });
 
-    $("#scottishFold button").click(function(e){
-        e.preventDefault();
-        $("#scottishFoldPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#scottishFoldPopup").fadeOut(400);
-    });
+    // $("#feathers button").click(function(e){
+    //     e.preventDefault();
+    //     $("#feathersPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#feathersPopup").fadeOut(400);
+    // });
 
-    $("#mackerel button").click(function(e){
-        e.preventDefault();
-        $("#mackerelPopup").fadeIn(400);
-    });
-    $(".btn_close").click(function(e){
-        e.preventDefault();
-        $("#mackerelPopup").fadeOut(400);
-    });
+    // $("#woolBall button").click(function(e){
+    //     e.preventDefault();
+    //     $("#woolBallPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#woolBallPopup").fadeOut(400);
+    // });
+
+
+
+    // $("#chaos button").click(function(e){
+    //     e.preventDefault();
+    //     $("#chaosPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#chaosPopup").fadeOut(400);
+    // });
+
+    // $("#threeColor button").click(function(e){
+    //     e.preventDefault();
+    //     $("#threeColorPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#threeColorPopup").fadeOut(400);
+    // });
+
+    // $("#cheese button").click(function(e){
+    //     e.preventDefault();
+    //     $("#cheesePopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#cheesePopup").fadeOut(400);
+    // });
+
+    // $("#milkCow button").click(function(e){
+    //     e.preventDefault();
+    //     $("#milkCowPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#milkCowPopup").fadeOut(400);
+    // });
+
+    // $("#tuxedo button").click(function(e){
+    //     e.preventDefault();
+    //     $("#tuxedoPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#tuxedoPopup").fadeOut(400);
+    // });
+
+    // $("#persian button").click(function(e){
+    //     e.preventDefault();
+    //     $("#persianPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#persianPopup").fadeOut(400);
+    // });
+
+
+    // $("#koreanCheese button").click(function(e){
+    //     e.preventDefault();
+    //     $("#koreanCheesePopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#koreanCheesePopup").fadeOut(400);
+    // });
+
+    // $("#koreanTuxedo button").click(function(e){
+    //     e.preventDefault();
+    //     $("#koreanTuxedoPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#koreanTuxedoPopup").fadeOut(400);
+    // });
+
+    // $("#scottishFold button").click(function(e){
+    //     e.preventDefault();
+    //     $("#scottishFoldPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#scottishFoldPopup").fadeOut(400);
+    // });
+
+    // $("#mackerel button").click(function(e){
+    //     e.preventDefault();
+    //     $("#mackerelPopup").fadeIn(400);
+    // });
+    // $(".btn_close").click(function(e){
+    //     e.preventDefault();
+    //     $("#mackerelPopup").fadeOut(400);
+    // });
 }
 
 

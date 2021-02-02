@@ -532,10 +532,10 @@
         background: url('../images/hoverLine.png') no-repeat bottom;
         background-size: 100%; font-weight: 700;
     }
-    .drink div{
+    .drink div.tabPage{
         display: none;
     }
-    .drink div.active{
+    .drink div.tabPage.active{
         display: block;
     }
     .drink div ul li{
