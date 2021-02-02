@@ -145,8 +145,6 @@ $(document).ready(function(){
 
     drink();
 
-    ex();
-
     popup();
 
     accordionTab();
@@ -180,19 +178,12 @@ function drink(){
     $(detailBtn).click(function(){
         var detailPage = $(this).attr('data-detailName');
         $('#' + detailPage).addClass('activated');
+        $(closeBtn).click(function(){
+            $('#' + detailPage).removeClass('activated');
+        });
     });
 }
 
-
-function ex(){
-    $(".button").click(function(){
-        if($('.block').css('display') == 'none'){
-            $('.block').show();
-          }else{
-            $('.block').hide();
-        }
-    });
-}
 
 
 
