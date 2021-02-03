@@ -31,8 +31,8 @@
     .popup,
     .popup form div fieldset ul li select,
     .popup form div input[type='submit'],
-    .catPopup figure figcaption dl,
-    .catPopup figure figcaption a{
+    .cat figure figcaption dl,
+    .cat figure figcaption a{
         font-family: 'MapoFlowerIsland';
         font-weight: 400;
     }
@@ -44,8 +44,8 @@
     .introduceCat div strong,
     .stayByCat h2,
     .stayByCatDetail div strong,
-    .catPopup figure figcaption dl:first-child dt,
-    .catPopup figure figcaption dl:last-of-type dd{
+    .cat figure figcaption dl:first-child dt,
+    .cat figure figcaption dl:last-of-type dd{
         font-family: 'Nanum Pen Script';
         font-weight: 400;
     }
@@ -520,24 +520,6 @@
     .drink{
         width: 73.68%; margin: 0 auto;
     }
-    .drink > ul{
-        width: 50%; margin: 0 auto;
-    }
-    .drink > ul li{
-        font-size: 20px; cursor: pointer;
-        display: inline-block;
-        padding-bottom: 8px; margin-left: 6%;
-    }
-    .drink > ul li.active{
-        background: url('../images/hoverLine.png') no-repeat bottom;
-        background-size: 100%; font-weight: 700;
-    }
-    .drink div.tabPage{
-        display: none;
-    }
-    .drink div.tabPage.active{
-        display: block;
-    }
     .drink div ul li{
         display: inline-block;
         width: 28.57%; margin: 0 auto;
@@ -815,33 +797,10 @@
     .catToy{
         width: 73.68%; margin: 0 auto;
     }
-    .stickerandTape ul:not(:first-of-type),
-    .postandMemo ul:not(:first-of-type),
-    .etcProduct ul:not(:first-of-type){
-        display: none;
-    }
-    .stickerandTape ul.active,
-    .postandMemo ul.active,
-    .etcProduct ul.active{
-        display: block;
-    }
     .stickerandTape ul:first-of-type,
     .postandMemo ul:first-of-type,
     .etcProduct ul:first-of-type{
         width: 22.14%; margin: 0 auto;
-    }
-    .stickerandTape ul:first-of-type li,
-    .postandMemo ul:first-of-type li,
-    .etcProduct ul:first-of-type li{
-        display: inline-block; cursor: pointer;
-        font-size: 20px; margin-bottom: 100px;
-    }
-    .stickerandTape ul:first-of-type li.active,
-    .postandMemo ul:first-of-type li.active,
-    .etcProduct ul:first-of-type li.active{
-        background: url('../images/hoverLine.png') no-repeat bottom;
-        background-size: 100%;
-        padding-bottom: 10px; font-weight: 700;
     }
     .stickerandTape ul:first-of-type li:last-of-type,
     .postandMemo ul:first-of-type li:last-of-type,
@@ -855,9 +814,7 @@
         width: 28.57%; margin: 0 auto 100px;
         position: relative; cursor: pointer;
     }
-    .stickerandTape ul li:hover button,
-    .postandMemo ul li:hover button,
-    .etcProduct ul li:hover button,
+    .tab .tabPage li:hover button,
     .catFood ul li:hover button,
     .catToy ul li:hover button,
     .hello ul li:hover button,
@@ -1071,42 +1028,42 @@
     }
     /* cat product Fin */
 
-    .catPopup{
+    .cat{
         display: none; position: fixed; left: 20%; top: 150px; width: 52.63%; 
         background-color: #f8f3ed;
         padding: 75px 30px; z-index: 1000;
     }
-    .popup figure::after{
+    .cat figure::after{
         content: ''; display: block; visibility: hidden; clear: both;
     }
-    .catPopup figure img{
+    .cat figure img{
         width: 60%; display: block; float: left;
     }
-    .catPopup figure figcaption{
+    .cat figure figcaption{
         width: 35%; margin-left: 65%;
     }
-    .catPopup figure figcaption dl:first-of-type{
+    .cat figure figcaption dl:first-of-type{
         margin-bottom: 55px;
     }
-    .catPopup figure figcaption dl:first-child dt{
+    .cat figure figcaption dl:first-child dt{
         font-size: 40px; color: #343333;
         padding-top: 60px; margin-bottom: 40px;
         text-align: center;
     }
-    .catPopup figure figcaption dl dd{
+    .cat figure figcaption dl dd{
         font-size: 20px; color: #343333;
         text-align: left; line-height: 30px;
     }
-    .catPopup figure figcaption dl:last-of-type dt{
+    .cat figure figcaption dl:last-of-type dt{
         background: url('../images/logo_mini.png') no-repeat left;
         background-size: 35px;
         font-size: 20px; padding-left: 50px;
         line-height: 50px; margin-bottom: 20px;
     }
-    .catPopup figure figcaption dl:last-of-type dd{
+    .cat figure figcaption dl:last-of-type dd{
         font-size: 20px; margin-bottom: 75px;
     }
-    .catPopup figure figcaption a{
+    .cat figure figcaption a{
         text-decoration: none; font-size: 24px; color: #343333;
         line-height: 70px; display: block; text-align: center;
         background: url('../images/btn_bg.png') no-repeat center;
