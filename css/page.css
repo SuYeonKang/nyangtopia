@@ -762,7 +762,7 @@
     .popup form div fieldset ul li select{
         width: 42%; appearance: none; padding: 10px 10px 10px 16%;
         font-size: 16px; color: #343333;
-        background: url('../images/tab_arrow.png') no-repeat left;
+        background: url('../images/tab_arrow.png') no-repeat 2%;
         background-size: 20px;
         background-color: #fff;
     }
@@ -802,18 +802,6 @@
     .etcProduct ul:first-of-type{
         width: 22.14%; margin: 0 auto;
     }
-    .stickerandTape ul:first-of-type li:last-of-type,
-    .postandMemo ul:first-of-type li:last-of-type,
-    .etcProduct ul:first-of-type li:last-of-type{
-        margin-left: 5%;
-    }
-    .stickerandTape ul:not(:first-of-type) li,
-    .postandMemo ul:not(:first-of-type) li,
-    .etcProduct ul:not(:first-of-type) li{
-        display: inline-block; font-size: 16px;
-        width: 28.57%; margin: 0 auto 100px;
-        position: relative; cursor: pointer;
-    }
     .tab .tabPage li:hover button,
     .catFood ul li:hover button,
     .catToy ul li:hover button,
@@ -821,29 +809,12 @@
     .stayCat ul li:hover button{
         display: block;
     }
-    .stickerandTape ul:not(:first-of-type) li img,
-    .postandMemo ul:not(:first-of-type) li img,
-    .etcProduct ul:not(:first-of-type) li img{
-        width: 100%; margin-bottom: 20px;
-    }
-    .stickerandTape ul:nth-of-type(2) li:nth-of-type(2) img,
-    .postandMemo ul:nth-of-type(2) li:nth-of-type(2) img,
-    .etcProduct ul:nth-of-type(2) li:nth-of-type(2) img{
-        width: 66%; display: block; margin: 0 auto 20px;
-    }
     .stickerandTape ul:not(:first-of-type) li:not(:nth-of-type(3n-2)),
     .postandMemo ul:not(:first-of-type) li:not(:nth-of-type(3n-2)),
     .etcProduct ul:not(:first-of-type) li:not(:nth-of-type(3n-2)){
         margin-left: 6%;
     }
-    .stickerandTape ul:not(:first-of-type) li small,
-    .postandMemo ul:not(:first-of-type) li small,
-    .etcProduct ul:not(:first-of-type) li small{
-        padding-left: 75px;
-    }
-    .stickerandTape ul li button,
-    .postandMemo ul li button,
-    .etcProduct ul li button,
+    .tabPage li button,
     .catFood ul li button,
     .catToy ul li button,
     .hello ul li button,
@@ -854,11 +825,6 @@
         background-color: rgba(255,255,255,0.8);
         border: none; border-radius: 25px; cursor: pointer;
         display: none;
-    }
-    .stickerandTape ul li button,
-    .postandMemo ul li button,
-    .etcProduct ul li button{
-        position: absolute; top: 180px; left: 180px;
     }
     /* product page Fin */
 
@@ -898,7 +864,7 @@
         width: 76%; height: 50px;
         appearance: none; padding: 10px 10px 10px 35%;
         font-size: 20px; color: #343333;
-        background: url('../images/tab_arrow.png') no-repeat left;
+        background: url('../images/tab_arrow.png') no-repeat 2%;
         background-size: 20px;
         margin-left: 12.66%;
     }
