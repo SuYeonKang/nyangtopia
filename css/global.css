@@ -1,6 +1,6 @@
-html,body{
+/* html,body{
     height: 100%;
-}
+} */
 body{
     padding-top: 185px;
 }
@@ -331,8 +331,11 @@ footer{
         width: 100%; margin-bottom: 20px;
     }
     /* tabUI */
-
-
+    .catFam{
+        background: url('../images/cat_bg.png') repeat-y center 35%;
+        background-size: contain;
+    }
+    /*  pattern BG */
     footer::after{
         content: ''; display: block; visibility: hidden; clear: both;
     }

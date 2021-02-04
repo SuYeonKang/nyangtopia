@@ -21,8 +21,8 @@
     .shop form fieldset ul li div select,
     .shop form fieldset > input,
     .shopDetail,
-    .helloCat ul,
-    .helloCat a:last-of-type,
+    .helloCat div ul,
+    .helloCat div a,
     .stayByCat ul,
     .cart ul li,
     .deliver,
@@ -74,6 +74,8 @@
     .shop > a,
     .catFoodNotice article,
     .shopDetail > article,
+    .helloCat > a,
+    .stayByCat > a,
     .introduceCat div,
     .stayByCatDetail div,
     .cart ul li:nth-of-type(2) span:nth-of-type(2),
@@ -712,9 +714,14 @@
     /* dessert Fin */
 
     .popup{
-        display: none; position: fixed; left: 25%; top: 100px; width: 47.37%; 
+        display: none; position: fixed; left: 0; top: 0; z-index: 1000;
+        padding: 100px; box-sizing: border-box; width: 100%;
+        height: 100%; background-color: rgba(0,0,0,0.7);
+    }
+    .popup > div{
+        width: 47.37%; margin: 0 auto;
         background-color: #f8f3ed;
-        padding: 30px; z-index: 1000;
+        padding: 30px; position: relative;
     }
     .popup figure::after{
         content: ''; display: block; visibility: hidden; clear: both;
@@ -814,6 +821,16 @@
     .etcProduct ul:not(:first-of-type) li:not(:nth-of-type(3n-2)){
         margin-left: 6%;
     }
+    .tab .tabPage li::after,
+    .catFood ul li small::after,
+    .catToy ul li small::after,{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    .tab .tabPage li small,
+    .catFood ul li small,
+    .catToy ul li small{
+        float: right;
+    }
     .tabPage li button,
     .catFood ul li button,
     .catToy ul li button,
@@ -834,13 +851,16 @@
         border-bottom: 1px solid #222222;
     }
     .shop > a,
-    .helloCat > a:first-of-type,
+    .helloCat > a,
     .stayByCat a{
         background: url('../images/back_arrow.png') no-repeat left;
         background-size: contain;
-        display: block; width: 8%; line-height: 50px;
-        text-decoration: none; padding-left: 60px;
-        color: #8b8b8b; margin-bottom: 40px;
+        display: block; width: 8%; text-decoration: none; 
+        color: #8b8b8b; line-height: 50px;
+    }
+    .shop > a{
+        margin-bottom: 40px; 
+        padding-left: 60px;
     }
     .shop::after{
         content: ''; display: block; visibility: hidden; clear: both;
@@ -962,12 +982,6 @@
     .catToy ul li:nth-of-type(even){
         margin-left: 3.8%;
     }
-    .catFood ul li small{
-        padding-left: 450px;
-    }
-    .catToy ul li small{
-        padding-left: 300px;
-    }
     .catFood ul li button{
         position: absolute; top: 200px; left: 300px;
     }
@@ -994,52 +1008,39 @@
     }
     /* cat product Fin */
 
-    .cat{
-        display: none; position: fixed; left: 20%; top: 150px; width: 52.63%; 
-        background-color: #f8f3ed;
-        padding: 75px 30px; z-index: 1000;
-    }
-    .cat figure::after{
-        content: ''; display: block; visibility: hidden; clear: both;
-    }
-    .cat figure img{
-        width: 60%; display: block; float: left;
-    }
     .cat figure figcaption{
-        width: 35%; margin-left: 65%;
+        padding-top: 50px;
     }
     .cat figure figcaption dl:first-of-type{
-        margin-bottom: 55px;
+        margin-bottom: 50px;
     }
-    .cat figure figcaption dl:first-child dt{
-        font-size: 40px; color: #343333;
-        padding-top: 60px; margin-bottom: 40px;
-        text-align: center;
+    .cat figure figcaption dl:first-of-type dt{
+        font-size: 40px; background: none; padding: 0;
     }
     .cat figure figcaption dl dd{
-        font-size: 20px; color: #343333;
-        text-align: left; line-height: 30px;
+        text-align: left; font-size: 20px; color: #343333;
+        line-height: 30px;
+    }
+    .cat figure figcaption dl dd:first-of-type{
+        margin: 0;
+    }
+    .cat figure figcaption dl:last-of-type{
+        margin-bottom: 50px;
     }
     .cat figure figcaption dl:last-of-type dt{
-        background: url('../images/logo_mini.png') no-repeat left;
-        background-size: 35px;
-        font-size: 20px; padding-left: 50px;
-        line-height: 50px; margin-bottom: 20px;
+        background-size: 35px; font-size: 20px;
+        background-position: left; padding: 0;
+        width: 50%; line-height: 40px;
+        margin-bottom: 20px;
     }
     .cat figure figcaption dl:last-of-type dd{
-        font-size: 20px; margin-bottom: 75px;
+        font-size: 20px; color: #222222;
     }
     .cat figure figcaption a{
         text-decoration: none; font-size: 24px; color: #343333;
         line-height: 70px; display: block; text-align: center;
         background: url('../images/btn_bg.png') no-repeat center;
         background-size: 62.5% 65px;
-    }
-    .btn_close{
-        position: absolute; right: 20px; top: 20px; 
-        background: url('../images/close_btn.png') no-repeat center;
-        background-size: 20px;
-        border: none; text-indent: -9999px; cursor: pointer;
     }
     /* catPopup Fin */
 
@@ -1077,47 +1078,69 @@
     .stayByCat{
         width: 84.21%; margin: 0 auto;
         border-bottom: 1px solid #222222;
+        padding-bottom: 100px; margin-bottom: 100px;
     }
-    .helloCat > a:first-of-type,
-    .stayByCat a{
-        width: 10%;
+    .helloCat::after,
+    .stayByCat::after{
+        content: ''; display: block; visibility: hidden; clear: both;
     }
-    .helloCat h2,
-    .stayByCat h2{
-        margin-bottom: 100px; padding-top: 50px;
-        font-size: 50px;
+    .helloCat > a,
+    .stayByCat > a{
+        width: 10%; padding-left: 70px;
+        margin-bottom: 50px;
     }
     .helloCat img,
     .stayByCat img{
         width: 50%; float: left;
     }
-    .helloCat ul,
-    .stayByCat ul{
-        font-size: 20px; margin-left: 63%;
-        width: 29.69%; margin-bottom: 100px;
+    .helloCat div,
+    .stayByCat div{
+        float: right; width: 50%; margin: 0 auto;
     }
-    .helloCat ul li,
-    .stayByCat ul li{
-        display: inline-block;
+    .helloCat div{
+        padding-top: 50px;
+    }
+    .stayByCat div{
+        padding-top: 100px;
+    }
+    .helloCat div::after,
+    .stayByCat div::after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    .helloCat div h2,
+    .stayByCat div h2{
+        font-size: 50px; margin-bottom: 100px;
+    }
+    .helloCat div ul,
+    .stayByCat div ul{
+        font-size: 20px; width: 70%;
+    }
+    .helloCat div ul::after,
+    .stayByCat div ul::after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    .helloCat div ul li,
+    .stayByCat div ul li{
         background: url('../images/logo_mini.png') no-repeat left;
         background-size: 30px;
         padding-left: 50px; line-height: 30px;
+        float: left;
     }
-    .helloCat ul li:nth-of-type(even),
-    .stayByCat ul li:nth-of-type(even){
+    .helloCat div ul li,
+    .stayByCat div ul li{
         margin-left: 15%; margin-bottom: 55px;
     }
-    .helloCat a:last-of-type{
-        width: 24.38%; margin-left: 65.75%;
+    .helloCat div a{
+        width: 60%; margin: 0 auto; text-align: center;
         text-decoration: none; display: block;
         font-size: 30px; color: #222222;
-        margin-bottom: 200px;
+        background: url('../images/btn_bg.png') no-repeat center;
+        background-size: contain;
+        line-height: 90px;
     }
     .introduceCat,
     .stayByCatDetail{
-        background: url('../images/cat_bg.png') repeat-y center;
-        background-size: contain;
-        padding-top: 100px;
+        margin-bottom: 100px;
     }
     .introduceCat div strong,
     .stayByCatDetail strong{
@@ -1143,23 +1166,36 @@
     .deliver ul li:first-of-type{
         border-top: 2px solid #343333;
     }
-    .notice ul li h3,
+    /* .notice ul li h3,
     .FAQ ul li h3{
+        background: url('../images/tab_arrow.png') no-repeat 98%;
+        background-size: 20px;
+    } */
+    .accordion li > :first-child{
         font-size: 20px; font-weight: 400;
         padding: 30px;
-        background: url('../images/tab_arrow.png') no-repeat right;
-        background-size: 20px;
         background-color: #f8f3ed;
         border-bottom: 2px solid #343333;
     }
-    .notice ul li h3 time{
+    .accordion li > :first-child:after{
+        content: url('../images/tab_arrow.png');
+        display: block; float: right; transition: transform 0.75s ease-in-out;
+    }
+    .accordion li > :first-child.active:after{
+        transform: rotate(180deg);
+    }
+    .accordion li > :first-child time{
         font-size: 16px;
     }
-    .notice ul li p,
-    .FAQ ul li p{
-        font-size: 14px; width: 70%;
-        margin: 0 auto; padding: 40px;
-        line-height: 26px; display: none;
+    .accordion li > :first-child+*{
+        font-size: 0px; width: 70%;
+        margin: 0 auto; padding: 0 40px;
+        line-height: 0px; overflow-y: hidden;
+        transition: all 0.5s ease-in-out;
+    }
+    .accordion li > :first-child.active+*{
+        font-size: 14px; padding: 40px 40px;
+        line-height: 24px; overflow-y: hidden;
     }
     .pager{
         width: 50%; margin: 0 auto;
