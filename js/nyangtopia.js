@@ -192,7 +192,23 @@ $(document).ready(function(){
     popup('scottishFold');
     popup('mackerel');
 
-    accordionTab();
+    quantity();
+
+    accordionTab('notyOne');
+    accordionTab('notyTwo');
+    accordionTab('notyThree');
+    accordionTab('notyFour');
+
+    accordionTab('FAQone');
+    accordionTab('FAQtwo');
+    accordionTab('FAQthree');
+    accordionTab('FAQfour');
+    accordionTab('FAQfive');
+    accordionTab('FAQsix');
+    accordionTab('FAQseven');
+    accordionTab('FAQeight');
+    accordionTab('FAQnine');
+    accordionTab('FAQten');
 
     IDcheck();
 });
@@ -242,20 +258,41 @@ function popup(btnPopupName){
 }
 
 
+function quantity(){
 
+    var targetContainer = $(this).parents("div").attr("id");
+    var productCountField = Number($('#'+ targetContainer + " .quantity").val());
+    // var productCount = Number(productCountField);
 
-function accordionTab(){
-    $(".notice ul li h3").click(function() {
-        if ( $(this).hasClass("active") ) {
-            $(this).find(".notice ul li p").stop().slideUp(300);
-            $(this).removeClass("active");
-        }
-        else {
-            $(this).find(".notice ul li p").stop().slideDown(300);
-            $(this).addClass("active");
-        }
+    $('.plus').click(function(){
+        
+        
+        // if(number < 100){
+        //     number++;
+        //     $('#quantity').val(number++);
+        //     $(price).val(price*number++);
+        // }else{
+        //     alert('최대 구매가능 수량은 99개 입니다.');
+        // }
+    });
+
+    $('#minus').click(function(){
+        // if(2 == number < 100){
+        //     number--;
+        //     $('#quantity').val(number--);
+        // }else{
+        //     alert('1~99개까지 구매 가능합니다');
+        // }
     });
 }
+
+
+function accordionTab(accOpen){
+    $('#'+accOpen).click(function(){
+        $('#'+accOpen).toggleClass('open');
+    });
+}
+
 
 
 
