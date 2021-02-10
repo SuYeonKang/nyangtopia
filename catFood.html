@@ -13,7 +13,7 @@
 <body>
     <div class="popup" id="fishPopup">
         <div>
-            <button class="btn_close">close</button>
+            <button class="btn_close btn_Reset">close</button>
             <figure>
                 <img src="images/food1_1.jpg" alt="freezeDryingFish">
                 <figcaption>
@@ -28,7 +28,7 @@
                             <a href="cart.html">
                                 장바구니
                             </a>
-                            <a href="food01.html">
+                            <a href="food01.html" class="btn_Reset">
                                 상세보기
                             </a>
                         </dd>
@@ -43,16 +43,16 @@
                                 <option value="">무염황태채</option>
                             </select>
                             <button class="minus">-</button>
-                            <input type="text" class="quantity" value="1">
+                            <input type="text" class="count" value="1">
                             <button class="plus">+</button>
                         </li>
                         <li>
                             <label for="purchasePrice01">총 구매금액</label>
-                            <input type="text" id="purchasePrice01" value="6,500원" readonly>
+                            <input type="text" class="price" value="6500" readonly>
                         </li>
                     </ul>
                 </fieldset>
-                <input type="submit" value="구매하기">
+                <input type="submit" value="구매하기" class="btn_Reset">
             </div>
         </div>
     </div>

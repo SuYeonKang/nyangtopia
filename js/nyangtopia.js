@@ -60,7 +60,6 @@ $(document).ready(function(){
         // customizing 방법은 controler 와 동일
         
         autoStart: true, // 페이지 로드가 되면, 슬라이드의 자동시작 여부    -- auto와 같은 옵션(true/false)이어야함.
-        autoDirection: 'prev', // 자동 재생 시에 정순, 역순(prev) 방식 설정
         autoHover: true, // 슬라이드 오버시 재생 중단 여부 (false: 오버무시) 
         autoDelay: 0, // 자동 재생 전 대기 시간 설정
         pause: 4000, // 자동 재생 시 각 슬라이드 별 노출 시간
@@ -130,7 +129,6 @@ $(document).ready(function(){
         // customizing 방법은 controler 와 동일
         
         autoStart: true, // 페이지 로드가 되면, 슬라이드의 자동시작 여부    -- auto와 같은 옵션(true/false)이어야함.
-        autoDirection: 'prev', // 자동 재생 시에 정순, 역순(prev) 방식 설정
         autoHover: true, // 슬라이드 오버시 재생 중단 여부 (false: 오버무시) 
         autoDelay: 0, // 자동 재생 전 대기 시간 설정
         pause: 4000, // 자동 재생 시 각 슬라이드 별 노출 시간
@@ -192,8 +190,6 @@ $(document).ready(function(){
     popup('scottishFold');
     popup('mackerel');
 
-    quantity();
-
     accordionTab('notyOne');
     accordionTab('notyTwo');
     accordionTab('notyThree');
@@ -213,6 +209,7 @@ $(document).ready(function(){
     cartAllCheck();
 
     IDcheck();
+    countUpDown();
 });
 
 
@@ -260,32 +257,48 @@ function popup(btnPopupName){
 }
 
 
-function quantity(){
+function countUpDown(){
+    var count = 1;
+    var countContainer, countField, priceBase;
 
-    var targetContainer = $(this).parents("div").attr("id");
-    var productCountField = Number($('#'+ targetContainer + " .quantity").val());
-    // var productCount = Number(productCountField);
-
-    $('.plus').click(function(){
-        
-        
-        // if(number < 100){
-        //     number++;
-        //     $('#quantity').val(number++);
-        //     $(price).val(price*number++);
-        // }else{
-        //     alert('최대 구매가능 수량은 99개 입니다.');
-        // }
+    $(".plus").click(function(){
+        countContainer = $("#" + $(this).parents("div").attr("id"));
+        countField = countContainer.find(".count");
+        priceBase = countContainer.find(".price").attr("value");
+        if(count < 99){
+            ++count;
+        }else if(count == 99){
+            alert('최대수량 99');
+            count = 99;
+        }
+        countOutput(count, countField);
+        price(count, countContainer, priceBase);
     });
-
-    $('#minus').click(function(){
-        // if(2 == number < 100){
-        //     number--;
-        //     $('#quantity').val(number--);
-        // }else{
-        //     alert('1~99개까지 구매 가능합니다');
-        // }
+    $(".minus").click(function(){
+        countContainer = $("#" + $(this).parents("div").attr("id"));
+        countField = countContainer.find(".count");
+        priceBase = countContainer.find(".price").attr("value");
+        if(count > 1){
+            count--;
+        }else if(count == 1){
+            alert('최소수량 1');
+            count = 1;
+        }
+        countOutput(count, countField);
+        price(count, countContainer, priceBase);
     });
+    $(".btn_Reset").click(function(){
+        count = 1;
+        countField.val(count);
+        countContainer.find(".price").val(priceBase);
+    });
+}
+function countOutput(count, countField){
+    $(countField).val(count);
+}
+function price(count, countContainer, priceBase){
+    priceField = countContainer.find(".price");
+    $(priceField).val(priceBase * count);
 }
 
 

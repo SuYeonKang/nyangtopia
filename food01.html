@@ -6,7 +6,7 @@
     <title>냥토피아</title>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    
+
     <script src="js/nyangtopia.js"></script>
     <link rel="stylesheet" href="css/import.css">
 </head>
@@ -95,27 +95,29 @@
         <h2>
             냥토피아 무염황태채
         </h2>
-        <fieldset>
-            <ul>
-                <li>
-                    <div>
-                        <select name="option select">
-                            <option value="">무염황태채</option>
-                        </select>
-                    </div>
-                    <label for="plus">수량</label>
-                    <input type="button" value="-">
-                    <input type="text" value="1" readonly>
-                    <input type="button" id="plus" value="+">
-                </li>
-                <li>
-                    <label for="purchasePrice">총 구매금액</label>
-                    <input type="text" id="purchasePrice" value="6,500 원" readonly>
-                </li>
-            </ul>
-            <input type="submit" value="구매하기">
-            <a href="cart.html">장바구니</a>
-        </fieldset>
+        <div id="food01">
+            <fieldset>
+                <ul>
+                    <li>
+                        <div>
+                            <select name="option select">
+                                <option value="">무염황태채</option>
+                            </select>
+                        </div>
+                        <label for="plus">수량</label>
+                        <input type="button" value="-" class="minus">
+                        <input type="text" value="1" readonly class="count">
+                        <input type="button" class="plus" value="+">
+                    </li>
+                    <li>
+                        <label for="purchasePrice">총 구매금액</label>
+                        <input type="text" class="price" value="6500" readonly>
+                    </li>
+                </ul>
+                <input type="submit" value="구매하기">
+                <a href="cart.html">장바구니</a>
+            </fieldset>
+        </div>
     </section>
 
     <section class="shopDetail">
