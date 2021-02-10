@@ -210,6 +210,8 @@ $(document).ready(function(){
     accordionTab('FAQnine');
     accordionTab('FAQten');
 
+    cartAllCheck();
+
     IDcheck();
 });
 
@@ -293,6 +295,16 @@ function accordionTab(accOpen){
     });
 }
 
+
+function cartAllCheck(){
+    $('#checkAll').click(function(){
+        if($('#checkAll').prop('checked')){
+            $('input[type=checkbox]').prop('checked',true);
+        }else{
+            $('input[type=checkbox]').prop('checked',false);
+        }
+    });
+}
 
 
 

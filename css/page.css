@@ -17,9 +17,9 @@
     .login > div form fieldset div input[type='submit'],
     .membership form fieldset ul li label,
     .membership form fieldset > input,
-    .shop form fieldset,
-    .shop form fieldset ul li div select,
-    .shop form fieldset > input,
+    .shop fieldset,
+    .shop fieldset ul li div select,
+    .shop fieldset > input,
     .shopDetail,
     .helloCat div ul,
     .helloCat div a,
@@ -29,8 +29,8 @@
     .cart ul li:nth-of-type(2) span:last-of-type input,
     .membership form fieldset ul li:nth-of-type(2) input[type='button'],
     .popup,
-    .popup form div fieldset ul li select,
-    .popup form div input[type='submit'],
+    .popup div fieldset ul li select,
+    .popup div input[type='submit'],
     .cat figure figcaption dl,
     .cat figure figcaption a{
         font-family: 'MapoFlowerIsland';
@@ -69,8 +69,8 @@
     .applyNotice ul,
     .login,
     .membership form fieldset ul li:last-of-type label,
-    .shop form fieldset ul li input:nth-of-type(2),
-    .shop form fieldset ul li:last-of-type input,
+    .shop fieldset ul li input:nth-of-type(2),
+    .shop fieldset ul li:last-of-type input,
     .shop > a,
     .catFoodNotice article,
     .shopDetail > article,
@@ -81,8 +81,8 @@
     .cart ul li:nth-of-type(2) span:nth-of-type(2),
     .cart ul li:nth-of-type(2) span:nth-of-type(3),
     .cart ul li:nth-of-type(2) span:nth-of-type(4),
-    .popup form div fieldset ul li button,
-    .popup form div fieldset ul li input[type='text']{
+    .popup div fieldset ul li button,
+    .popup div fieldset ul li input[type='text']{
         font-family: 'Noto Sans';
         font-weight: 400; color: #222222;
     }
@@ -106,7 +106,7 @@
     .login > div form fieldset,
     .membership h2,
     .membership form fieldset > input,
-    .shop form fieldset ul li,
+    .shop fieldset ul li,
     .catFoodNotice,
     .shop img,
     .applyNotice > a,
@@ -789,16 +789,13 @@
     .shop h2{
         font-size: 30px; padding-top: 50px;
     }
-    .shop form{
-        margin-left: 1%;
+    .shop fieldset{
+        width: 49%; margin-left: 1%;
     }
-    .shop form fieldset{
-        width: 49%;
-    }
-    .shop form fieldset ul li div{
+    .shop fieldset ul li div{
         margin-bottom: 60px;
     }
-    .shop form fieldset ul li div select{
+    .shop fieldset ul li div select{
         width: 76%; height: 50px;
         appearance: none; padding: 10px 10px 10px 35%;
         font-size: 20px; color: #343333;
@@ -806,39 +803,39 @@
         background-size: 20px;
         margin-left: 12.66%;
     }
-    .shop form fieldset ul li:first-of-type label{
+    .shop fieldset ul li:first-of-type label{
         font-size: 30px; color: #343333;
         margin-left: 12.66%;        
     }
-    .shop form fieldset ul li:first-of-type input:first-of-type{
+    .shop fieldset ul li:first-of-type input:first-of-type{
         margin-left: 55.69%;
     }
-    .shop form fieldset ul li:first-of-type input:not(:nth-of-type(2)){
+    .shop fieldset ul li:first-of-type input:not(:nth-of-type(2)){
         background: none; border: 1px solid #222222;
         padding: 5px 10px;
     }
-    .shop form fieldset ul li:first-of-type input:nth-of-type(2){
+    .shop fieldset ul li:first-of-type input:nth-of-type(2){
         border: none;
         font-size: 20px; width: 5.7%; text-align: center;
     }
-    .shop form fieldset ul li:last-of-type label{
+    .shop fieldset ul li:last-of-type label{
         margin-left: 65%;
     }
-    .shop form fieldset ul li:last-of-type input{
+    .shop fieldset ul li:last-of-type input{
         width: 12.66%; border: none; font-size: 24px;
         margin-left: 3.77%;
     }
-    .shop form fieldset > input{
+    .shop fieldset > input{
         cursor: pointer; margin-left: 23.42%;
     }
-    .shop form fieldset > input,
-    .shop form fieldset > a{
+    .shop fieldset > input,
+    .shop fieldset > a{
         border: none; width: 22%; line-height: 60px;
         background: url('../images/btn_bg.png') no-repeat center;
         background-size: cover;
         font-size: 24px; color: #343434;
     }
-    .shop form fieldset > a{
+    .shop fieldset > a{
         text-decoration: none;
         margin-left: 12.66%;
     }
@@ -847,7 +844,7 @@
     .stayByCatDetail div{
         width: 39%; margin: 0 auto;
         font-size: 16px; line-height: 30px;
-        text-align: center;
+        text-align: center; color: #222222;
     }
     .shopDetail h2,
     .introduceCat div h2,
