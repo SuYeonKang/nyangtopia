@@ -742,7 +742,7 @@
     }
     .tab .tabPage li::after,
     .catFood ul li small::after,
-    .catToy ul li small::after,{
+    .catToy ul li small::after{
         content: ''; display: block; visibility: hidden; clear: both;
     }
     .tab .tabPage li small,
