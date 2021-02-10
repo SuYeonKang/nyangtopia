@@ -181,7 +181,7 @@
         font-size: 72px; display: block;
     }
     .mainSlider .slider li.banner2{
-        background: url('../images/ban_02.png') no-repeat left top;
+        background: url('../images/ban_02.jpg') no-repeat left top;
         background-size: cover;
     }
     .mainSlider .slider li.banner2 p{
@@ -224,7 +224,7 @@
         padding-left: 26.05%;
     }
     .mainSlider .slider li.banner4{
-        background: url('../images/ban_04.png') no-repeat left top;
+        background: url('../images/ban_04.jpg') no-repeat left top;
         background-size: cover;
     }
     .mainSlider .slider li.banner4 h2{
