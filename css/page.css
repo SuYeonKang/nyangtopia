@@ -168,12 +168,11 @@
         display: block; 
     }
     .mainSlider .slider li.banner1{
-        background: url('../images/ban_01.jpg') no-repeat left top;
-        background-size: cover;
+        position: relative;
     }
     .mainSlider .slider li.banner1 h2{
         font-size: 48px; color: #222222; opacity: 0.5;
-        text-align: right; 
+        text-align: right; position: absolute; 
         padding: 145px 11.85%;
     }
     .mainSlider .slider li.banner1 h2 strong{
@@ -181,8 +180,7 @@
         font-size: 72px; display: block;
     }
     .mainSlider .slider li.banner2{
-        background: url('../images/ban_02.jpg') no-repeat left top;
-        background-size: cover;
+
     }
     .mainSlider .slider li.banner2 p{
         font-family: 'KCC-Kimhoon';
@@ -198,8 +196,7 @@
         width: 40%; display: block;
     }
     .mainSlider .slider li.banner3{
-        background: url('../images/ban_03.png') no-repeat left top;
-        background-size: cover;
+
         font-family: 'SangSangFlowerRoad';
     }
     .mainSlider .slider li.banner3 h2{
@@ -224,8 +221,7 @@
         padding-left: 26.05%;
     }
     .mainSlider .slider li.banner4{
-        background: url('../images/ban_04.jpg') no-repeat left top;
-        background-size: cover;
+
     }
     .mainSlider .slider li.banner4 h2{
         font-family: 'SangSangFlowerRoad';
