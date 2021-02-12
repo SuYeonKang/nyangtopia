@@ -95,27 +95,30 @@
         <h2>
             파운드캣 오늘 고마운 하루 떡메모지
         </h2>
-        <fieldset>
-            <ul>
-                <li>
-                    <div>
-                        <select name="option select">
-                            <option value="">오늘 고마운 하루 떡메모지</option>
-                        </select>
-                    </div>
-                    <label for="plus">수량</label>
-                    <input type="button" value="-">
-                    <input type="text" value="1" readonly>
-                    <input type="button" id="plus" value="+">
-                </li>
-                <li>
-                    <label for="purchasePrice">총 구매금액</label>
-                    <input type="text" id="purchasePrice" value="3,500 원" readonly>
-                </li>
-            </ul>
-            <input type="submit" value="구매하기">
-            <a href="cart.html">장바구니</a>
-        </fieldset>
+        <div id="memo01">
+            <fieldset>
+                <ul>
+                    <li>
+                        <div>
+                            <select name="option select">
+                                <option value="">오늘 고마운 하루 떡메모지</option>
+                            </select>
+                        </div>
+                        <label for="plus">수량</label>
+                        <input type="button" class="minus" value="-">
+                        <input type="text" class="count" value="1" readonly>
+                        <input type="button" class="plus" value="+">
+                    </li>
+                    <li>
+                        <label for="purchasePrice">총 구매금액</label>
+                        <input type="text" class="price" value="3500" readonly>
+                        <span>원</span>
+                    </li>
+                </ul>
+                <input type="submit" class="btn_Reset" value="구매하기">
+                <a href="cart.html">장바구니</a>
+            </fieldset>
+        </div>
     </section>
 
     <section class="shopDetail">

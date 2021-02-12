@@ -407,11 +407,11 @@ footer{
         font-size: 24px; vertical-align: middle;
     }
     .popup div fieldset ul li label{
-        margin-left: 35%;
+        margin-left: 33%;
     }
     .popup div fieldset ul li:last-of-type input[type='text']{
         font-size: 20px; border: none; background: none;
-        width: 8.5%; margin-left: 2%;
+        width: 9%; text-align: right; margin-left: 1%;
     }
     .popup div input[type='submit']{
         margin-left: 70%; border: none; background: none;

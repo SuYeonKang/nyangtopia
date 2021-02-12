@@ -13,7 +13,7 @@
 <body>
     <div class="popup" id="fishingRodPopup">
         <div>
-            <button class="btn_close">close</button>
+            <button class="btn_close btn_Reset">close</button>
             <figure>
                 <img src="images/toy1_1.png" alt="fishingRod">
                 <figcaption>
@@ -28,37 +28,38 @@
                             <a href="cart.html">
                                 장바구니
                             </a>
-                            <a href="toy01.html">
+                            <a href="toy01.html" class="btn_Reset">
                                 상세보기
                             </a>
                         </dd>
                     </dl>
                 </figcaption>
             </figure>
-            <div>
+            <div id="cattoyRod">
                 <fieldset>
                     <ul>
                         <li>
                             <select name="option select">
                                 <option value="">2m 낚시대</option>
                             </select>
-                            <button>-</button>
-                            <input type="text" value="1" readonly>
-                            <button>+</button>
+                            <button class="minus">-</button>
+                            <input type="text" class="count" value="1" readonly>
+                            <button class="plus">+</button>
                         </li>
                         <li>
                             <label for="purchasePrice01">총 구매금액</label>
-                            <input type="text" id="purchasePrice01" value="22,000 원" readonly>
+                            <input type="text" class="price" value="22000" readonly>
+                            <span>원</span>
                         </li>
                     </ul>
                 </fieldset>
-                <input type="submit" value="구매하기">
+                <input type="submit" value="구매하기" class="btn_Reset">
             </div>
         </div>
     </div>
     <div class="popup" id="feathersPopup">
         <div>
-            <button class="btn_close">close</button>
+            <button class="btn_close btn_Reset">close</button>
             <figure>
                 <img src="images/toy2_0.png" alt="pheasantFeathers">
                 <figcaption>
@@ -73,37 +74,38 @@
                             <a href="cart.html">
                                 장바구니
                             </a>
-                            <a href="toy02.html">
+                            <a href="toy02.html" class="btn_Reset">
                                 상세보기
                             </a>
                         </dd>
                     </dl>
                 </figcaption>
             </figure>
-            <div>
+            <div id="cattoyFeathers">
                 <fieldset>
                     <ul>
                         <li>
                             <select name="option select">
                                 <option value="">100%리얼 꿩 깃털</option>
                             </select>
-                            <button>-</button>
-                            <input type="text" value="1" readonly>
-                            <button>+</button>
+                            <button class="minus">-</button>
+                            <input type="text" class="count" value="1" readonly>
+                            <button class="plus">+</button>
                         </li>
                         <li>
                             <label for="purchasePrice02">총 구매금액</label>
-                            <input type="text" id="purchasePrice02" value="5,000 원" readonly>
+                            <input type="text" class="price" value="5000" readonly>
+                            <span>원</span>
                         </li>
                     </ul>
                 </fieldset>
-                <input type="submit" value="구매하기">
+                <input type="submit" value="구매하기" class="btn_Reset">
             </div>
         </div>
     </div>
     <div class="popup" id="woolBallPopup">
         <div>
-            <button class="btn_close">close</button>
+            <button class="btn_close btn_Reset">close</button>
             <figure>
                 <img src="images/toy3_1.png" alt="woolBalls">
                 <figcaption>
@@ -118,31 +120,32 @@
                             <a href="cart.html">
                                 장바구니
                             </a>
-                            <a href="toy03.html">
+                            <a href="toy03.html" class="btn_Reset">
                                 상세보기
                             </a>
                         </dd>
                     </dl>
                 </figcaption>
             </figure>
-            <div>
+            <div id="cattoyBalls">
                 <fieldset>
                     <ul>
                         <li>
                             <select name="option select">
                                 <option value="">캣잎 숙성 마약양모볼</option>
                             </select>
-                            <button>-</button>
-                            <input type="text" value="1" readonly>
-                            <button>+</button>
+                            <button class="minus">-</button>
+                            <input type="text" class="count" value="1" readonly>
+                            <button class="plus">+</button>
                         </li>
                         <li>
                             <label for="purchasePrice03">총 구매금액</label>
-                            <input type="text" id="purchasePrice03" value="6,500 원" readonly>
+                            <input type="text" class="price" value="6500" readonly>
+                            <span>원</span>
                         </li>
                     </ul>
                 </fieldset>
-                <input type="submit" value="구매하기">
+                <input type="submit" value="구매하기" class="btn_Reset">
             </div>
         </div>
     </div>

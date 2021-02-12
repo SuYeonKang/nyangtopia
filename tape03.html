@@ -95,29 +95,32 @@
         <h2>
             김메주와 고양이들 먼봉휴요 마스킹테이프 3종 중 택1
         </h2>
-        <fieldset>
-            <ul>
-                <li>
-                    <div>
-                        <select name="option select">
-                            <option value="">조르륵</option>
-                            <option value="">일러스트</option>
-                            <option value="">I♥MBHY</option>
-                        </select>
-                    </div>
-                    <label for="plus">수량</label>
-                    <input type="button" value="-">
-                    <input type="text" value="1" readonly>
-                    <input type="button" id="plus" value="+">
-                </li>
-                <li>
-                    <label for="purchasePrice">총 구매금액</label>
-                    <input type="text" id="purchasePrice" value="4,500 원" readonly>
-                </li>
-            </ul>
-            <input type="submit" value="구매하기">
-            <a href="cart.html">장바구니</a>
-        </fieldset>
+        <div id="tape03">
+            <fieldset>
+                <ul>
+                    <li>
+                        <div>
+                            <select name="option select">
+                                <option value="">조르륵</option>
+                                <option value="">일러스트</option>
+                                <option value="">I♥MBHY</option>
+                            </select>
+                        </div>
+                        <label for="plus">수량</label>
+                        <input type="button" class="minus" value="-">
+                        <input type="text" class="count" value="1" readonly>
+                        <input type="button" class="plus" value="+">
+                    </li>
+                    <li>
+                        <label for="purchasePrice">총 구매금액</label>
+                        <input type="text" class="price" value="4500" readonly>
+                        <span>원</span>
+                    </li>
+                </ul>
+                <input type="submit" class="btn_Reset" value="구매하기">
+                <a href="cart.html">장바구니</a>
+            </fieldset>
+        </div>
     </section>
 
     <section class="shopDetail">

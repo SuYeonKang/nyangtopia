@@ -13,7 +13,7 @@
 <body>
     <div class="popup" id="catBakeryPopup">
         <div>
-            <button class="btn_close">close</button>
+            <button class="btn_close btn_Reset">close</button>
             <figure>
                 <img src="images/stk1_1.png" alt="catBakeryImg">
                 <figcaption>
@@ -28,37 +28,38 @@
                             <a href="cart.html">
                                 장바구니
                             </a>
-                            <a href="stk01.html">
+                            <a href="stk01.html" class="btn_Reset">
                                 상세보기
                             </a>
                         </dd>
                     </dl>
                 </figcaption>
             </figure>
-            <div>
+            <div id="stkCatbakery">
                 <fieldset>
                     <ul>
                         <li>
                             <select name="option select">
                                 <option value="">대충 그린 고양이 스티커</option>
                             </select>
-                            <button>-</button>
-                            <input type="text" value="1" readonly>
-                            <button>+</button>
+                            <button class="minus">-</button>
+                            <input type="text" class="count" value="1" readonly>
+                            <button class="plus">+</button>
                         </li>
                         <li>
                             <label for="purchasePrice01">총 구매금액</label>
-                            <input type="text" id="purchasePrice01" value="2,600 원" readonly>
+                            <input type="text" class="price" value="2600" readonly>
+                            <span>원</span>
                         </li>
                     </ul>
                 </fieldset>
-                <input type="submit" value="구매하기">
+                <input type="submit" class="btn_Reset" value="구매하기">
             </div>
         </div>
     </div>
     <div class="popup" id="catGirlPopup">
         <div>
-            <button class="btn_close">close</button>
+            <button class="btn_close btn_Reset">close</button>
             <figure>
                 <img src="images/stk2_0.png" alt="catAndGirlImg">
                 <figcaption>
@@ -73,37 +74,38 @@
                             <a href="cart.html">
                                 장바구니
                             </a>
-                            <a href="stk02.html">
+                            <a href="stk02.html" class="btn_Reset">
                                 상세보기
                             </a>
                         </dd>
                     </dl>
                 </figcaption>
             </figure>
-            <div>
+            <div id="stkCatgirl">
                 <fieldset>
                     <ul>
                         <li>
                             <select name="option select">
                                 <option value="">고양이와 소녀 빈티지 스티커</option>
                             </select>
-                            <button>-</button>
-                            <input type="text" value="1" readonly>
-                            <button>+</button>
+                            <button class="minus">-</button>
+                            <input type="text" class="count" value="1" readonly>
+                            <button class="plus">+</button>
                         </li>
                         <li>
                             <label for="purchasePrice02">총 구매금액</label>
-                            <input type="text" id="purchasePrice02" value="2,500 원" readonly>
+                            <input type="text" class="price" value="2500" readonly>
+                            <span>원</span>
                         </li>
                     </ul>
                 </fieldset>
-                <input type="submit" value="구매하기">
+                <input type="submit" class="btn_Reset" value="구매하기">
             </div>
         </div>
     </div>
     <div class="popup" id="catRemovablePopup">
         <div>
-            <button class="btn_close">close</button>
+            <button class="btn_close btn_Reset">close</button>
             <figure>
                 <img src="images/stk3_1.png" alt="removablePieceStickerImg">
                 <figcaption>
@@ -118,37 +120,38 @@
                             <a href="cart.html">
                                 장바구니
                             </a>
-                            <a href="stk03.html">
+                            <a href="stk03.html" class="btn_Reset">
                                 상세보기
                             </a>
                         </dd>
                     </dl>
                 </figcaption>
             </figure>
-            <div>
+            <div id="stkRemovable">
                 <fieldset>
                     <ul>
                         <li>
                             <select name="option select">
                                 <option value="">옷입은 고양이 리무버블 스티커</option>
                             </select>
-                            <button>-</button>
-                            <input type="text" value="1" readonly>
-                            <button>+</button>
+                            <button class="minus">-</button>
+                            <input type="text" class="count" value="1" readonly>
+                            <button class="plus">+</button>
                         </li>
                         <li>
                             <label for="purchasePrice03">총 구매금액</label>
-                            <input type="text" id="purchasePrice03" value="2,600 원" readonly>
+                            <input type="text" class="price" value="2600" readonly>
+                            <span>원</span>
                         </li>
                     </ul>
                 </fieldset>
-                <input type="submit" value="구매하기">
+                <input type="submit" class="btn_Reset" value="구매하기">
             </div>
         </div>
     </div>
     <div class="popup" id="poundcatPopup">
         <div>
-            <button class="btn_close">close</button>
+            <button class="btn_close btn_Reset">close</button>
             <figure>
                 <img src="images/stk4_1.jpg" alt="removablePieceStickerImg">
                 <figcaption>
@@ -163,14 +166,14 @@
                             <a href="cart.html">
                                 장바구니
                             </a>
-                            <a href="stk04.html">
+                            <a href="stk04.html" class="btn_Reset">
                                 상세보기
                             </a>
                         </dd>
                     </dl>
                 </figcaption>
             </figure>
-            <div>
+            <div id="stkPoundcat">
                 <fieldset>
                     <ul>
                         <li>
@@ -179,23 +182,24 @@
                                 <option value="">파운드캣 초밥 투명스티커</option>
                                 <option value="">파운드캣 마카롱 스티커</option>
                             </select>
-                            <button>-</button>
-                            <input type="text" value="1" readonly>
-                            <button>+</button>
+                            <button class="minus">-</button>
+                            <input type="text" class="count" value="1" readonly>
+                            <button class="plus">+</button>
                         </li>
                         <li>
                             <label for="purchasePrice04">총 구매금액</label>
-                            <input type="text" id="purchasePrice04" value="2,000 원" readonly>
+                            <input type="text" class="price" value="2000" readonly>
+                            <span>원</span>
                         </li>
                     </ul>
                 </fieldset>
-                <input type="submit" value="구매하기">
+                <input type="submit" class="btn_Reset" value="구매하기">
             </div>
         </div>
     </div>
     <div class="popup" id="mindwavePopup">
         <div>
-            <button class="btn_close">close</button>
+            <button class="btn_close btn_Reset">close</button>
             <figure>
                 <img src="images/stk5_2.jpg" alt="mindwaveStickerImg">
                 <figcaption>
@@ -210,37 +214,38 @@
                             <a href="cart.html">
                                 장바구니
                             </a>
-                            <a href="stk05.html">
+                            <a href="stk05.html" class="btn_Reset">
                                 상세보기
                             </a>
                         </dd>
                     </dl>
                 </figcaption>
             </figure>
-            <div>
+            <div id="stkMindwave">
                 <fieldset>
                     <ul>
                         <li>
                             <select name="option select">
                                 <option value="">도도한 고양이 씰 스티커</option>
                             </select>
-                            <button>-</button>
-                            <input type="text" value="1" readonly>
-                            <button>+</button>
+                            <button class="minus">-</button>
+                            <input type="text" class="count" value="1" readonly>
+                            <button class="plus">+</button>
                         </li>
                         <li>
                             <label for="purchasePrice05">총 구매금액</label>
-                            <input type="text" id="purchasePrice05" value="2,500 원" readonly>
+                            <input type="text" class="price" value="2500" readonly>
+                            <span>원</span>
                         </li>
                     </ul>
                 </fieldset>
-                <input type="submit" value="구매하기">
+                <input type="submit" class="btn_Reset" value="구매하기">
             </div>
         </div>
     </div>
     <div class="popup" id="poundcatTapePopup">
         <div>
-            <button class="btn_close">close</button>
+            <button class="btn_close btn_Reset">close</button>
             <figure>
                 <img src="images/tape1_0.png" alt="poundcatTapeImg">>
                 <figcaption>
@@ -255,14 +260,14 @@
                             <a href="cart.html">
                                 장바구니
                             </a>
-                            <a href="tape01.html">
+                            <a href="tape01.html" class="btn_Reset">
                                 상세보기
                             </a>
                         </dd>
                     </dl>
                 </figcaption>
             </figure>
-            <div>
+            <div id="tapePoundcat">
                 <fieldset>
                     <ul>
                         <li>
@@ -276,23 +281,24 @@
                                 <option value="">식빵고양이 레몬카카오</option>
                                 <option value="">식빵고양이 치이즈</option>
                             </select>
-                            <button>-</button>
-                            <input type="text" value="1" readonly>
-                            <button>+</button>
+                            <button class="minus">-</button>
+                            <input type="text" class="count" value="1" readonly>
+                            <button class="plus">+</button>
                         </li>
                         <li>
                             <label for="purchasePrice06">총 구매금액</label>
-                            <input type="text" id="purchasePrice06" value="3,000 원" readonly>
+                            <input type="text" class="price" value="3000" readonly>
+                            <span>원</span>
                         </li>
                     </ul>
                 </fieldset>
-                <input type="submit" value="구매하기">
+                <input type="submit" class="btn_Reset" value="구매하기">
             </div>
         </div>
     </div>
     <div class="popup" id="dagoTapePopup">
         <div>
-            <button class="btn_close">close</button>
+            <button class="btn_close btn_Reset">close</button>
             <figure>
                 <img src="images/tape2_0.png" alt="dagoTapeImg">
                 <figcaption>
@@ -307,14 +313,14 @@
                             <a href="cart.html">
                                 장바구니
                             </a>
-                            <a href="tape02.html">
+                            <a href="tape02.html" class="btn_Reset">
                                 상세보기
                             </a>
                         </dd>
                     </dl>
                 </figcaption>
             </figure>
-            <div>
+            <div id="tapeDago">
                 <fieldset>
                     <ul>
                         <li>
@@ -323,23 +329,24 @@
                                 <option value="">낙서대고</option>
                                 <option value="">대고의 하루</option>
                             </select>
-                            <button>-</button>
-                            <input type="text" value="1" readonly>
-                            <button>+</button>
+                            <button class="minus">-</button>
+                            <input type="text" class="count" value="1" readonly>
+                            <button class="plus">+</button>
                         </li>
                         <li>
                             <label for="purchasePrice07">총 구매금액</label>
-                            <input type="text" id="purchasePrice07" value="3,000 원" readonly>
+                            <input type="text" class="price" value="3000" readonly>
+                            <span>원</span>
                         </li>
                     </ul>
                 </fieldset>
-                <input type="submit" value="구매하기">
+                <input type="submit" class="btn_Reset" value="구매하기">
             </div>
         </div>
     </div>
     <div class="popup" id="mbhyTapePopup">
         <div>
-            <button class="btn_close">close</button>
+            <button class="btn_close btn_Reset">close</button>
             <figure>
                 <img src="images/tape3_1.JPG" alt="mbhyTapeImg">
                 <figcaption>
@@ -354,14 +361,14 @@
                             <a href="cart.html">
                                 장바구니
                             </a>
-                            <a href="tape03.html">
+                            <a href="tape03.html" class="btn_Reset">
                                 상세보기
                             </a>
                         </dd>
                     </dl>
                 </figcaption>
             </figure>
-            <div>
+            <div id="tapeMBHY">
                 <fieldset>
                     <ul>
                         <li>
@@ -370,23 +377,24 @@
                                 <option value="">일러스트</option>
                                 <option value="">I♥MBHY</option>
                             </select>
-                            <button>-</button>
-                            <input type="text" value="1" readonly>
-                            <button>+</button>
+                            <button class="minus">-</button>
+                            <input type="text" class="count" value="1" readonly>
+                            <button class="plus">+</button>
                         </li>
                         <li>
                             <label for="purchasePrice08">총 구매금액</label>
-                            <input type="text" id="purchasePrice08" value="4,500 원" readonly>
+                            <input type="text" class="price" value="4500" readonly>
+                            <span>원</span>
                         </li>
                     </ul>
                 </fieldset>
-                <input type="submit" value="구매하기">
+                <input type="submit" class="btn_Reset" value="구매하기">
             </div>
         </div>
     </div>
     <div class="popup" id="catuncleTapePopup">
         <div>
-            <button class="btn_close">close</button>
+            <button class="btn_close btn_Reset">close</button>
             <figure>
                 <img src="images/tape4_0.png" alt="catuncleTapeImg">
                 <figcaption>
@@ -401,14 +409,14 @@
                             <a href="cart.html">
                                 장바구니
                             </a>
-                            <a href="tape04.html">
+                            <a href="tape04.html" class="btn_Reset">
                                 상세보기
                             </a>
                         </dd>
                     </dl>
                 </figcaption>
             </figure>
-            <div>
+            <div id="tapeCatuncle">
                 <fieldset>
                     <ul>
                         <li>
@@ -416,23 +424,24 @@
                                 <option value="">빵고양이</option>
                                 <option value="">놀러와</option>
                             </select>
-                            <button>-</button>
-                            <input type="text" value="1" readonly>
-                            <button>+</button>
+                            <button class="minus">-</button>
+                            <input type="text" class="count" value="1" readonly>
+                            <button class="plus">+</button>
                         </li>
                         <li>
                             <label for="purchasePrice09">총 구매금액</label>
-                            <input type="text" id="purchasePrice09" value="4,500 원" readonly>
+                            <input type="text" class="price" value="4500" readonly>
+                            <span>원</span>
                         </li>
                     </ul>
                 </fieldset>
-                <input type="submit" value="구매하기">
+                <input type="submit" class="btn_Reset" value="구매하기">
             </div>
         </div>
     </div>
     <div class="popup" id="cutecatTapePopup">   
         <div>
-            <button class="btn_close">close</button>
+            <button class="btn_close btn_Reset">close</button>
             <figure>
                 <img src="images/tape5_0.png" alt="cutecatTapeImg">
                 <figcaption>
@@ -447,14 +456,14 @@
                             <a href="cart.html">
                                 장바구니
                             </a>
-                            <a href="tape05.html">
+                            <a href="tape05.html" class="btn_Reset">
                                 상세보기
                             </a>
                         </dd>
                     </dl>
                 </figcaption>
             </figure>
-            <div>
+            <div id="tapeCutecat">
                 <fieldset>
                     <ul>
                         <li>
@@ -463,17 +472,18 @@
                                 <option value="">보리블루</option>
                                 <option value="">라봉오렌지</option>
                             </select>
-                            <button>-</button>
-                            <input type="text" value="1" readonly>
-                            <button>+</button>
+                            <button class="minus">-</button>
+                            <input type="text" class="count" value="1" readonly>
+                            <button class="plus">+</button>
                         </li>
                         <li>
                             <label for="purchasePrice10">총 구매금액</label>
-                            <input type="text" id="purchasePrice10" value="2,500 원" readonly>
+                            <input type="text" class="price" value="2500" readonly>
+                            <span>원</span>
                         </li>
                     </ul>
                 </fieldset>
-                <input type="submit" value="구매하기">
+                <input type="submit" class="btn_Reset" value="구매하기">
             </div>
         </div>
     </div>
