@@ -91,33 +91,29 @@
 
     <section class="login tab">
         <h2>로그인</h2>
-        <ul>
+        <ul class="tabMenu">
             <li data-tabMenu="member" class="active">회원 로그인</li>
             <li data-tabMenu="nonMember">비회원 주문조회</li>
         </ul>
         <div id="member" class="tabPage active">
-            <form>
-                <fieldset>
-                    <input type="text" placeholder="아이디" maxlength="11" minlength="5">
-                    <input type="password" placeholder="비밀번호" minlength="8">
-                    <div>
-                        <input type="submit" value="로그인">
-                        <a href="membership.html">회원가입</a>
-                    </div>
-                </fieldset>
-            </form>
+            <fieldset>
+                <input type="text" placeholder="아이디" maxlength="11" minlength="5">
+                <input type="password" placeholder="비밀번호" minlength="8">
+                <div>
+                    <input type="submit" value="로그인">
+                    <a href="membership.html">회원가입</a>
+                </div>
+            </fieldset>
         </div>
         <div id="nonMember" class="tabPage">
-            <form>
-                <fieldset>
-                    <input type="text" placeholder="주문자명">
-                    <input type="text" placeholder="주문번호(-없이 입력)">
-                    <div>
-                        <a href="deliver.html">주문조회</a>
-                        <a href="membership.html">회원가입</a>
-                    </div>
-                </fieldset>
-            </form>
+            <fieldset>
+                <input type="text" placeholder="주문자명">
+                <input type="text" placeholder="주문번호(-없이 입력)">
+                <div>
+                    <a href="deliver.html">주문조회</a>
+                    <a href="membership.html">회원가입</a>
+                </div>
+            </fieldset>
         </div>
     </section>
 
