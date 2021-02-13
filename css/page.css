@@ -165,15 +165,14 @@
     .mainSlider .slider > li{
         width: 100%;
         height: 100%;
-        display: block; 
+        display: block; position: relative;
     }
     .mainSlider .slider li img{
-        width: 100%;
+        width: 100%; 
     }
     .mainSlider .slider li.banner1 h2{
         font-size: 48px; color: #222222; opacity: 0.5;
-        text-align: right; position: absolute; 
-        padding: 145px 11.85%;
+        text-align: right; position: absolute; top: 145px; right: 11.85%;
     }
     .mainSlider .slider li.banner1 h2 strong{
         margin-top: 65px; padding-right: 2.1%;
@@ -183,22 +182,21 @@
         font-family: 'KCC-Kimhoon';
         font-size: 35px; line-height: 48px;
         color: #8c9197; font-weight: 200;
-        font-style: italic; 
-        padding: 90px 0 30px 11.57%;
-        width: 44%;
+        font-style: italic; position: absolute; top: 90px; left: 11.57%;        width: 44%;
     }
     .mainSlider .slider li.banner2 p span{
         font-size: 30px; 
         margin-left: 60%;
         width: 40%; display: block;
     }
-    .mainSlider .slider li.banner3{
+    .mainSlider .slider li.banner3 div{
         font-family: 'SangSangFlowerRoad';
+        position: absolute; top: 165px; left: 24.21%;
     }
     .mainSlider .slider li.banner3 h2{
         font-size: 100px; font-weight: 400;
         color: #222222; letter-spacing: 20px;
-        padding: 165px 0 60px 24.21%;
+        margin-bottom: 80px;
     }
     .mainSlider .slider li.banner3 mark{
         background: none; display: block;
@@ -206,25 +204,28 @@
     }
     .mainSlider .slider li.banner3 mark.dec{
         color: #cc825d;
-        padding: 0 0 40px 26.84%;
+        padding: 0 0 30px 10.84%;
     }
     .mainSlider .slider li.banner3 mark.mas{
         color: #87503b;
-        padding: 0 0 80px 26.05%;
+        padding: 0 0 60px 5%;
     }
    .mainSlider .slider li.banner3 p{
         font-size: 24px; line-height: 30px; letter-spacing: 5px;
-        padding-left: 26.05%;
+        text-align: center;
+    }
+    .mainSlider .slider li.banner4 div{
+        position: absolute; top: 0; right: 15.78%
     }
     .mainSlider .slider li.banner4 h2{
         font-family: 'SangSangFlowerRoad';
         font-size: 70px; color: #222222;
-        padding: 0 15.78% 50px 0; text-align: right;
+        text-align: right; margin-bottom: 50px;
     }
     .mainSlider .slider li.banner4 h2 > strong{
         font-family: 'Yeon Sung'; font-size: 70px;
         font-weight: 400; display: block;
-        padding: 140px 11.05% 35px 0;
+        padding: 140px 23.05% 35px 0;
     }
     .mainSlider .slider li.banner4 h2 > strong:first-letter{
         font-size: 100px;
@@ -235,11 +236,11 @@
         text-align: right;
     }
     .mainSlider .slider li.banner4 p{
-        padding: 0 15.78% 70px 0;
+        margin-bottom: 50px;
     }
     .mainSlider .slider li.banner4 ol{
         text-align: left;
-        padding-left: 62.5%;
+        padding-left: 15.5%;
         list-style: decimal;
     }
     /* main banner Fin */
