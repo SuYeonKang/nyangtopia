@@ -108,6 +108,7 @@
         .membership fieldset > input,
         .shop fieldset ul li,
         .catFoodNotice,
+        .shop h2,
         .shop img,
         .applyNotice > a,
         .cart h2,
@@ -121,7 +122,6 @@
         .staff ul,
         .guide h2,
         .dessert h2,
-        .shop h2,
         .shopDetail > article{
             margin-bottom: 130px;
         }
@@ -743,12 +743,11 @@
         .catToy ul li button,
         .hello ul li button,
         .stayCat ul li button{
-            text-indent: -9999px; width: 50px; height: 50px;
+            text-indent: -9999px; width: 40px; height: 40px;
             background: url('../images/magnifying_glass_plus.png') no-repeat center;
-            background-size: 25px;
+            background-size: 20px;
             background-color: rgba(255,255,255,0.8);
             border: none; border-radius: 25px; cursor: pointer;
-            display: none;
         }
         /* product page Fin */
     
@@ -762,7 +761,7 @@
         .stayByCat a{
             background: url('../images/back_arrow.png') no-repeat left;
             background-size: contain;
-            display: block; width: 8%; text-decoration: none; 
+            display: block; width: 14%; text-decoration: none; 
             color: #8b8b8b; line-height: 50px;
         }
         .shop > a{
@@ -776,28 +775,28 @@
             width: 50%; float: left;
         }
         .shop h2{
-            font-size: 30px; padding-top: 50px;
+            font-size: 20px; padding-top: 50px;
         }
         .shop fieldset{
             width: 49%; margin-left: 1%;
         }
         .shop fieldset ul li div{
-            margin-bottom: 60px;
+            margin-bottom: 30px;
         }
         .shop fieldset ul li div select{
             width: 76%; height: 50px;
-            appearance: none; padding: 10px 10px 10px 35%;
-            font-size: 20px; color: #343333;
+            appearance: none; padding: 10px 10px 10px 20%;
+            font-size: 14px; color: #343333;
             background: url('../images/tab_arrow.png') no-repeat 2%;
             background-size: 20px;
             margin-left: 12.66%;
         }
         .shop fieldset ul li:first-of-type label{
-            font-size: 30px; color: #343333;
+            font-size: 20px; color: #343333;
             margin-left: 12.66%;        
         }
         .shop fieldset ul li:first-of-type input:first-of-type{
-            margin-left: 55.69%;
+            margin-left: 40.69%;
         }
         .shop fieldset ul li:first-of-type input:not(:nth-of-type(2)){
             background: none; border: 1px solid #222222;
@@ -808,10 +807,10 @@
             font-size: 20px; width: 5.7%; text-align: center;
         }
         .shop fieldset ul li:last-of-type label{
-            margin-left: 65%;
+            margin-left: 40%;
         }
         .shop fieldset ul li:last-of-type input{
-            width: 12.66%; border: none; font-size: 24px;
+            width: 20%; border: none; font-size: 24px;
             margin-left: 3.77%;
         }
         .shop fieldset > input{
@@ -821,8 +820,8 @@
         .shop fieldset > a{
             border: none; width: 22%; line-height: 60px;
             background: url('../images/btn_bg.png') no-repeat center;
-            background-size: cover;
-            font-size: 24px; color: #343434;
+            background-size: 100%;
+            font-size: 20px; color: #343434;
         }
         .shop fieldset > a{
             text-decoration: none;
@@ -831,8 +830,8 @@
         .shopDetail,
         .introduceCat div,
         .stayByCatDetail div{
-            width: 39%; margin: 0 auto;
-            font-size: 16px; line-height: 30px;
+            width: 50%; margin: 0 auto;
+            font-size: 14px; line-height: 30px;
             text-align: center; color: #222222;
         }
         .shopDetail h2,
@@ -846,7 +845,7 @@
         .introduceCat div img,
         .stayByCatDetail div img,
         .stayByCatDetail div p{
-            margin-bottom: 80px;
+            margin-bottom: 60px;
         }
         .shopDetail img,
         .introduceCat div img,
@@ -855,7 +854,7 @@
         }
         .shopDetail ul{
             background-color: #fbf3fb;
-            width: 60%; margin: 0 auto 150px;
+            width: 65%; margin: 0 auto 100px;
             padding: 50px 8%;
         }
         .shopDetail ul li{
@@ -872,9 +871,13 @@
         }
         /* product detail page Fin */
     
+        .catFood ul::after,
+        .catToy ul::after{
+            content: ''; display: block; visibility: hidden; clear: both;
+        }
         .catFood ul li,
         .catToy ul li{
-            font-size: 20px; display: inline-block;
+            font-size: 18px; float: left;
             cursor: pointer; width: 47.9%;
             margin: 0 auto 100px; position: relative;
         }
@@ -887,17 +890,17 @@
             margin-left: 3.8%;
         }
         .catFood ul li button{
-            position: absolute; top: 200px; left: 300px;
+            position: absolute; top: 100px; left: 150px;
         }
         .catToy ul li button{
-            position: absolute; top: 270px; left: 300px;
+            position: absolute; top: 155px; left: 160px;
         }
     
         .catFoodNotice h2{
             font-size: 30px; margin-bottom: 80px;
         }
         .catFoodNotice article{
-            width: 39%; margin: 0 auto;
+            width: 53%; margin: 0 auto;
         }
         .catFoodNotice article h3{
             font-size: 20px; margin-bottom: 30px;
@@ -911,29 +914,32 @@
             margin-left: 5%; line-height: 25px;
         }
         /* cat product Fin */
-    
+        
+        .cat figure img{
+            padding-top: 55px;
+        }
         .cat figure figcaption{
             padding-top: 50px;
         }
         .cat figure figcaption dl:first-of-type{
-            margin-bottom: 50px;
+            margin-bottom: 30px;
         }
         .cat figure figcaption dl:first-of-type dt{
             font-size: 40px; background: none; padding: 0;
         }
         .cat figure figcaption dl dd{
-            text-align: left; font-size: 20px; color: #343333;
+            text-align: left; font-size: 16px; color: #343333;
             line-height: 30px;
         }
         .cat figure figcaption dl dd:first-of-type{
             margin: 0;
         }
         .cat figure figcaption dl:last-of-type{
-            margin-bottom: 50px;
+            margin-bottom: 30px;
         }
         .cat figure figcaption dl:last-of-type dt{
             background-size: 35px; font-size: 20px;
-            background-position: left; padding: 0;
+            background-position: left; padding: 0 20px;
             width: 50%; line-height: 40px;
             margin-bottom: 20px;
         }
@@ -951,15 +957,17 @@
         .hello,
         .stayCat,
         .notice,
-        .FAQ,
-        .cart,
-        .deliver{
+        .FAQ{
             width: 67.36%; margin: 0 auto;
+        }
+        .hello ul::after,
+        .stayCat ul::after{
+            content: ''; display: block; visibility: hidden; clear: both;
         }
         .hello ul li,
         .stayCat ul li{
             width: 46.88%; position: relative;
-            display: inline-block;
+            float: left;
         }
         .hello ul li:nth-of-type(even),
         .stayCat ul li:nth-of-type(even){
@@ -974,7 +982,7 @@
         }
         .hello ul li button,
         .stayCat ul li button{
-            position: absolute; top: 300px; left: 300px;
+            position: absolute; top: 150px; left: 150px;
         }
         /* recruitment, stayCat Fin */
     
@@ -990,8 +998,8 @@
         }
         .helloCat > a,
         .stayByCat > a{
-            width: 10%; padding-left: 70px;
-            margin-bottom: 50px;
+            width: 20%; padding-left: 50px;
+            margin-bottom: 30px;
         }
         .helloCat img,
         .stayByCat img{
@@ -1001,23 +1009,23 @@
         .stayByCat div{
             float: right; width: 50%; margin: 0 auto;
         }
-        .helloCat div{
-            padding-top: 50px;
-        }
-        .stayByCat div{
-            padding-top: 100px;
-        }
         .helloCat div::after,
         .stayByCat div::after{
             content: ''; display: block; visibility: hidden; clear: both;
         }
-        .helloCat div h2,
+        .helloCat div h2{
+            font-size: 50px; margin-bottom: 40px;
+        }
         .stayByCat div h2{
-            font-size: 50px; margin-bottom: 100px;
+            font-size: 40px; margin-bottom: 80px;
         }
         .helloCat div ul,
         .stayByCat div ul{
-            font-size: 20px; width: 70%;
+            font-size: 16px; width: 90%;
+            margin-bottom: 30px;
+        }
+        .stayByCat div ul{
+            width: 80%;
         }
         .helloCat div ul::after,
         .stayByCat div ul::after{
@@ -1032,12 +1040,12 @@
         }
         .helloCat div ul li,
         .stayByCat div ul li{
-            margin-left: 15%; margin-bottom: 55px;
+            margin-left: 15%;
         }
         .helloCat div a{
             width: 60%; margin: 0 auto; text-align: center;
             text-decoration: none; display: block;
-            font-size: 30px; color: #222222;
+            font-size: 25px; color: #222222;
             background: url('../images/btn_bg.png') no-repeat center;
             background-size: contain;
             line-height: 90px;
@@ -1045,6 +1053,10 @@
         .introduceCat,
         .stayByCatDetail{
             margin-bottom: 100px;
+        }
+        .introduceCat p,
+        .stayByCatDetail p{
+            font-size: 14px;
         }
         .introduceCat div strong,
         .stayByCatDetail strong{
@@ -1073,7 +1085,7 @@
     
         
         .accordion li > :first-child{
-            font-size: 20px; font-weight: 400;
+            font-size: 16px; font-weight: 400;
             padding: 30px; cursor: pointer;
             background-color: #f8f3ed;
             border-bottom: 2px solid #343333;
@@ -1121,61 +1133,61 @@
         .applyNotice strong{
             background: url('../images/logo_mini.png') no-repeat left;
             background-size: 40px;
-            padding-left: 4.13%; line-height: 100px; font-size: 20px;
-            font-weight: 700; width: 13%; margin: 0 auto 60px;
+            padding-left: 8.13%; line-height: 100px; font-size: 18px;
+            font-weight: 700; width: 22%; margin: 0 auto 60px;
             display: block;
         }
         .applyNotice ul li{
             display: inline-block;
-            font-size: 14px; line-height: 20px; width: 21.87%;
-            margin: 0 auto; padding-left: 8.59%;
+            font-size: 14px; line-height: 20px; width: 32%;
+            margin: 0 auto; padding-left: 15%;
         }
-        .applyNotice ul li:not(:nth-of-type(3n-2)){
-            margin-left: 2.34%;
+        .applyNotice ul li:nth-of-type(even){
+            margin-left: 5%;
         }
         .applyNotice ul li:first-of-type{
             background: url('../images/catIcon_01.png') no-repeat left;
-            background-size: 100px;
+            background-size: 90px;
         }
         .applyNotice ul li:nth-of-type(2){
             background: url('../images/catIcon_02.png') no-repeat left;
-            background-size: 100px;
+            background-size: 90px;
         }
         .applyNotice ul li:nth-of-type(3){
             background: url('../images/catIcon_03.png') no-repeat left;
-            background-size: 100px;
+            background-size: 90px;
         }
         .applyNotice ul li:nth-of-type(4){
             background: url('../images/catIcon_04.png') no-repeat left;
-            background-size: 100px;
+            background-size: 90px;
         }
         .applyNotice ul li:nth-of-type(5){
             background: url('../images/catIcon_05.png') no-repeat left;
-            background-size: 100px;
+            background-size: 90px;
         }
         .applyNotice ul li:nth-of-type(6){
             background: url('../images/catIcon_06.png') no-repeat left;
-            background-size: 100px;
+            background-size: 90px;
         }
         .applyNotice ul li:nth-of-type(7){
             background: url('../images/catIcon_07.png') no-repeat left;
-            background-size: 100px;
+            background-size: 90px;
         }
         .applyNotice ul li:nth-of-type(8){
             background: url('../images/catIcon_08.png') no-repeat left;
-            background-size: 100px;
+            background-size: 90px;
         }
         .applyNotice ul li:nth-of-type(9){
             background: url('../images/catIcon_09.png') no-repeat left;
-            background-size: 100px;
+            background-size: 90px;
         }
         .applyNotice ul li:nth-of-type(10){
             background: url('../images/catIcon_10.png') no-repeat left;
-            background-size: 100px;
+            background-size: 90px;
         }
         .applyNotice ul li:last-of-type{
             background: url('../images/catIcon_11.png') no-repeat left;
-            background-size: 100px;
+            background-size: 90px;
             margin-bottom: 60px;
         }
         .applyNotice ul li p{
@@ -1190,10 +1202,10 @@
             background-size: cover;
         }
         .applyNotice > a:first-of-type{
-            margin-left: 38%;
+            margin-left: 25%;
         }
         .applyNotice > a:last-of-type{
-            margin-left: 10%; width: 10%; text-align: center;
+            margin-left: 10%; width: 20%; text-align: center;
         }
         /* applyNotice Fin */
     
@@ -1221,7 +1233,7 @@
             padding-left: 10%;
         }
         .login > div fieldset > input{
-            padding: 25px 4.69%; display: block;
+            padding: 25px 12%; display: block;
             border: 1px solid #8b8b8b; border-radius: 10px;
             font-size: 16px; width: 50%; margin: 0 auto;
         }
@@ -1264,30 +1276,24 @@
             display: none;
         }
         .membership fieldset{
-            width: 60%; margin: 0 auto;
+            width: 100%; margin: 0 auto;
         }
         .membership fieldset ul li{
             margin-bottom: 20px;
         }
-        .membership fieldset ul li::after{
-            content: ''; display: block; visibility: hidden; clear: both;
-        }
         .membership fieldset ul li label{
             font-size: 20px; color: #343333;
-            float: left; padding-top: 10px;
-        }
-        .membership fieldset ul li input{
-            display: inline-block;
+            padding-top: 10px; width: 20%;
         }
         .membership fieldset ul li:first-of-type input{
-            margin-left: 65px;
+            margin-left: 13%;
         }
         .membership fieldset ul li:nth-of-type(2) input{
-            margin-left: 50px;
+            margin-left: 10%;
         }
         .membership fieldset ul li:nth-of-type(2) input[type='button']{
-            width: 15%; margin-left: 20px;
             border: none; background: none;
+            width: 14%; margin: 0;
         }
         .membership fieldset ul li:nth-of-type(3) input{
             margin-left: 35px;
@@ -1319,16 +1325,20 @@
             display: block; margin: 0 auto 100px; cursor: pointer;
         }
         /* membership Fin */
-    
+        
+        .cart,
+        .deliver{
+            width: 80%; margin: 0 auto;
+        }
         .cart ul li span{
             display: inline-block; text-align: center;
         }
         .cart ul li:first-of-type{
-            padding: 30px; background-color: #f8f3ed;
-            font-size: 20px; color: #222222;
+            padding: 20px; background-color: #f8f3ed;
+            font-size: 18px; color: #222222;
         }
         .cart ul li span:nth-child(2){
-            width: 46.09%;
+            width: 40%;
         }
         .cart ul li span:nth-child(3){
             width: 10.16%;
@@ -1340,23 +1350,23 @@
             width: 13.72%;
         }
         .cart ul li span:last-child{
-            width: 16.41%;
+            width: 21%;
         }
         .cart ul li:last-of-type{
-            padding: 20px 30px;
+            padding: 20px;
         }
         .cart ul li:nth-of-type(2) span:nth-child(2){
             background: url('../images/food4_1.png') no-repeat left;
-            background-size: 25.42% 105px;
-            line-height: 105px;
-            font-size: 16px;
+            background-size: 18%;
+            line-height: 80px;
+            font-size: 14px; padding-left: 5px;
         }
         .cart ul li:nth-of-type(2) span:nth-of-type(3){
-            font-size: 20px;
+            font-size: 14px;
         }
         .cart ul li:nth-of-type(2) span input[type='text']{
             border: none; padding-left: 30px;
-            font-size: 20px;
+            font-size: 14px;
         }
         .cart ul li:nth-of-type(2) span:last-of-type{
             vertical-align: middle;
@@ -1383,16 +1393,16 @@
             padding-top: 20px;
         }
         .deliver ul li{
-            padding: 40px; color: #343333;
+            padding: 20px; color: #343333;
         }
         .deliver ul li:first-of-type{
-            font-size: 20px; background-color: #f8f3ed;
+            font-size: 18px; background-color: #f8f3ed;
         }
         .deliver ul li:nth-of-type(2){
             border-bottom: 2px dotted #222222;
         }
         .deliver ul li:not(:first-of-type){
-            font-size: 16px;
+            font-size: 14px;
         }
         .deliver ul li span{
             display: inline-block; text-align: center;
@@ -1408,17 +1418,11 @@
         }
         .deliver ul li span:nth-child(4),
         .deliver ul li span:last-child{
-            width: 13.67%;
+            width: 13%;
         }
-        .deliver ul li:nth-of-type(2) span:nth-of-type(3){
-            background: url('../images/memo5_1.jpg') no-repeat left;
-            background-size: 70px;
-            line-height: 70px;
-        }
+        .deliver ul li:nth-of-type(2) span:nth-of-type(3),
         .deliver ul li:last-of-type span:nth-of-type(3){
-            background: url('../images/food3_1.jpg') no-repeat left;
-            background-size: 70px;
-            line-height: 70px;
+            line-height: 50px;
         }
         /* deliver Fin */
     }

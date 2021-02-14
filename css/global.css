@@ -145,7 +145,7 @@ footer{
         height: 100%; background-color: rgba(0,0,0,0.7);
     }
     .popup > div{
-        width: 47.37%; margin: 0 auto;
+        width: 80%; margin: 0 auto;
         background-color: #f8f3ed;
         padding: 30px; position: relative;
     }
@@ -169,7 +169,7 @@ footer{
         padding-top: 100px; margin-bottom: 40px;
     }
     .popup figure figcaption dl dd:first-of-type{
-        font-size: 20px; color: #343333;
+        font-size: 16px; color: #343333;
         margin-bottom: 100px;
     }
     .popup figure figcaption dl dd a{
@@ -196,15 +196,15 @@ footer{
         vertical-align: middle;
     }
     .popup div fieldset ul li select{
-        width: 42%; appearance: none; padding: 10px 10px 10px 16%;
-        font-size: 16px; color: #343333;
+        width: 42%; appearance: none; padding: 10px 10px 10px 10%;
+        font-size: 14px; color: #343333;
         background: url('../images/tab_arrow.png') no-repeat 2%;
         background-size: 20px;
         background-color: #fff;
     }
     .popup div fieldset ul li button{
         background-color: #fff; border: 1px solid #222222;
-        font-size: 20px; padding: 5px 10px;
+        font-size: 20px; padding: 0 5px;
         width: 4%; vertical-align: middle;
     }
     .popup div fieldset ul li:first-of-type input[type='text']{
@@ -212,11 +212,11 @@ footer{
         font-size: 24px; vertical-align: middle;
     }
     .popup div fieldset ul li label{
-        margin-left: 33%;
+        margin-left: 25%;
     }
     .popup div fieldset ul li:last-of-type input[type='text']{
         font-size: 20px; border: none; background: none;
-        width: 9%; text-align: right; margin-left: 1%;
+        width: 13%; text-align: right; margin-left: 1%;
     }
     .popup div input[type='submit']{
         margin-left: 70%; border: none; background: none;
