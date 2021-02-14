@@ -22,6 +22,321 @@ footer{
     background-size: cover;
 }
 
+@media screen and (max-width: 767px){
+    body{
+        padding-top: 110px;
+    }
+    header{
+        min-height: 120px;
+    }
+    header div{
+        max-width: 767px; margin: 0 auto;
+    }
+    header div{
+        position: relative;
+    }
+    header h1{
+        margin: 0 auto; width: 20%;
+        padding-top: 10px;
+    }
+    header h1 a{
+        margin-bottom: 30px;
+    }
+    header h1 a img{
+        width: 100%;
+    }
+    header div > ul{
+        position: absolute; right: 0; top: 0px;
+        width: 40%; max-width: 670px;
+        text-align: right; padding-right: 20px;
+    }
+    header div > ul li a{
+        line-height: 30px;
+        font-size: 12px; 
+        box-sizing: border-box;
+    }
+    header div nav{
+        display: none;
+    }
+    header div nav ul::after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    header div nav ul > li{
+        float: left; width: 10%;
+        display: block; position: relative;
+    }
+    header div nav ul > li:not(:first-child){
+        margin-left: 5%;
+    }
+    header div nav ul > li > a{
+        display: block;
+        text-align: center; line-height: 55px;
+        font-size: 20px;
+    }
+    header div nav ul > li > a:hover{
+        background: url('../images/btn_bg.png') no-repeat center;
+        background-size: contain;
+    }
+    header div nav ul > li ol{
+        position: absolute; top: 55px; left: 0;
+        opacity: 0; padding: 0px 10px;
+        transition-duration: 0.5s; transition-timing-function: ease-in;
+    }
+    header div nav ul li > ol li a{
+        display: block;
+        font-size: 16px; 
+        line-height: 0px;
+        overflow-y: hidden;
+        text-align: center;
+        transition-duration: 0.5s; transition-timing-function: ease-in;
+    }
+    header div nav ul > li:hover ol{
+         width: 100%;
+        background: url('../images/hoverBG.png') no-repeat top;
+        background-size: contain;
+        padding: 30px 10px; opacity: 1;
+    }
+    header div nav ul li:hover > ol li:not(:last-child){
+        background: url('../images/hoverLine.png') no-repeat center bottom;
+        background-size: 80%; padding-bottom: 20px;
+    }
+    header div nav ul li:hover > ol li a{
+        line-height: 55px;
+    }
+    /* header Fin */
+
+
+    .tab .tabMenu{
+        margin-bottom: 100px;
+        width: 50%; margin: 0 auto;
+    }
+    .tab .tabMenu li{
+        display: inline-block;
+        cursor: pointer;
+        font-size: 20px; margin-bottom: 100px;
+        padding-bottom: 8px; margin-left: 6%; 
+    }
+    .tab .tabMenu li.active{
+        background: url('../images/hoverLine.png') no-repeat bottom;
+        background-size: 100%;
+        padding-bottom: 10px;
+        font-weight: 700;
+    }
+    .tab .tabPage{
+        display: none;
+    }
+    .tab .tabPage.active{
+        display: block;
+    }
+    .tab .tabPage li{
+        display: inline-block; font-size: 16px;
+        width: 28.57%; margin: 0 auto 100px;
+        position: relative; cursor: pointer;
+    }
+    .stickerandTape .tabPage li button,
+    .postandMemo .tabPage li button,
+    .etcProduct .tabPage li button{
+        position: absolute; top: 180px; left: 180px;
+    }
+    .tab .tabPage li img{
+        width: 100%; margin-bottom: 20px;
+    }
+    /* tabUI */
+
+    .popup{
+        display: none; position: fixed; left: 0; top: 0; z-index: 1000;
+        padding: 100px; box-sizing: border-box; width: 100%;
+        height: 100%; background-color: rgba(0,0,0,0.7);
+    }
+    .popup > div{
+        width: 47.37%; margin: 0 auto;
+        background-color: #f8f3ed;
+        padding: 30px; position: relative;
+    }
+    .popup figure::after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    .popup figure img{
+        width: 55.55%; display: block; float: left;
+        margin-bottom: 60px;
+    }
+    .popup figure figcaption{
+        padding-top: 80px; width: 37.78%; margin-left: 60%;
+    }
+    .popup figure figcaption dl{
+        text-align: center;
+    }
+    .popup figure figcaption dl dt{
+        background: url('../images/logo_mini.png') no-repeat top;
+        background-size: 90px;
+        font-size: 24px; color: #343333;
+        padding-top: 100px; margin-bottom: 40px;
+    }
+    .popup figure figcaption dl dd:first-of-type{
+        font-size: 20px; color: #343333;
+        margin-bottom: 100px;
+    }
+    .popup figure figcaption dl dd a{
+        text-decoration: none; font-size: 16px; color: #343333;
+        line-height: 30px; padding-left: 40px;
+        display: inline-block;
+    }
+    .popup figure figcaption dl dd a:first-of-type{
+        background: url('../images/cart.png') no-repeat left;
+        background-size: 30px;
+    }
+    .popup figure figcaption dl dd a:last-of-type{
+        background: url('../images/magnifying_glass.png') no-repeat left;
+        background-size: 30px;
+        margin-left: 30px;
+    }
+    .btn_close{
+        position: absolute; right: 20px; top: 20px; 
+        background: url('../images/close_btn.png') no-repeat center;
+        background-size: 20px;
+        border: none; text-indent: -9999px; cursor: pointer;
+    }
+    .popup div fieldset ul li > *{
+        vertical-align: middle;
+    }
+    .popup div fieldset ul li select{
+        width: 42%; appearance: none; padding: 10px 10px 10px 16%;
+        font-size: 16px; color: #343333;
+        background: url('../images/tab_arrow.png') no-repeat 2%;
+        background-size: 20px;
+        background-color: #fff;
+    }
+    .popup div fieldset ul li button{
+        background-color: #fff; border: 1px solid #222222;
+        font-size: 20px; padding: 5px 10px;
+        width: 4%; vertical-align: middle;
+    }
+    .popup div fieldset ul li:first-of-type input[type='text']{
+        border: none; background: none; width: 4%; text-align: center;
+        font-size: 24px; vertical-align: middle;
+    }
+    .popup div fieldset ul li label{
+        margin-left: 33%;
+    }
+    .popup div fieldset ul li:last-of-type input[type='text']{
+        font-size: 20px; border: none; background: none;
+        width: 9%; text-align: right; margin-left: 1%;
+    }
+    .popup div input[type='submit']{
+        margin-left: 70%; border: none; background: none;
+        background: url('../images/btn_bg.png') no-repeat center;
+        background-size: cover;
+        font-size: 30px; cursor: pointer; color: #343333;
+    }
+    /* popup Fin */
+
+    .catFam{
+        background: url('../images/cat_bg.png') repeat-y center 35%;
+        background-size: contain;
+    }
+    /*  pattern BG */
+    
+    footer div{
+        font-size: 12px; width: 80%;
+        margin-left: 10%;
+        padding-top: 120px;
+    }
+    footer div a,
+    footer div span{
+        margin-bottom: 20px;
+    }
+    footer div a:last-of-type{
+        margin-left: 5%;
+    }
+    footer div p{
+        line-height: 20px; padding-top: 20px;
+        margin-bottom: 40px;
+    }
+    footer div span{
+        display: inline-block;
+    }
+    footer > ul{
+        width: 80%; margin: 0 auto;
+        text-align: center; padding-bottom: 50px;
+    }
+    footer > ul li{
+        margin-left: 1.57%;
+        display: inline-block;
+    }
+    footer > ul li a{
+        text-indent: -9999px; display: block;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 50px; height: 50px;
+        background-size: 100%;
+    }
+    footer > ul li:first-of-type a{
+        background-image: url('../images/insta.png');
+    }
+    footer > ul li:nth-of-type(2) a{
+        background-image: url('../images/facebook.png');
+    }
+    footer > ul li:nth-of-type(3) a{
+        background-image: url('../images/twitter.png');
+    }
+    footer > ul li:last-of-type a{
+        background-image: url('../images/kakao.png');
+    }
+
+    /* slider */
+    /* layout */
+    .bx-wrapper{
+        border: none;
+    }
+
+    /* pager */
+    .sliderContainer{
+        position: relative;
+    }
+    .sliderContainer > ol.sliderPager{
+        position: absolute;
+        bottom: 50px; left: 0; width: 100%; text-align: center;
+    }
+    .sliderContainer > ol.sliderPager li{
+        display: inline-block; vertical-align: middle;
+    }
+    .sliderContainer > ol.sliderPager li .active,
+    .sliderContainer > ol.sliderPager li a:hover{
+        background: url('../images/indicator.png') no-repeat top;
+        background-size: cover;
+        width: 20px; height: 20px;
+    }
+    .sliderContainer > ol.sliderPager li a{
+        text-decoration: none; display: block;
+        background-color: #fff; border-radius: 5px;
+        width: 10px; height: 10px; text-indent: -9999px;
+    }
+    .sliderContainer > ol.sliderPager li a:not(:first-of-type){
+        margin-left: 0.52%;
+    }
+    /* controler */
+    .bx-controls .bx-controls-direction a{
+       width:34px; height: 64px;
+    }
+    .bx-controls .bx-controls-direction .bx-prev{
+        background: url('../images/controls.png') no-repeat 0px 0px;
+    }
+    .bx-controls .bx-controls-direction .bx-next{
+        background: url('../images/controls.png') no-repeat -42px 0px;  
+    }
+    .bx-wrapper{
+        box-shadow: none;
+    }
+    .bx-wrapper .bx-prev{
+        left: 100px;
+    }
+    .bx-wrapper .bx-next{
+        right: 100px;
+    }
+    /* slider Fin */
+}
+/* mobile Fin */
+
 @media screen and (min-width: 768px) and (max-width: 1279px){
     header{
         min-height: 205px;

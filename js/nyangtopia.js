@@ -322,7 +322,7 @@ function cartAllCheck(){
 
 
 function IDcheck(){
-    $(".membership form fieldset ul li input:button").click(function(){
+    $(".membership fieldset ul li input:button").click(function(){
         alert("사용 가능한 아이디 입니다.");
     });
 }
