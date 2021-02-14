@@ -80,7 +80,7 @@
         font-weight: 400; color: #222222;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1279px){
+@media screen and (min-width: 768px) and (max-width: 1279px){
         section h2{
             font-family: 'MapoFlowerIsland';
             font-weight: 400; font-size: 30px;
@@ -1425,7 +1425,7 @@
             line-height: 50px;
         }
         /* deliver Fin */
-    }
+}
     /* tablet Fin */
 
 @media screen and (min-width: 1280px){
