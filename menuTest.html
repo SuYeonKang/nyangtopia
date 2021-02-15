@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mui Test</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        html,body{
+            height: 100%;
+        }
+        header{
+            position: relative;
+        }
+        button.mui{
+            width: 50px; height: 50px;
+            background: url('images/ico_mui.png') no-repeat center;
+            background-size: contain; text-indent: -9999px;
+            position: absolute;
+        }
+        header h1{
+            width: 20%; margin: 0 auto; text-align: center; line-height: 50px;
+        }
+        nav.muiContainer{
+            height: 0%; overflow-y: hidden; background-color: yellow;
+            position: fixed; width: 100%; transition: height 0.75s ease-in-out;
+        }
+        nav.muiContainer.active{
+            height: 100%;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".mui").click(function(){
+                $(".muiContainer").toggleClass("active");
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <button class="mui">mobile UI open and close</button>
+        <h1>logo</h1>
+        <nav class="muiContainer">
+            <ul>
+                <li>outer menu</li>
+                <li>outer menu</li>
+                <li>outer menu</li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">mainMenu</a>
+                    <ol>
+                        <li>subMenu</li>
+                        <li>subMenu</li>
+                        <li>subMenu</li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="">mainMenu</a>
+                    <ol>
+                        <li>subMenu</li>
+                        <li>subMenu</li>
+                        <li>subMenu</li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="">mainMenu</a>
+                    <ol>
+                        <li>subMenu</li>
+                        <li>subMenu</li>
+                        <li>subMenu</li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="">mainMenu</a>
+                    <ol>
+                        <li>subMenu</li>
+                        <li>subMenu</li>
+                        <li>subMenu</li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="">mainMenu</a>
+                    <ol>
+                        <li>subMenu</li>
+                        <li>subMenu</li>
+                        <li>subMenu</li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="">mainMenu</a>
+                    <ol>
+                        <li>subMenu</li>
+                        <li>subMenu</li>
+                        <li>subMenu</li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="">mainMenu</a>
+                    <ol>
+                        <li>subMenu</li>
+                        <li>subMenu</li>
+                        <li>subMenu</li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>
