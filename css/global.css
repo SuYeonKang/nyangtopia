@@ -667,10 +667,11 @@ footer{
         max-width: 1600px; margin: 0 auto;
     }
     header div{
-        position: relative;
+        
     }
     header h1{
         margin: 0 auto; width: 6%;
+        position: relative;
     }
     header h1 a{
         display: inline-block;
@@ -679,20 +680,20 @@ footer{
     header h1 a img{
         width: 100%;
     }
-    header div > ul{
-        position: absolute; right: 0; top: 15px;
-        width: 40%; max-width: 670px;
+    header nav ul:first-of-type{
+        position: absolute; right: 3%; top: 15px;
+        width: 30%; max-width: 670px;
         text-align: right;
     }
-    header div > ul li{
+    header nav ul:first-of-type li{
         display: inline-block;
         background: url('../images/logo_mini.png') no-repeat left;
         background-size: 35px;
     }
-    header div > ul li:not(:first-child){
+    header nav ul:first-of-type li:not(:first-child){
         margin-left: 2.63%;
     }
-    header div > ul li a{
+    header nav ul:first-of-type li a{
         padding-left: 40px;
         line-height: 40px;
         font-size: 18px; 
@@ -701,28 +702,28 @@ footer{
     header div nav ul::after{
         content: ''; display: block; visibility: hidden; clear: both;
     }
-    header div nav ul > li{
+    header div nav ul:last-of-type > li{
         float: left; width: 10%;
         display: block; position: relative;
     }
-    header div nav ul > li:not(:first-child){
+    header div nav ul:last-of-type > li:not(:first-child){
         margin-left: 5%;
     }
-    header div nav ul > li > a{
+    header div nav ul:last-of-type > li > a{
         display: block;
         text-align: center; line-height: 55px;
         font-size: 20px;
     }
-    header div nav ul > li > a:hover{
+    header div nav ul:last-of-type > li > a:hover{
         background: url('../images/btn_bg.png') no-repeat center;
         background-size: contain;
     }
-    header div nav ul > li ol{
+    header div nav ul:last-of-type > li ol{
         position: absolute; top: 55px; left: 0;
         opacity: 0; padding: 0px 10px;
         transition-duration: 0.5s; transition-timing-function: ease-in;
     }
-    header div nav ul li > ol li a{
+    header div nav ul:last-of-type li > ol li a{
         display: block;
         font-size: 16px; 
         line-height: 0px;
@@ -730,17 +731,17 @@ footer{
         text-align: center;
         transition-duration: 0.5s; transition-timing-function: ease-in;
     }
-    header div nav ul > li:hover ol{
+    header div nav ul:last-of-type > li:hover ol{
          width: 100%;
         background: url('../images/hoverBG.png') no-repeat top;
         background-size: contain;
         padding: 30px 10px; opacity: 1;
     }
-    header div nav ul li:hover > ol li:not(:last-child){
+    header div nav ul:last-of-type li:hover > ol li:not(:last-child){
         background: url('../images/hoverLine.png') no-repeat center bottom;
         background-size: 80%; padding-bottom: 20px;
     }
-    header div nav ul li:hover > ol li a{
+    header div nav ul:last-of-type li:hover > ol li a{
         line-height: 55px;
     }
     /* header Fin */
