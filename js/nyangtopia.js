@@ -139,6 +139,8 @@ $(document).ready(function(){
 
     kakaotalkAlert();
 
+    mui();
+
     tabPage();
 
     drink();
@@ -216,6 +218,12 @@ $(document).ready(function(){
 function kakaotalkAlert(){
     $("footer ul li a.kakao").click(function(){
         alert("준비중이니 기다려달라냥");
+    });
+}
+
+function mui(){
+    $(".mui").click(function(){
+        $(".muiContainer").toggleClass("active");
     });
 }
 

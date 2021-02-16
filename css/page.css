@@ -3988,7 +3988,7 @@
     }
     .membership fieldset ul li label{
         font-size: 20px; color: #343333;
-        float: left; padding-top: 10px;
+        padding-top: 10px; float: left;
     }
     .membership fieldset ul li:first-of-type input{
         margin-left: 65px;
