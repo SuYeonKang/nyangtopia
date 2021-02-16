@@ -47,12 +47,10 @@
     .guide div h3,
     .guide div:first-of-type ul li,
     .guide div:last-of-type ul li,
-    .drink ul li,
     .drink div ul li div:last-of-type,
     .dessert figure figcaption,
-    .stickerandTape ul li,
-    .postandMemo ul li,
-    .etcProduct ul li,
+    .tab .tabMenu li,
+    .tab .tabPage li,
     .catFood ul li,
     .catToy ul li,
     .hello ul li,
@@ -1431,7 +1429,7 @@
 @media screen and (min-width: 768px) and (max-width: 1279px){
         section h2{
             font-family: 'MapoFlowerIsland';
-            font-weight: 400; font-size: 30px;
+            font-weight: 400; font-size: 25px;
             text-align: center; color: #343333;
         }
         .sliderContainer,
@@ -1463,7 +1461,7 @@
         .cart ul,
         .deliver h2,
         .deliver ul{
-            margin-bottom: 80px;
+            margin-bottom: 60px;
         }
         .introduce h2,
         .staff h2,
@@ -1471,7 +1469,7 @@
         .guide h2,
         .dessert h2,
         .shopDetail > article{
-            margin-bottom: 130px;
+            margin-bottom: 100px;
         }
         .introduce,
         .guide h2,
@@ -1491,7 +1489,7 @@
         .cart,
         .deliver,
         .membership{
-            padding-top: 100px;
+            padding-top: 80px;
         }
     
         .sliderContainer{
@@ -1519,47 +1517,47 @@
         }
         .mainSlider .slider li.banner1 h2{
             font-size: 30px; color: #222222; opacity: 0.5;
-            text-align: right; position: absolute; top: 100px; right: 11.85%;
+            text-align: right; position: absolute; top: 50px; right: 10%;
         }
         .mainSlider .slider li.banner1 h2 strong{
-            margin-top: 55px; padding-right: 2.1%;
-            font-size: 50px; display: block;
+            margin-top: 40px; padding-right: 2.1%;
+            font-size: 40px; display: block;
         }
         .mainSlider .slider li.banner2 p{
             font-family: 'KCC-Kimhoon';
-            font-size: 20px; line-height: 30px;
+            font-size: 16px; line-height: 30px;
             color: #8c9197; font-weight: 200;
-            font-style: italic; position: absolute; top: 60px; left: 10%;        
-            width: 46%;
+            font-style: italic; position: absolute; top: 50px; left: 6%;        
+            width: 50%;
         }
         .mainSlider .slider li.banner2 p span{
-            font-size: 18px; 
-            margin-left: 60%;
+            font-size: 14px; 
+            margin-left: 70%;
             width: 40%; display: block;
         }
         .mainSlider .slider li.banner3 div{
             font-family: 'SangSangFlowerRoad';
-            position: absolute; top: 100px; left: 21.21%;
+            position: absolute; top: 80px; left: 20.21%;
         }
         .mainSlider .slider li.banner3 h2{
-            font-size: 50px; font-weight: 400;
+            font-size: 35px; font-weight: 400;
             color: #222222; letter-spacing: 18px;
-            margin-bottom: 40px; padding-left: 8%;
+            margin-bottom: 20px; padding-left: 8%;
         }
         .mainSlider .slider li.banner3 mark{
             background: none; display: block;
-            font-size: 25px; letter-spacing: 10px;        
+            font-size: 18px; letter-spacing: 10px;        
         }
         .mainSlider .slider li.banner3 mark.dec{
             color: #cc825d;
-            padding: 0 0 10px 17%;
+            padding: 0 0 10px 14%;
         }
         .mainSlider .slider li.banner3 mark.mas{
             color: #87503b;
-            padding: 0 0 40px 11%;
+            padding: 0 0 20px 8%;
         }
        .mainSlider .slider li.banner3 p{
-            font-size: 14px; line-height: 20px; letter-spacing: 5px;
+            font-size: 12px; line-height: 20px; letter-spacing: 3px;
             text-align: center;
         }
         .mainSlider .slider li.banner4 div{
@@ -1567,20 +1565,20 @@
         }
         .mainSlider .slider li.banner4 h2{
             font-family: 'SangSangFlowerRoad';
-            font-size: 40px; color: #222222;
+            font-size: 30px; color: #222222;
             text-align: right; margin-bottom: 40px;
         }
         .mainSlider .slider li.banner4 h2 > strong{
-            font-family: 'Yeon Sung'; font-size: 40px;
+            font-family: 'Yeon Sung'; font-size: 30px;
             font-weight: 400; display: block;
-            padding: 60px 23.05% 0 0;
+            padding: 30px 23.05% 0 0;
         }
         .mainSlider .slider li.banner4 h2 > strong:first-letter{
-            font-size: 70px;
+            font-size: 50px;
         }
         .mainSlider .slider li.banner4 p,
         .mainSlider .slider li.banner4 ol{
-            font-size: 14px; line-height: 30px;
+            font-size: 12px; line-height: 20px;
             text-align: right;
         }
         .mainSlider .slider li.banner4 p{
@@ -1599,7 +1597,7 @@
         /* gallery Fin */
     
         .map{
-            width: 84.21%;
+            width: 90%;
             margin: 0 auto;
         }
         .map::after{
@@ -1615,12 +1613,12 @@
             float: left;
         }
         .map ul li{
-            font-size: 16px; font-weight: 400; width: 70%;
-            margin-bottom: 30px; line-height: 35px;
+            font-size: 12px; font-weight: 400; width: 67%;
+            margin-bottom: 20px; line-height: 30px;
         }
         .map ul li strong{
             padding-left: 5%;
-            font-size: 16px; font-weight: 700;
+            font-size: 14px; font-weight: 700;
             display: block; line-height: 60px;
             background: url('../images/btn_bg.png') no-repeat left center;
             background-size: 50% 50px;
@@ -1630,14 +1628,14 @@
             background-size: 60% 50px;
         }
         .map ul li:last-of-type strong{
-            font-size: 14px;
+            font-size: 11px; width: 100%;
             padding-left: 0;
             background-size: 100% 50px;
         }
         /* index Fin */
     
         .introduce{
-            width: 70%; margin: 0 auto;
+            width: 80%; margin: 0 auto;
         }
         .introduce::after{
             content: ''; display: block; visibility: hidden; clear: both;
@@ -1655,7 +1653,7 @@
             width: 34.74%; margin: 135px 0 100px 5.26%;
         }
         .staff{
-            width: 70%; margin: 0 auto;
+            width: 90%; margin: 0 auto;
         }
         .staff ul::after{
             content: ''; display: block; visibility: hidden; clear: both;
@@ -1743,33 +1741,33 @@
         /* introduce Fin */
     
         .guide{
-            width: 70%; margin: 0 auto;
+            width: 90%; margin: 0 auto;
         }
         .guide div h3{
             text-align: center;
-            font-size: 20px; font-weight: 700;
-            line-height: 50px; padding-left: 7.47%;
-            width: 25%; margin: 0 auto;
+            font-size: 18px; font-weight: 700;
+            line-height: 50px; padding-left: 2%;
+            width: 35%; margin: 0 auto;
         }
         .guide div:first-of-type{
             margin-bottom: 100px;
         }
         .guide div:first-of-type h3{
             background: url('../images/logo_mini03.png') no-repeat left;
-            background-size: 50px;
+            background-size: 40px;
         }
         .guide div:last-of-type h3{
             background: url('../images/logo_mini02.png') no-repeat left;
-            background-size: 50px;
+            background-size: 40px;
         }
         .guide div ul{
-            padding-top: 80px;
+            padding-top: 60px;
         }
         .guide div ul::after{
             content: ''; display: block; visibility: hidden; clear: both;
         }
         .guide div:first-of-type ul li{
-            width: 25%; float: left;
+            width: 26%; float: left;
             border-radius: 35px;
             font-size: 16px; text-align: center;
             padding: 20px 5% 20px 15%; line-height: 20px;
@@ -1809,57 +1807,52 @@
             border: 3px solid #0f9302;
         }
         .guide div:last-of-type ul{
-            margin-bottom: 100px;
+            width: 90%; margin: 0 auto 100px; 
         }
         .guide div:last-of-type ul::after{
             content: ''; display: block; visibility: hidden; clear: both;
         }
         .guide div:last-of-type ul li{
-            width: 21%; float: left;
+            width: 30%; float: left;
             margin: 0 auto 30px; font-size: 14px;
             text-align: center; line-height: 18px;
+            padding-top: 135px;
+        }
+        .guide div:last-of-type ul li:not(:nth-of-type(3n-2)){
+            margin-left: 5%;
         }
         .guide div:last-of-type ul li small{
             display: block; padding-top: 5px;
             font-size: 16px; color: #222222;
         }
-        .guide div:last-of-type ul li:not(:nth-of-type(3n-2)){
-            margin-left: 18%;
-        }
         .guide div:last-of-type ul li:first-of-type{
             background: url('../images/cauCat_01.png') no-repeat top;
             background-size: 130px;
-            padding-top: 150px;
         }
         .guide div:last-of-type ul li:nth-of-type(2){
             background: url('../images/cauCat_02.png') no-repeat top;
             background-size: 130px;
-            padding-top: 135px;
         }
         .guide div:last-of-type ul li:nth-of-type(3){
             background: url('../images/cauCat_03.png') no-repeat top;
             background-size: 130px;
-            padding-top: 150px;
         }
         .guide div:last-of-type ul li:nth-of-type(4){
             background: url('../images/cauCat_04.png') no-repeat top;
             background-size: 130px;
-            padding-top: 150px;
         }
         .guide div:last-of-type ul li:nth-of-type(5){
             background: url('../images/cauCat_05.png') no-repeat top;
             background-size: 130px;
-            padding-top: 135px;
         }
         .guide div:last-of-type ul li:last-of-type{
             background: url('../images/cauCat_06.png') no-repeat top;
             background-size: 130px;
-            padding-top: 135px;
         }
         /* guide Fin */
     
         .drink{
-            width: 73.68%; margin: 0 auto;
+            width: 90%; margin: 0 auto;
         }
         .drink div ul::after{
             content: ''; display: block; visibility: hidden; clear: both;
@@ -1867,7 +1860,7 @@
         .drink div ul li{
             float: left;
             width: 28.57%; margin: 0 auto;
-            padding-top: 240px; font-size: 20px; color: #222222;
+            padding-top: 240px; font-size: 16px; color: #222222;
             text-align: center; position: relative;
         }
         .drink div ul li > div{
@@ -1906,8 +1899,8 @@
             display: none;
         }
         .drink div ul li:hover div:first-of-type{
-            font-size: 16px; color: #fff; z-index: 1;
-            display: block; padding: 30px 20px;
+            font-size: 14px; color: #fff; z-index: 1;
+            display: block; padding: 25px 20px;
         }
         .drink div ul li:hover div:first-of-type p{
             width: 80%; margin: 0 auto;
@@ -1932,8 +1925,8 @@
         .drink div ul li div:last-of-type{
             color: #fff; text-align: left; margin: 0 auto;
             box-sizing: border-box; line-height: 20px;
-            font-size: 14px; white-space: pre-line;
-            display: none; padding: 30px;
+            font-size: 12px; white-space: pre-line;
+            display: none; padding: 5px 30px;
         }
         .drink #nonCoffee ul li:first-of-type{
             background: url('../images/nonco_01.png') no-repeat center;
@@ -3208,14 +3201,8 @@
     }
     /* guide Fin */
 
-    .drink{
-        width: 73.68%; margin: 0 auto;
-    }
-    .drink div ul::after{
-        content: ''; display: block; visibility: hidden; clear: both;
-    }
+
     .drink div ul li{
-        padding-top: 400px; color: #222222;
         text-align: center; font-size: 20px;
     }
     .drink div ul li > div{
@@ -3223,32 +3210,23 @@
         background-size: 400px; width: 100%; height: 100%;
         position: absolute; top: 0; left: 0;
     }
-    .drink div ul li:not(:nth-of-type(3n-2)){
-        margin-left: 6%;
-    }
     .drink #coffee ul li:first-of-type{
-        background: url('../images/co_01.png') no-repeat center;
-        background-size: 100%;
+        background-image: url('../images/co_01.png');
     }
     .drink #coffee ul li:nth-of-type(2){
-        background: url('../images/co_02.png') no-repeat center;
-        background-size: 100%;
+        background-image: url('../images/co_02.png');
     }
     .drink #coffee ul li:nth-of-type(3){
-        background: url('../images/co_03.png') no-repeat center;
-        background-size: 100%;
+        background-image: url('../images/co_03.png');
     }
     .drink #coffee ul li:nth-of-type(4){
-        background: url('../images/co_04.png') no-repeat center;
-        background-size: 100%;
+        background-image: url('../images/co_04.png');
     }
     .drink #coffee ul li:nth-of-type(5){
-        background: url('../images/co_05.png') no-repeat center;
-        background-size: 100%;
+        background-image: url('../images/co_05.png');
     }
     .drink #coffee ul li:last-of-type{
-        background: url('../images/co_06.png') no-repeat center;
-        background-size: 100%;
+        background-image: url('../images/co_06.png');
     }
     .drink div ul li div:first-of-type{
         display: none;
@@ -3284,52 +3262,40 @@
         display: none;
     }
     .drink #nonCoffee ul li:first-of-type{
-        background: url('../images/nonco_01.png') no-repeat center;
-        background-size: 100%;
+        background-image: url('../images/nonco_01.png');
     }
     .drink #nonCoffee ul li:nth-of-type(2){
-        background: url('../images/nonco_02.png') no-repeat center;
-        background-size: 100%;
+        background-image: url('../images/nonco_02.png');
     }
     .drink #nonCoffee ul li:nth-of-type(3){
-        background: url('../images/nonco_03.png') no-repeat center;
-        background-size: 100%;
+        background-image: url('../images/nonco_03.png');
     }
     .drink #ade ul li:first-of-type{
-        background: url('../images/ade_01.png') no-repeat center;
-        background-size: 100%;
+        background-image: url('../images/ade_01.png');
     }    
     .drink #ade ul li:last-of-type{
-        background: url('../images/ade_02.png') no-repeat center;
-        background-size: 100%;
+        background-image: url('../images/ade_02.png');
     }
     .drink #tea ul li:first-of-type{
-        background: url('../images/tea_01.png') no-repeat center;
-        background-size: 100%;
+        background-image: url('../images/tea_01.png');
     }    
     .drink #tea ul li:nth-of-type(2){
-        background: url('../images/tea_02.png') no-repeat center;
-        background-size: 100%;
+        background-image: url('../images/tea_02.png');
     }    
     .drink #tea ul li:nth-of-type(3){
-        background: url('../images/tea_03.png') no-repeat center;
-        background-size: 100%;
+        background-image: url('../images/tea_03.png');
     }
     .drink #tea ul li:nth-of-type(4){
-        background: url('../images/tea_04.png') no-repeat center;
-        background-size: 100%;
+        background-image: url('../images/tea_04.png');
     }
     .drink #tea ul li:last-of-type{
-        background: url('../images/tea_05.png') no-repeat center;
-        background-size: 100%;
+        background-image: url('../images/tea_05.png');
     }    
     .drink #season ul li:first-of-type{
-        background: url('../images/ju_01.png') no-repeat center;
-        background-size: 100%;
+        background-image: url('../images/ju_01.png');
     }
     .drink #season ul li:last-of-type{
-        background: url('../images/ju_02.png') no-repeat center;
-        background-size: 100%;
+        background-image: url('../images/ju_02.png');
     }    
     /* drink Fin */
 
@@ -3403,48 +3369,94 @@
     }
     /* dessert Fin */
 
-    .stickerandTape,
-    .postandMemo,
-    .etcProduct,
+    #sticker li:first-of-type{
+        background-image: url('../images/stk1_1.png');
+    }
+    #sticker li:nth-of-type(2){
+        background-image: url('../images/stk2_0.png');
+    }
+    #sticker li:nth-of-type(3){
+        background-image: url('../images/stk3_1.png');
+    }
+    #sticker li:nth-of-type(4){
+        background-image: url('../images/stk4_1.jpg');
+    }
+    #sticker li:last-of-type{
+        background-image: url('../images/stk5_2.jpg');
+    }
+    #maskingTape li:first-of-type{
+        background-image: url('../images/tape1_0.png');
+    }    
+    #maskingTape li:nth-of-type(2){
+        background-image: url('../images/tape2_0.png');
+    }
+    #maskingTape li:nth-of-type(3){
+        background-image: url('../images/tape3_1.JPG');
+    }
+    #maskingTape li:nth-of-type(4){
+        background-image: url('../images/tape4_0.png');
+    }
+    #maskingTape li:last-of-type{
+        background-image: url('../images/tape5_0.png');
+    }
+    #post li:first-of-type{
+        background-image: url('../images/post1_1.png');
+    }    
+    #post li:nth-of-type(2){
+        background-image: url('../images/post2_0.png');
+    }    
+    #post li:last-of-type{
+        background-image: url('../images/post3_1.jpg');
+    }
+    #memo li:first-of-type{
+        background-image: url('../images/memo1_1.jpg');
+    }    
+    #memo li:nth-of-type(2){
+        background-image: url('../images/memo2_1.png');
+    }    
+    #memo li:nth-of-type(3){
+        background-image: url('../images/memo3_1.jpg');
+    }
+    #memo li:nth-of-type(4){
+        background-image: url('../images/memo4_0.png');
+    }
+    #memo li:last-of-type{
+        background-image: url('../images/memo5_1.jpg');
+    }
+    #ecobag li:first-of-type{
+        background-image: url('../images/etc1_1.jpg');
+    }    
+    #ecobag li:nth-of-type(2){
+        background-image: url('../images/etc2_1.png');
+    }    
+    #ecobag li:last-of-type{
+        background-image: url('../images/etc3_0.png');
+    }
+    #umbrella li:first-of-type{
+        background-image: url('../images/etc4_1.jpg');
+    }    
+    #umbrella li:last-of-type{
+        background-image: url('../images/etc5_1.jpg');
+    }    
+
     .catFood,
     .catToy{
         width: 73.68%; margin: 0 auto;
     }
-    .stickerandTape ul:first-of-type,
-    .postandMemo ul:first-of-type,
-    .etcProduct ul:first-of-type{
-        width: 22.14%; margin: 0 auto;
-    }
-    .stickerandTape ul li,
-    .postandMemo ul li,
-    .etcProduct ul li{
-        font-size: 16px;
-    }
-    .tab .tabPage li:hover button,
     .catFood ul li:hover button,
     .catToy ul li:hover button,
     .hello ul li:hover button,
     .stayCat ul li:hover button{
         display: block;
     }
-    .stickerandTape ul:not(:first-of-type) li:not(:nth-of-type(3n-2)),
-    .postandMemo ul:not(:first-of-type) li:not(:nth-of-type(3n-2)),
-    .etcProduct ul:not(:first-of-type) li:not(:nth-of-type(3n-2)){
-        margin-left: 6%;
-    }
-    .tab .tabPage li::after,
     .catFood ul li small::after,
     .catToy ul li small::after{
         content: ''; display: block; visibility: hidden; clear: both;
     }
-    .tab .tabPage li small,
     .catFood ul li small,
     .catToy ul li small{
         float: right;
     }
-    .stickerandTape .tabPage li button,
-    .postandMemo .tabPage li button,
-    .etcProduct .tabPage li button,
     .catFood ul li button,
     .catToy ul li button,
     .hello ul li button,
@@ -3924,7 +3936,7 @@
     .login ul li{
         cursor: pointer; color: #222222;
         font-size: 24px; line-height: 40px;
-        padding-left: 5.21%; margin-bottom: 60px;
+        padding-left: 5.21%;
     }
     .login ul li:last-of-type{
         margin-left: 8.33%;

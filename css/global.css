@@ -365,7 +365,7 @@ footer{
     }
     header div nav.muiContainer{
         height: 0%; overflow-y: hidden; background-color: #f8f3ed;
-        width: 100%; transition: height 0.75s ease-in-out;
+        width: 30%; transition: height 0.75s ease-in-out;
         position: fixed;
     }
     header div nav.muiContainer.active{
@@ -387,64 +387,19 @@ footer{
     header div nav ul li ol li a{
         font-size: 14px; padding-left: 4%; color: #343333;
     }
-    /* header div nav ul::after{
-        content: ''; display: block; visibility: hidden; clear: both;
-    }
-    header div nav ul:last-of-type > li{
-        float: left; width: 10%;
-        display: block; position: relative;
-    }
-    header div nav ul:last-of-type > li:not(:first-child){
-        margin-left: 5%;
-    }
-    header div nav ul:last-of-type > li > a{
-        display: block;
-        text-align: center; line-height: 55px;
-        font-size: 20px;
-    }
-    header div nav ul:last-of-type > li > a:hover{
-        background: url('../images/btn_bg.png') no-repeat center;
-        background-size: contain;
-    }
-    header div nav ul:last-of-type > li ol{
-        position: absolute; top: 55px; left: 0;
-        opacity: 0; padding: 0px 10px;
-        transition-duration: 0.5s; transition-timing-function: ease-in;
-    }
-    header div nav ul:last-of-type li > ol li a{
-        display: block;
-        font-size: 16px; 
-        line-height: 0px;
-        overflow-y: hidden;
-        text-align: center;
-        transition-duration: 0.5s; transition-timing-function: ease-in;
-    }
-    header div nav ul:last-of-type > li:hover ol{
-         width: 100%;
-        background: url('../images/hoverBG.png') no-repeat top;
-        background-size: contain;
-        padding: 30px 10px; opacity: 1;
-    }
-    header div nav ul:last-of-type li:hover > ol li:not(:last-child){
-        background: url('../images/hoverLine.png') no-repeat center bottom;
-        background-size: 80%; padding-bottom: 20px;
-    }
-    header div nav ul:last-of-type li:hover > ol li a{
-        line-height: 55px;
-    } */
     /* header Fin */
 
 
     .tab .tabMenu{
         margin-bottom: 100px;
-        width: 50%; margin: 0 auto;
+        width: 80%; margin: 0 auto;
     }
     .tab .tabMenu::after{
         content: ''; display: block; visibility: hidden; clear: both;
     }
     .tab .tabMenu li{
-        float: left; cursor: pointer; 
-        font-size: 20px; margin-bottom: 100px;
+        display: inline-block; cursor: pointer; 
+        font-size: 16px; margin-bottom: 100px;
         padding-bottom: 8px; margin-left: 6%; 
     }
     .tab .tabMenu li.active{
@@ -454,7 +409,7 @@ footer{
         font-weight: 700;
     }
     .tab .tabPage{
-        display: none;
+        display: none; margin-bottom: 150px;
     }
     .tab .tabPage.active{
         display: block;
@@ -464,7 +419,7 @@ footer{
     }
     .tab .tabPage li{
         float: left; 
-        width: 28.57%; margin: 0 auto 100px;
+        width: 28.57%; margin: 0 auto;
         position: relative; cursor: pointer;
     }
     .stickerandTape .tabPage li button,
@@ -574,9 +529,9 @@ footer{
         content: ''; display: block; visibility: hidden; clear: both;
     }
     footer div{
-        font-size: 14px; width: 21%;
-        margin-left: 15.78%;
-        padding-top: 50px; float: left;
+        font-size: 14px; width: 42%;
+        margin-left: 12%;
+        padding-top: 70px; float: left;
     }
     footer div a:not(:last-of-type),
     footer div p:not(:nth-of-type(2)),
@@ -600,8 +555,8 @@ footer{
         display: inline-block;
     }
     footer > ul{
-        width: 15%; margin-left: 72.63%;
-        padding-top: 140px;
+        width: 30%; margin-left: 60%;
+        padding-top: 170px;
     }
     footer > ul li{
         margin-left: 1.57%;
@@ -639,7 +594,7 @@ footer{
     }
     .sliderContainer > ol.sliderPager{
         position: absolute;
-        bottom: 50px; left: 0; width: 100%; text-align: center;
+        bottom: 20px; left: 0; width: 100%; text-align: center;
     }
     .sliderContainer > ol.sliderPager li{
         display: inline-block; vertical-align: middle;
@@ -660,22 +615,24 @@ footer{
     }
     /* controler */
     .bx-controls .bx-controls-direction a{
-       width:34px; height: 64px;
+       width: 30px; height: 64px;
     }
     .bx-controls .bx-controls-direction .bx-prev{
-        background: url('../images/controls.png') no-repeat 0px 0px;
+        background: url('../images/controls.png') no-repeat 8px 0px;
+        background-size: 60px;
     }
     .bx-controls .bx-controls-direction .bx-next{
-        background: url('../images/controls.png') no-repeat -42px 0px;  
+        background: url('../images/controls.png') no-repeat -22px 0px;
+        background-size: 60px;  
     }
     .bx-wrapper{
         box-shadow: none;
     }
     .bx-wrapper .bx-prev{
-        left: 100px;
+        left: 30px;
     }
     .bx-wrapper .bx-next{
-        right: 100px;
+        right: 30px;
     }
     /* slider Fin */
 }
@@ -768,18 +725,20 @@ footer{
     }
     /* header Fin */
 
-
+    .tab{
+        width: 73.68%; margin: 0 auto;
+    }
     .tab .tabMenu{
         margin-bottom: 100px;
-        width: 50%; margin: 0 auto;
-    }
-    .tab .tabMenu::after{
-        content: ''; display: block; visibility: hidden; clear: both;
+        text-align: center;
     }
     .tab .tabMenu li{
-        float: left; cursor: pointer; 
-        font-size: 20px; margin-bottom: 100px;
-        padding-bottom: 8px; margin-left: 6%; 
+        display: inline-block; cursor: pointer; 
+        font-size: 20px; margin-bottom: 50px;
+        padding-bottom: 8px; 
+    }
+    .tab .tabMenu li:not(:first-child){
+        margin-left: 6%;
     }
     .tab .tabMenu li.active{
         background: url('../images/hoverLine.png') no-repeat bottom;
@@ -797,18 +756,38 @@ footer{
         content: ''; display: block; visibility: hidden; clear: both;
     }
     .tab .tabPage li{
-        float: left; 
-        width: 28.57%; margin: 0 auto 100px;
+        float: left; padding-top: 400px; color: #222222;
+        width: 30%; margin-bottom: 100px;
         position: relative; cursor: pointer;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
     }
-    .stickerandTape .tabPage li button,
-    .postandMemo .tabPage li button,
-    .etcProduct .tabPage li button{
-        position: absolute; top: 180px; left: 180px;
+    .tab .tabPage li:not(:nth-of-type(3n-2)){
+        margin-left: 5%;
     }
-    .tab .tabPage li img{
-        width: 100%; margin-bottom: 20px;
+    .tab .tabPage li span{
+        display: block; line-height: 21px;
+        padding-top: 50px;
     }
+    .tab .tabPage li span small{
+        float: right;
+    }
+    .tab > ul.tabPage li button{
+        position: absolute; top: 185px; left: 185px;
+        text-indent: -9999px; width: 50px; height: 50px;
+        background: url('../images/magnifying_glass_plus.png') no-repeat center;
+        background-size: 25px;
+        background-color: rgba(255,255,255,0.8);
+        border: none; border-radius: 25px; cursor: pointer;
+        display: none;
+    }
+    .tab .tabPage li:hover button{
+        display: block;
+    }
+    /* .tab .tabPage button.btn_close{
+        background: url('../images/close_btn.png') no-repeat top right;
+    } */
     /* tabUI */
 
     .popup{
