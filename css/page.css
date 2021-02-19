@@ -3,6 +3,7 @@
     .mainSlider .slider li.banner4 ol,
     .staff ul li h3,
     .drink div ul li,
+    .drink div ul li div:first-of-type span,
     .dessert h3,
     .applyNotice a,
     .login ul li,
@@ -50,7 +51,8 @@
     .drink div ul li div:last-of-type,
     .dessert figure figcaption,
     .tab .tabMenu li,
-    .tab .tabPage li,
+    .tabPage li span,
+    .drink div.detailContainer,
     .catFood ul li,
     .catToy ul li,
     .hello ul li,
@@ -1851,64 +1853,45 @@
         }
         /* guide Fin */
     
-        .drink{
-            width: 90%; margin: 0 auto;
-        }
-        .drink div ul::after{
-            content: ''; display: block; visibility: hidden; clear: both;
-        }
         .drink div ul li{
-            float: left;
-            width: 28.57%; margin: 0 auto;
-            padding-top: 240px; font-size: 16px; color: #222222;
-            text-align: center; position: relative;
+            text-align: center; font-size: 20px;
         }
         .drink div ul li > div{
             background-color: rgba(204, 130, 93, 0.9);
-            background-size: 100px; width: 100%;
+            background-size: 400px; width: 100%;
             position: absolute; top: 0; left: 0;
         }
-        .drink div ul li:not(:nth-of-type(3n-2)){
-            margin-left: 6%;
-        }
         .drink #coffee ul li:first-of-type{
-            background: url('../images/co_01.png') no-repeat center;
-            background-size: 100%;
+            background-image: url('../images/co_01.png');
         }
         .drink #coffee ul li:nth-of-type(2){
-            background: url('../images/co_02.png') no-repeat center;
-            background-size: 100%;
+            background-image: url('../images/co_02.png');
         }
         .drink #coffee ul li:nth-of-type(3){
-            background: url('../images/co_03.png') no-repeat center;
-            background-size: 100%;
+            background-image: url('../images/co_03.png');
         }
         .drink #coffee ul li:nth-of-type(4){
-            background: url('../images/co_04.png') no-repeat center;
-            background-size: 100%;
+            background-image: url('../images/co_04.png');
         }
         .drink #coffee ul li:nth-of-type(5){
-            background: url('../images/co_05.png') no-repeat center;
-            background-size: 100%;
+            background-image: url('../images/co_05.png');
         }
         .drink #coffee ul li:last-of-type{
-            background: url('../images/co_06.png') no-repeat center;
-            background-size: 100%;
+            background-image: url('../images/co_06.png');
         }
         .drink div ul li div:first-of-type{
             display: none;
         }
         .drink div ul li:hover div:first-of-type{
-            font-size: 14px; color: #fff; z-index: 1;
-            display: block; padding: 25px 20px;
+            font-size: 16px; color: #fff; z-index: 1;
+            display: block; padding: 30px 5px;
         }
         .drink div ul li:hover div:first-of-type p{
-            width: 80%; margin: 0 auto;
-            line-height: 20px;
+            line-height: 30px;
         }
         .drink div ul li div:first-of-type span{
             display: block; text-align: right;
-            padding: 5px 45px 30px 0;
+            padding: 20px 45px 40px 0; color: #fff;
         }
         .drink div ul li div:first-of-type input[type='button']{
             font-size: 16px; background: none;
@@ -1924,57 +1907,45 @@
         }
         .drink div ul li div:last-of-type{
             color: #fff; text-align: left; margin: 0 auto;
-            box-sizing: border-box; line-height: 20px;
-            font-size: 12px; white-space: pre-line;
-            display: none; padding: 5px 30px;
+            padding: 60px 100px; box-sizing: border-box; line-height: 30px;
+            font-size: 20px; white-space: pre-line;
+            display: none;
         }
         .drink #nonCoffee ul li:first-of-type{
-            background: url('../images/nonco_01.png') no-repeat center;
-            background-size: 100%;
+            background-image: url('../images/nonco_01.png');
         }
         .drink #nonCoffee ul li:nth-of-type(2){
-            background: url('../images/nonco_02.png') no-repeat center;
-            background-size: 100%;
+            background-image: url('../images/nonco_02.png');
         }
         .drink #nonCoffee ul li:nth-of-type(3){
-            background: url('../images/nonco_03.png') no-repeat center;
-            background-size: 100%;
+            background-image: url('../images/nonco_03.png');
         }
         .drink #ade ul li:first-of-type{
-            background: url('../images/ade_01.png') no-repeat center;
-            background-size: 100%;
+            background-image: url('../images/ade_01.png');
         }    
         .drink #ade ul li:last-of-type{
-            background: url('../images/ade_02.png') no-repeat center;
-            background-size: 100%;
+            background-image: url('../images/ade_02.png');
         }
         .drink #tea ul li:first-of-type{
-            background: url('../images/tea_01.png') no-repeat center;
-            background-size: 100%;
+            background-image: url('../images/tea_01.png');
         }    
         .drink #tea ul li:nth-of-type(2){
-            background: url('../images/tea_02.png') no-repeat center;
-            background-size: 100%;
+            background-image: url('../images/tea_02.png');
         }    
         .drink #tea ul li:nth-of-type(3){
-            background: url('../images/tea_03.png') no-repeat center;
-            background-size: 100%;
+            background-image: url('../images/tea_03.png');
         }
         .drink #tea ul li:nth-of-type(4){
-            background: url('../images/tea_04.png') no-repeat center;
-            background-size: 100%;
+            background-image: url('../images/tea_04.png');
         }
         .drink #tea ul li:last-of-type{
-            background: url('../images/tea_05.png') no-repeat center;
-            background-size: 100%;
+            background-image: url('../images/tea_05.png');
         }    
         .drink #season ul li:first-of-type{
-            background: url('../images/ju_01.png') no-repeat center;
-            background-size: 100%;
+            background-image: url('../images/ju_01.png');
         }
         .drink #season ul li:last-of-type{
-            background: url('../images/ju_02.png') no-repeat center;
-            background-size: 100%;
+            background-image: url('../images/ju_02.png');
         }    
         /* drink Fin */
     
@@ -2869,9 +2840,10 @@
     }
     .mainSlider .slider li.banner2 p{
         font-family: 'KCC-Kimhoon';
-        font-size: 35px; line-height: 48px;
+        font-size: 30px; line-height: 48px;
         color: #8c9197; font-weight: 200;
-        font-style: italic; position: absolute; top: 90px; left: 11.57%;        width: 44%;
+        font-style: italic; position: absolute; top: 80px; left: 3%;        
+        width: 56%;
     }
     .mainSlider .slider li.banner2 p span{
         font-size: 30px; 
@@ -2880,7 +2852,7 @@
     }
     .mainSlider .slider li.banner3 div{
         font-family: 'SangSangFlowerRoad';
-        position: absolute; top: 165px; left: 24.21%;
+        position: absolute; top: 20%; left: 24%;
     }
     .mainSlider .slider li.banner3 h2{
         font-size: 100px; font-weight: 400;
@@ -2962,24 +2934,18 @@
         font-size: 16px; font-weight: 400;
         margin-bottom: 30px; line-height: 35px;
     }
-    .map ul li{
-        width: 53%;
-    }
     .map ul li strong{
         padding-left: 5%;
         font-size: 20px; font-weight: 700;
         display: block; line-height: 60px;
         background: url('../images/btn_bg.png') no-repeat left center;
-        background-size: 60% 50px;
+        background-size: contain;
         margin-bottom: 30px;
     }
-    .map ul li:nth-of-type(2) strong{
-        background-size: 65% 50px;
-    }
     .map ul li:last-of-type strong{
-        font-size: 16px;
+        font-size: 14px;
         padding-left: 0;
-        background-size: 100% 50px;
+        background-size: 50% 50px;
     }
     /* index Fin */
 
@@ -3016,20 +2982,21 @@
         margin-left: 2.63%;
     }
     .staff ul li p{
-        position: absolute; top: 0; left: 0;
+        position: absolute; top: 35%; left: 22%;
         opacity: 0; width: 60%;
-        font-size: 30px; line-height: 40px;
+        font-size: 25px; line-height: 25px;
     }
     .staff ul li:hover p{
         opacity: 1; color: #ffffff;
-        padding: 195px 90px;
+        /* padding: 195px 90px;  */
+        box-sizing: border-box;
     }
     .staff ul li h3{
         color: #222222; font-size: 24px;
         text-align: center; line-height: 40px;
         background: url('../images/btn_bg.png') no-repeat center;
         background-size: contain;
-        margin-top: 400px;
+        margin-top: 80%;
     }
     .staff ul li:first-of-type{
         background: url('../images/CEOcat.png') no-repeat center top;
@@ -3055,11 +3022,6 @@
         background: url('../images/bari_02_hover.png') no-repeat center;
         background-size: contain;
     }
-    .staff ul li:nth-of-type(3):hover p,
-    .staff ul li:nth-of-type(4):hover p,
-    .staff ul li:nth-of-type(5):hover p{
-        padding: 180px 90px;
-    }
     .staff ul li:nth-of-type(4){
         background: url('../images/sweetCat.png') no-repeat center top;
         background-size: contain;
@@ -3084,30 +3046,27 @@
         background: url('../images/baby_hover.png') no-repeat center;
         background-size: contain;
     }
-    .staff ul li:last-of-type:hover p{
-        padding: 170px 90px;
-    }
     /* introduce Fin */
 
     .guide{
-        width: 70%; margin: 0 auto;
+        width: 75%; margin: 0 auto;
     }
     .guide div h3{
         text-align: center;
         font-size: 25px; font-weight: 700;
         line-height: 70px; padding-left: 4.47%;
-        width: 20%; margin: 0 auto;
+        width: 25%; margin: 0 auto;
     }
     .guide div:first-of-type{
         margin-bottom: 100px;
     }
     .guide div:first-of-type h3{
         background: url('../images/logo_mini03.png') no-repeat left;
-        background-size: 70px;
+        background-size: 17%;
     }
     .guide div:last-of-type h3{
         background: url('../images/logo_mini02.png') no-repeat left;
-        background-size: 70px;
+        background-size: 17%;
     }
     .guide div ul{
         padding-top: 80px;
@@ -3119,7 +3078,7 @@
         float: left; width: 20%;
         border-radius: 35px;
         font-size: 16px; text-align: center;
-        padding: 20px 1.05% 20px 8.14%; line-height: 20px;
+        padding: 20px 1.7% 20px 8.14%; line-height: 20px;
     }
     .guide div:first-of-type ul li:not(:nth-of-type(3n-2)){
         margin-left: 4.21%;
@@ -3158,7 +3117,7 @@
         border: 3px solid #0f9302;
     }
     .guide div:last-of-type ul li{
-        float: left; width: 10%;
+        float: left; width: 12%;
         margin: 0 auto 100px; font-size: 16px;
         text-align: center;
     }
@@ -3167,7 +3126,7 @@
         font-size: 16px; color: #222222;
     }
     .guide div:last-of-type ul li:not(:first-of-type){
-        margin-left: 7.5%;
+        margin-left: 5%;
     }
     .guide div:last-of-type ul li:first-of-type{
         background: url('../images/cauCat_01.png') no-repeat top;
@@ -3236,12 +3195,12 @@
         display: block;
     }
     .drink div ul li:hover div:first-of-type p{
-        padding-top: 118px; width: 80%; margin: 0 auto;
+        padding-top: 8%; width: 80%; margin: 0 auto;
         line-height: 30px;
     }
     .drink div ul li div:first-of-type span{
         display: block; text-align: right;
-        padding: 20px 45px 40px 0;
+        padding: 20px 45px 40px 0; color: #fff;
     }
     .drink div ul li div:first-of-type input[type='button']{
         font-size: 16px; background: none;
@@ -3257,8 +3216,9 @@
     }
     .drink div ul li div:last-of-type{
         color: #fff; text-align: left; margin: 0 auto;
-        padding: 60px 100px; box-sizing: border-box; line-height: 30px;
-        font-size: 20px; white-space: pre-line;
+        padding: 15%;
+        box-sizing: border-box; line-height: 30px;
+        font-size: 20px;
         display: none;
     }
     .drink #nonCoffee ul li:first-of-type{
