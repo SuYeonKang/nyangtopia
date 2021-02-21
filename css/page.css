@@ -83,7 +83,7 @@
 @media screen and (max-width: 767px){
     section h2{
         font-family: 'MapoFlowerIsland';
-        font-weight: 400; font-size: 25px;
+        font-weight: 400; font-size: 20px;
         text-align: center; color: #343333;
     }
     .sliderContainer,
@@ -115,7 +115,7 @@
     .cart ul,
     .deliver h2,
     .deliver ul{
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
     .introduce h2,
     .staff h2,
@@ -123,7 +123,7 @@
     .guide h2,
     .dessert h2,
     .shopDetail > article{
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
     .introduce,
     .guide h2,
@@ -143,7 +143,7 @@
     .cart,
     .deliver,
     .membership{
-        padding-top: 80px;
+        padding-top: 40px;
     }
 
     .sliderContainer{
@@ -170,78 +170,67 @@
         width: 100%; 
     }
     .mainSlider .slider li.banner1 h2{
-        font-size: 30px; color: #222222; opacity: 0.5;
-        text-align: right; position: absolute; top: 50px; right: 10%;
+        font-size: 12px; color: #222222; opacity: 0.5;
+        text-align: right; position: absolute; top: 20px; right: 8%;
     }
     .mainSlider .slider li.banner1 h2 strong{
-        margin-top: 40px; padding-right: 2.1%;
-        font-size: 40px; display: block;
+        margin-top: 15px; padding-right: 9%;
+        font-size: 20px; display: block;
     }
     .mainSlider .slider li.banner2 p{
         font-family: 'KCC-Kimhoon';
-        font-size: 16px; line-height: 30px;
+        font-size: 10px; line-height: 15px;
         color: #8c9197; font-weight: 200;
-        font-style: italic; position: absolute; top: 50px; left: 6%;        
-        width: 50%;
+        font-style: italic; position: absolute; top: 15px; left: 6%;        
+        width: 85%;
     }
     .mainSlider .slider li.banner2 p span{
-        font-size: 14px; 
-        margin-left: 70%;
+        font-size: 10px; 
+        margin-left: 25%;
         width: 40%; display: block;
     }
     .mainSlider .slider li.banner3 div{
         font-family: 'SangSangFlowerRoad';
-        position: absolute; top: 80px; left: 20.21%;
+        position: absolute; top: 30px; left: 20.21%;
     }
     .mainSlider .slider li.banner3 h2{
-        font-size: 35px; font-weight: 400;
-        color: #222222; letter-spacing: 18px;
-        margin-bottom: 20px; padding-left: 8%;
+        font-size: 15px; font-weight: 400;
+        color: #222222; letter-spacing: 5px;
+        margin-bottom: 20px; padding-left: 3.5%;
     }
     .mainSlider .slider li.banner3 mark{
         background: none; display: block;
-        font-size: 18px; letter-spacing: 10px;        
+        font-size: 8px; letter-spacing: 3px;        
     }
     .mainSlider .slider li.banner3 mark.dec{
         color: #cc825d;
-        padding: 0 0 10px 14%;
+        padding: 0 0 5px 5%;
     }
     .mainSlider .slider li.banner3 mark.mas{
         color: #87503b;
-        padding: 0 0 20px 6%;
     }
    .mainSlider .slider li.banner3 p{
-        font-size: 12px; line-height: 20px; letter-spacing: 3px;
-        text-align: center;
+        display: none;
     }
     .mainSlider .slider li.banner4 div{
-        position: absolute; top: 0; right: 9.78%
+        position: absolute; top: 0; right: 20%
     }
     .mainSlider .slider li.banner4 h2{
         font-family: 'SangSangFlowerRoad';
-        font-size: 30px; color: #222222;
-        text-align: right; margin-bottom: 40px;
+        font-size: 15px; color: #222222;
+        text-align: right; 
     }
     .mainSlider .slider li.banner4 h2 > strong{
-        font-family: 'Yeon Sung'; font-size: 30px;
+        font-family: 'Yeon Sung'; font-size: 15px;
         font-weight: 400; display: block;
-        padding: 30px 23.05% 0 0;
+        padding: 20px 0 15px 0;
     }
     .mainSlider .slider li.banner4 h2 > strong:first-letter{
-        font-size: 50px;
+        font-size: 30px;
     }
     .mainSlider .slider li.banner4 p,
     .mainSlider .slider li.banner4 ol{
-        font-size: 12px; line-height: 20px;
-        text-align: right;
-    }
-    .mainSlider .slider li.banner4 p{
-        margin-bottom: 30px;
-    }
-    .mainSlider .slider li.banner4 ol{
-        text-align: left;
-        padding-left: 15.5%;
-        list-style: decimal;
+        display: none;
     }
     /* main banner Fin */
 
@@ -251,64 +240,52 @@
     /* gallery Fin */
 
     .map{
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
+        margin: 0 auto 30px;
     }
-    .map::after{
-        content: ''; display: block; visibility: hidden; clear: both;
-    }
-    .map > div{
-        width: 53.42%;
-        float: left;
+    .map div{
+        margin-bottom: 100px;
     }
     .map ul{
-        margin-left: 2%; width: 44.58%;
-        color: #343333;
-        float: left;
+        color: #343333; 
     }
     .map ul li{
-        font-size: 12px; font-weight: 400; width: 67%;
-        margin-bottom: 20px; line-height: 30px;
+        font-size: 10px; font-weight: 400; text-align: center;
+        line-height: 20px;
     }
     .map ul li strong{
-        padding-left: 5%;
-        font-size: 14px; font-weight: 700;
-        display: block; line-height: 60px;
-        background: url('../images/btn_bg.png') no-repeat left center;
-        background-size: 50% 50px;
-        margin-bottom: 20px;
+        padding-left: 5%; width: 50%; margin: 0 auto;
+        font-size: 12px; font-weight: 700;
+        display: block; line-height: 48px;
+        background: url('../images/btn_bg.png') no-repeat center top;
+        background-size: contain;
+        margin-bottom: 10px;
     }
     .map ul li:nth-of-type(2) strong{
         background-size: 60% 50px;
     }
     .map ul li:last-of-type strong{
-        font-size: 11px; width: 100%;
+        font-size: 10px; width: 100%;
         padding-left: 0;
-        background-size: 100% 50px;
     }
     /* index Fin */
 
     .introduce{
-        width: 80%; margin: 0 auto;
-    }
-    .introduce::after{
-        content: ''; display: block; visibility: hidden; clear: both;
+        margin-bottom: 100px;
     }
     .introduce p{
-        width: 60%; 
-        font-size: 14px; line-height: 26px;
-        float: left;
-        margin-bottom: 200px;
+        width: 80%; margin: 0 auto;
+        font-size: 12px; line-height: 20px;
     }
     .introduce p:first-of-type{
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
     .introduce img{
-        width: 34.74%; margin: 135px 0 100px 5.26%;
+        width: 100%; margin: 0 auto;
     }
-    .staff{
+    /* .staff{
         width: 90%; margin: 0 auto;
-    }
+    } */
     .staff ul::after{
         content: ''; display: block; visibility: hidden; clear: both;
     }
