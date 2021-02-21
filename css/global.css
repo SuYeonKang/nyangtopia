@@ -793,9 +793,6 @@ footer{
     .drink .tabPage li span{
         background-color: transparent;
     }
-    .tab .tabPage li span small{
-        float: right;
-    }
     .tab > ul.tabPage li button{
         position: absolute; top: 44.05%; left: 44.05%;
         text-indent: -9999px; width: 50px; height: 50px;
@@ -816,7 +813,7 @@ footer{
         height: 100%; background-color: rgba(0,0,0,0.7);
     }
     .popup > div{
-        width: 47.37%; margin: 0 auto;
+        width: 47.37%; margin: 0 auto; max-width: 600px;
         background-color: #f8f3ed;
         padding: 30px; position: relative;
     }
@@ -828,7 +825,7 @@ footer{
         margin-bottom: 60px;
     }
     .popup figure figcaption{
-        padding-top: 80px; width: 37.78%; margin-left: 60%;
+        margin-left: 60%;
     }
     .popup figure figcaption dl{
         text-align: center;
@@ -840,15 +837,15 @@ footer{
         padding-top: 100px; margin-bottom: 40px;
     }
     .popup figure figcaption dl dd:first-of-type{
-        font-size: 20px; color: #343333;
-        margin-bottom: 100px;
+        font-size: 18px; color: #343333;
+        margin-bottom: 50px;
     }
     .popup figure figcaption dl dd:last-of-type:after{
         content: ''; display: block; visibility: hidden; clear: both;
     }
     .popup figure figcaption dl dd a{
         text-decoration: none; font-size: 16px; color: #343333;
-        line-height: 30px; padding-left: 13%; width: 45%;
+        line-height: 40px; padding-left: 13%; width: 45%;
         float: left; box-sizing: border-box;
         background-size: 25%;
         background-repeat: no-repeat;
@@ -891,15 +888,12 @@ footer{
     .popup div fieldset ul li button{
         background-color: #fff; border: 1px solid #222222;
         font-size: 20px; padding: 5px 10px;
-        width: 10%; vertical-align: middle;
+        width: 8%; vertical-align: middle;
     }
     .popup div fieldset ul li:first-of-type input[type='text']{
-        border: none; background: none; width: 4%; text-align: center;
-        font-size: 24px; vertical-align: middle;
+        border: none; background: none; width: 7%; text-align: center;
+        font-size: 20px; vertical-align: middle;
     }
-    /* .popup div fieldset ul li label{
-        margin-left: 33%;
-    } */
     .popup div fieldset ul li:last-of-type input[type='text']{
         font-size: 20px; border: none; background: none;
         width: 34%; text-align: right; margin-left: 1%;
