@@ -366,21 +366,23 @@ footer{
     header div nav.muiContainer{
         height: 0%; overflow-y: hidden; background-color: #f8f3ed;
         width: 30%; transition: height 0.75s ease-in-out;
-        position: fixed;
+        position: fixed; line-height: 30px; 
+        padding: 20px 0 0 2%; width: 30%;
+        color: #222222;
+    }
+    header div nav.muiContainer ul:first-of-type li{
+        margin-bottom: 30px;
+    }
+    header div nav.muiContainer ul:first-of-type li:not(:nth-of-type(2)){
+        display: none;
     }
     header div nav.muiContainer.active{
-        height: 100%; padding-left: 2%; width: 30%;
-        line-height: 30px; color: #222222;
+        height: 100%;
     }
     header div nav.muiContainer.active ul::after{
         content: ''; display: block; visibility: hidden; clear: both;
     }
-    header div nav.muiContainer.active ul:first-of-type li{
-        float: left; margin-bottom: 30px; padding-top: 20px;
-    }
-    header div nav.muiContainer.active ul:first-of-type li:not(:first-of-type){
-        margin-left: 5%;
-    }
+    
     header div nav ul > li > a{
         font-size: 18px;
     }
@@ -390,9 +392,9 @@ footer{
     /* header Fin */
 
 
-    .tab{
-        width: 100%; margin: 0 auto;
-    }
+    /* .tab{
+        width: 73.68%; margin: 0 auto;
+    } */
     .tab .tabMenu{
         text-align: center;
     }
@@ -420,34 +422,31 @@ footer{
         content: ''; display: block; visibility: hidden; clear: both;
     }
     .tab .tabPage li{
-        float: left; padding-top: 400px; color: #222222;
-        width: 30%;
+        float: left; padding-top: 31%; color: #222222;
+        width: 30%; margin-bottom: 100px;
         position: relative; cursor: pointer;
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center top;
     }
     .tab .tabPage li:not(:nth-of-type(3n-2)){
         margin-left: 5%;
     }
     .tab .tabPage li span{
-        display: block; line-height: 21px;
-        padding-top: 50px;
+        display: block; line-height: 21px; padding-top: 20px;
+        background-color: white; font-size: 12px;
+        text-align: center;
     }
-    .tab .tabPage li span small{
-        float: right;
+    .drink .tabPage li span{
+        background-color: transparent;
     }
     .tab > ul.tabPage li button{
-        position: absolute; top: 185px; left: 185px;
+        position: absolute; top: 38%; left: 38%;
         text-indent: -9999px; width: 50px; height: 50px;
         background: url('../images/magnifying_glass_plus.png') no-repeat center;
         background-size: 25px;
         background-color: rgba(255,255,255,0.8);
         border: none; border-radius: 25px; cursor: pointer;
-        display: none;
-    }
-    .tab .tabPage li:hover button{
-        display: block;
     }
     /* tabUI */
 
@@ -457,7 +456,7 @@ footer{
         height: 100%; background-color: rgba(0,0,0,0.7);
     }
     .popup > div{
-        width: 47.37%; margin: 0 auto;
+        width: 75%; margin: 0 auto; max-width: 490px;
         background-color: #f8f3ed;
         padding: 30px; position: relative;
     }
@@ -469,34 +468,37 @@ footer{
         margin-bottom: 60px;
     }
     .popup figure figcaption{
-        padding-top: 80px; width: 37.78%; margin-left: 60%;
+        margin-left: 60%;
     }
     .popup figure figcaption dl{
         text-align: center;
     }
     .popup figure figcaption dl dt{
-        background: url('../images/logo_mini.png') no-repeat top;
-        background-size: 90px;
-        font-size: 24px; color: #343333;
-        padding-top: 100px; margin-bottom: 40px;
+        background: url('../images/logo_mini.png') no-repeat center top;
+        background-size: 20%;
+        font-size: 20px; color: #343333;
+        padding-top: 50px; margin-bottom: 40px;
     }
     .popup figure figcaption dl dd:first-of-type{
-        font-size: 20px; color: #343333;
-        margin-bottom: 100px;
+        font-size: 14px; color: #343333;
+        margin-bottom: 50px;
+    }
+    .popup figure figcaption dl dd:last-of-type:after{
+        content: ''; display: block; visibility: hidden; clear: both;
     }
     .popup figure figcaption dl dd a{
-        text-decoration: none; font-size: 16px; color: #343333;
-        line-height: 30px; padding-left: 40px;
-        display: inline-block;
+        text-decoration: none; font-size: 14px; color: #343333;
+        line-height: 40px; padding-left: 13%; width: 45%;
+        float: left; box-sizing: border-box;
+        background-size: 25%;
+        background-repeat: no-repeat;
+        background-position: left center;
     }
     .popup figure figcaption dl dd a:first-of-type{
-        background: url('../images/cart.png') no-repeat left;
-        background-size: 30px;
+        background-image: url('../images/cart.png');
     }
     .popup figure figcaption dl dd a:last-of-type{
-        background: url('../images/magnifying_glass.png') no-repeat left;
-        background-size: 30px;
-        margin-left: 30px;
+        background-image: url('../images/magnifying_glass.png');
     }
     .btn_close{
         position: absolute; right: 20px; top: 20px; 
@@ -504,11 +506,20 @@ footer{
         background-size: 20px;
         border: none; text-indent: -9999px; cursor: pointer;
     }
+    .popup div fieldset ul:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    .popup div fieldset ul li{
+        float: left;
+    }
+    .popup div fieldset ul li:last-child{
+        width: 50%;
+    }
     .popup div fieldset ul li > *{
         vertical-align: middle;
     }
     .popup div fieldset ul li select{
-        width: 42%; appearance: none; padding: 10px 10px 10px 13%;
+        width: 70%; appearance: none; padding: 10px 10px 10px 13%;
         font-size: 16px; color: #343333;
         background: url('../images/tab_arrow.png') no-repeat 2%;
         background-size: 20px;
@@ -517,24 +528,22 @@ footer{
     .popup div fieldset ul li button{
         background-color: #fff; border: 1px solid #222222;
         font-size: 20px; padding: 5px 10px;
-        width: 4%; vertical-align: middle;
+        width: 8%; vertical-align: middle;
     }
     .popup div fieldset ul li:first-of-type input[type='text']{
-        border: none; background: none; width: 4%; text-align: center;
-        font-size: 24px; vertical-align: middle;
-    }
-    .popup div fieldset ul li label{
-        margin-left: 33%;
+        border: none; background: none; width: 7%; text-align: center;
+        font-size: 20px; vertical-align: middle;
     }
     .popup div fieldset ul li:last-of-type input[type='text']{
         font-size: 20px; border: none; background: none;
-        width: 9%; text-align: right; margin-left: 1%;
+        width: 34%; text-align: right; margin-left: 1%;
+        vertical-align: -10%;
     }
     .popup div input[type='submit']{
         margin-left: 70%; border: none; background: none;
         background: url('../images/btn_bg.png') no-repeat center;
         background-size: cover;
-        font-size: 30px; cursor: pointer; color: #343333;
+        font-size: 25px; cursor: pointer; color: #343333;
     }
     /* popup Fin */
 
