@@ -2797,11 +2797,11 @@
         content: ''; display: block; visibility: hidden; clear: both;
     }
     .mainSlider .slider{
-        width: 100%;
+        width: 100% !important;
         height: 100%;
     }
     .mainSlider .slider > li{
-        width: 100%;
+        width: 100% !important;
         height: 100%;
         display: block; position: relative;
     }

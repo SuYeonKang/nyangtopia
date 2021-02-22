@@ -28,8 +28,8 @@
   /** THEME
   ===================================*/
   .bx-wrapper {
-    box-shadow: 0 0 5px #ccc;
-    border: 5px solid #fff;
+    /* box-shadow: 0 0 5px #ccc;
+    border: 5px solid #fff; */
     background: #fff;
   }
   .bx-wrapper .bx-pager,
