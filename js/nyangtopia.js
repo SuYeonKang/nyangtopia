@@ -6,7 +6,7 @@ $(document).ready(function(){
         adaptiveHeight: true, 
         adaptiveHeightSpeed: 500,
         
-        speed: 500,
+        speed: 1000,
         easing: 'ease-out', 
         
         startSlide: 0,
@@ -34,7 +34,7 @@ $(document).ready(function(){
             pc 만 지원하는 반응형일 경우
             같은 class인 .bx-wrapper 에게 min-width를 1000px을 지정 하면 된다.
         */
-        touchEnabled: false, //터치스와이프 기능 사용여부 //chrome 터치불가현상. -- 지금은 안쓰는게 좋음
+        touchEnabled: true, //터치스와이프 기능 사용여부 //chrome 터치불가현상. -- 지금은 안쓰는게 좋음
         swipeThreshold: 0, //터치하여 스와이프 할때 변환 효과에 소모되는 시간 설정
         oneToOneTouch: false, // fade 효과가 아닌 슬라이드는 손가락의 접지상태에 따라 슬라이드를 움직일수있다.
         preventDefaultSwipeX: false, // onoToOneTouch 에서 true일 경우, 손가락을따라 x축으로 움직일지에 대한 여부
@@ -62,7 +62,7 @@ $(document).ready(function(){
         autoStart: true, // 페이지 로드가 되면, 슬라이드의 자동시작 여부    -- auto와 같은 옵션(true/false)이어야함.
         autoHover: true, // 슬라이드 오버시 재생 중단 여부 (false: 오버무시) 
         autoDelay: 0, // 자동 재생 전 대기 시간 설정
-        pause: 4000, // 자동 재생 시 각 슬라이드 별 노출 시간
+        pause: 5000, // 자동 재생 시 각 슬라이드 별 노출 시간
         keyboardEnabled : false, //키보드 조작 가능하게 할지 여부 -- 모바일에서 안좋음
         stopAutoOnClick : false // control 부분 (이전,다음,자동재생 등)과 상호작용시 자동작동 중지.
         
@@ -103,7 +103,7 @@ $(document).ready(function(){
             pc 만 지원하는 반응형일 경우
             같은 class인 .bx-wrapper 에게 min-width를 1000px을 지정 하면 된다.
         */
-        touchEnabled: false, //터치스와이프 기능 사용여부 //chrome 터치불가현상. -- 지금은 안쓰는게 좋음
+        touchEnabled: true, //터치스와이프 기능 사용여부 //chrome 터치불가현상. -- 지금은 안쓰는게 좋음
         swipeThreshold: 0, //터치하여 스와이프 할때 변환 효과에 소모되는 시간 설정
         oneToOneTouch: false, // fade 효과가 아닌 슬라이드는 손가락의 접지상태에 따라 슬라이드를 움직일수있다.
         preventDefaultSwipeX: false, // onoToOneTouch 에서 true일 경우, 손가락을따라 x축으로 움직일지에 대한 여부
