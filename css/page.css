@@ -265,19 +265,12 @@
     .introduce img{
         width: 100%; margin: 0 auto;
     }
-    /* .staff{
-        width: 90%; margin: 0 auto;
-    } */
-    .staff ul::after{
-        content: ''; display: block; visibility: hidden; clear: both;
-    }
     .staff ul li{
-        float: left; width: 31.58%;
         position: relative; cursor: pointer;
-        margin-bottom: 40px;
-    }
-    .staff ul li:not(:nth-of-type(3n-2)){
-        margin-left: 2.63%;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center top;
+        padding-top: 175px;
     }
     .staff ul li p{
         position: absolute; top: 0; left: 0;
@@ -286,70 +279,49 @@
     }
     .staff ul li:hover p{
         opacity: 1; color: #ffffff;
-        padding: 100px 55px;
+        padding: 27% 20%;
     }
     .staff ul li h3{
-        color: #222222; font-size: 24px;
+        color: #222222; font-size: 20px;
         text-align: center; line-height: 40px;
         background: url('../images/btn_bg.png') no-repeat center;
         background-size: contain;
-        margin-top: 220px;
     }
     .staff ul li:first-of-type{
-        background: url('../images/CEOcat.png') no-repeat center top;
-        background-size: contain;
+        background-image: url('../images/CEOcat.png');
     }
     .staff ul li:first-child:hover{
-        background: url('../images/CEO_hover.png') no-repeat center;
-        background-size: contain;
+        background-image: url('../images/CEO_hover.png');
     }
     .staff ul li:nth-of-type(2){
-        background: url('../images/bari_01.png') no-repeat center top;
-        background-size: contain;
+        background-image: url('../images/bari_01.png');
     }
     .staff ul li:nth-child(2):hover{
-        background: url('../images/bari_01_hover.png') no-repeat center;
-        background-size: contain;
+        background-image: url('../images/bari_01_hover.png');
     }
     .staff ul li:nth-of-type(3){
-        background: url('../images/bari_02.png') no-repeat center top;
-        background-size: contain;
+        background-image: url('../images/bari_02.png');
     }
     .staff ul li:nth-of-type(3):hover{
-        background: url('../images/bari_02_hover.png') no-repeat center;
-        background-size: contain;
-    }
-    .staff ul li:nth-of-type(3):hover p,
-    .staff ul li:nth-of-type(4):hover p,
-    .staff ul li:nth-of-type(5):hover p{
-        padding: 100px 45px;
+        background-image: url('../images/bari_02_hover.png');
     }
     .staff ul li:nth-of-type(4){
-        background: url('../images/sweetCat.png') no-repeat center top;
-        background-size: contain;
+        background-image: url('../images/sweetCat.png');
     }
     .staff ul li:nth-of-type(4):hover{
-        background: url('../images/sweet_hover.png') no-repeat center;
-        background-size: contain;
+        background-image: url('../images/sweet_hover.png');
     }
     .staff ul li:nth-of-type(5){
-        background: url('../images/chefCat.png') no-repeat center top;
-        background-size: contain;
+        background-image: url('../images/chefCat.png');
     }
     .staff ul li:nth-of-type(5):hover{
-        background: url('../images/chef_hover.png') no-repeat center;
-        background-size: contain;
+        background-image: url('../images/chef_hover.png');
     }
     .staff ul li:last-of-type{
-        background: url('../images/babyCat.png') no-repeat center top;
-        background-size: contain;
+        background-image: url('../images/babyCat.png');
     }
     .staff ul li:last-of-type:hover{
-        background: url('../images/baby_hover.png') no-repeat center;
-        background-size: contain;
-    }
-    .staff ul li:last-of-type:hover p{
-        padding: 90px 45px;
+        background-image: url('../images/baby_hover.png');
     }
     /* introduce Fin */
 
@@ -358,81 +330,65 @@
     }
     .guide div h3{
         text-align: center;
-        font-size: 18px; font-weight: 700;
-        line-height: 50px; padding-left: 2%;
-        width: 35%; margin: 0 auto;
+        font-size: 14px; font-weight: 700;
+        line-height: 50px;
+        width: 70%; margin: 0 auto;
     }
     .guide div:first-of-type{
         margin-bottom: 100px;
     }
     .guide div:first-of-type h3{
         background: url('../images/logo_mini03.png') no-repeat left;
-        background-size: 40px;
+        background-size: 30px;
     }
     .guide div:last-of-type h3{
         background: url('../images/logo_mini02.png') no-repeat left;
-        background-size: 40px;
+        background-size: 30px;
     }
     .guide div ul{
         padding-top: 60px;
     }
-    .guide div ul::after{
-        content: ''; display: block; visibility: hidden; clear: both;
-    }
     .guide div:first-of-type ul li{
-        width: 26%; float: left;
         border-radius: 35px;
-        font-size: 16px; text-align: center;
-        padding: 20px 5% 20px 15%; line-height: 20px;
-        margin-bottom: 50px;
-    }
-    .guide div:first-of-type ul li:nth-of-type(even){
-        margin-left: 4.21%;
+        font-size: 12px; text-align: center;
+        padding: 20px 5% 20px 37%; line-height: 20px;
+        margin-bottom: 20px;
+        border-width: 3px; border-style: solid;
+        background-size: 40%; background-repeat: no-repeat;
+        background-position: left center;
     }
     .guide div:first-of-type ul li:first-of-type{
-        background: url('../images/cau_drink.png') no-repeat left;
-        background-size: 100px;
-        border: 3px solid #0f9302;
+        background-image: url('../images/cau_drink.png');
+        border-color: #0f9302;
     }
     .guide div:first-of-type ul li:nth-of-type(2){
-        background: url('../images/cau_car.png') no-repeat left;
-        background-size: 100px;
-        border: 3px solid #d70000;
+        background-image: url('../images/cau_car.png');
+        border-color: #d70000;
     }
     .guide div:first-of-type ul li:nth-of-type(3){
-        background: url('../images/cau_food.png') no-repeat left;
-        background-size: 100px;
-        border: 3px solid #d70000;
+        background-image: url('../images/cau_food.png');
+        border-color: #d70000;
     }
     .guide div:first-of-type ul li:nth-of-type(4){
-        background: url('../images/cau_watch.png') no-repeat left;
-        background-size: 100px;
-        border: 3px solid #0f9302;
+        background-image: url('../images/cau_watch.png');
+        border-color: #0f9302;
     }
     .guide div:first-of-type ul li:nth-of-type(5){
-        background: url('../images/cau_cat.png') no-repeat left;
-        background-size: 100px;
-        border: 3px solid #d70000;
+        background-image: url('../images/cau_cat.png');
+        border-color: #d70000;
     }
     .guide div:first-of-type ul li:last-of-type{
-        background: url('../images/cau_drink.png') no-repeat left;
-        background-size: 100px;
-        border: 3px solid #0f9302;
+        background-image: url('../images/cau_drink.png');
+        border-color: #0f9302;
     }
     .guide div:last-of-type ul{
         width: 90%; margin: 0 auto 100px; 
     }
-    .guide div:last-of-type ul::after{
-        content: ''; display: block; visibility: hidden; clear: both;
-    }
     .guide div:last-of-type ul li{
-        width: 30%; float: left;
+        width: 70%;
         margin: 0 auto 30px; font-size: 14px;
         text-align: center; line-height: 18px;
         padding-top: 135px;
-    }
-    .guide div:last-of-type ul li:not(:nth-of-type(3n-2)){
-        margin-left: 5%;
     }
     .guide div:last-of-type ul li small{
         display: block; padding-top: 5px;
