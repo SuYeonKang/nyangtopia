@@ -988,7 +988,7 @@
     }
     .applyNotice strong{
         background: url('../images/logo_mini.png') no-repeat left;
-        background-size: 20%;
+        background-size: 18%;
         padding-left: 10%; line-height: 40px; font-size: 16px;
         font-weight: 700; width: 60%; margin: 0 auto 60px;
         display: block; text-align: center;
@@ -1044,15 +1044,16 @@
     }
     .applyNotice > a{
         text-decoration: none; color: #222222;
-        font-size: 16px; display: inline-block; line-height: 50px;
+        font-size: 16px; line-height: 50px; display: block;
         background: url('../images/btn_bg.png') no-repeat center top;
-        background-size: cover;
+        background-size: contain;
+        margin: 0 auto 30px; text-align: center;
     }
     .applyNotice > a:first-of-type{
-        margin-left: 27%;
+        width: 55%;
     }
     .applyNotice > a:last-of-type{
-        margin-left: 22%; width: 60%; text-align: center;
+        width: 60%;
     }
     /* applyNotice Fin */
 
