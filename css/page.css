@@ -270,11 +270,11 @@
         background-size: 70%;
         background-repeat: no-repeat;
         background-position: center top;
-        padding-top: 175px;
+        padding-top: 65%;
     }
     .staff ul li p{
         position: absolute; top: 0; left: 0;
-        opacity: 0; width: 60%;
+        opacity: 0; width: 55%;
         font-size: 20px; line-height: 20px;
     }
     .staff ul li:hover p{
