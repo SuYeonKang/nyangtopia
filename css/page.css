@@ -108,7 +108,6 @@
     .shop img,
     .applyNotice > a,
     .cart ul,
-    .deliver h2,
     .deliver ul{
         margin-bottom: 30px;
     }
@@ -122,7 +121,8 @@
     .postandMemo h2,
     .etcProduct h2,
     .shopDetail > article,
-    .cart h2{
+    .cart h2,
+    .deliver h2{
         margin-bottom: 50px;
     }
     .introduce,
@@ -1156,12 +1156,10 @@
     }
     /* membership Fin */
     
-    .cart,
-    .deliver{
+    .cart{
         width: 90%; margin: 0 auto;
     }
-    .cart ul,
-    .deliver ul{
+    .cart ul{
         margin-bottom: 300px;
         border: 1px solid #343434; padding: 5%;
     }
@@ -1207,11 +1205,11 @@
     /* cart Fin */
 
     .deliver select{
-        border: 1px solid #222222; padding: 10px 20px;
-        border-radius: 20px; margin-left: 88.28%;
+        border: 1px solid #222222; padding: 5px 10px;
+        border-radius: 20px; margin-left: 70%;
     }
     .deliver ul{
-        padding-top: 20px;
+        padding-top: 20px; margin-bottom: 300px;
     }
     .deliver ul li{
         padding: 4%; color: #343333;
@@ -1219,30 +1217,30 @@
         align-items: center; text-align: center;
     }
     .deliver ul li:first-of-type{
-        font-size: 18px; background-color: #f8f3ed;
+        font-size: 14px; background-color: #f8f3ed;
     }
     .deliver ul li:nth-of-type(2){
         border-bottom: 2px dotted #222222;
     }
     .deliver ul li:not(:first-of-type){
-        font-size: 12px;
+        font-size: 10px;
     }
     .deliver ul li span:first-child{
-        width: 14.06%;
+        display: none;
     }
     .deliver ul li span:nth-child(2){
-        width: 17.97%;
+        width: 21%;
     }
     .deliver ul li span:nth-child(3){
-        width: 41%;
+        width: 35%;
     }
     .deliver ul li span:nth-child(4),
     .deliver ul li span:last-child{
-        width: 13.67%;
+        width: 22%;
     }
-    .deliver ul li:not(:first-of-type) span{
+    /* .deliver ul li:not(:first-of-type) span{
         line-height: 25px;
-    }
+    } */
     /* deliver Fin */
 }
 /* mobile Fin */
