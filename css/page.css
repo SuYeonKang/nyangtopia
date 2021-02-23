@@ -354,11 +354,11 @@
         padding: 20px 5% 20px 37%; line-height: 20px;
         margin-bottom: 20px;
         border-width: 3px; border-style: solid;
-        background-size: 40%; background-repeat: no-repeat;
+        background-size: 35%; background-repeat: no-repeat;
         background-position: left center;
     }
     .guide div:first-of-type ul li:first-of-type{
-        background-image: url('../images/cau_drink.png');
+        background-image: url('../images/cau_family.png');
         border-color: #0f9302;
     }
     .guide div:first-of-type ul li:nth-of-type(2){
@@ -388,7 +388,7 @@
         width: 70%;
         margin: 0 auto 30px; font-size: 14px;
         text-align: center; line-height: 18px;
-        padding-top: 135px;
+        padding-top: 60%;
         background-size: 85%;
         background-repeat: no-repeat;
         background-position: center top;
@@ -1593,7 +1593,7 @@
             margin-left: 4.21%;
         }
         .guide div:first-of-type ul li:first-of-type{
-            background: url('../images/cau_drink.png') no-repeat left;
+            background: url('../images/cau_family.png') no-repeat left;
             background-size: 100px;
             border: 3px solid #0f9302;
         }
@@ -2900,7 +2900,7 @@
         margin-left: 4.21%;
     }
     .guide div:first-of-type ul li:first-of-type{
-        background: url('../images/cau_drink.png') no-repeat left;
+        background: url('../images/cau_family.png') no-repeat left;
         background-size: 100px;
         border: 3px solid #0f9302;
         margin-bottom: 60px;
