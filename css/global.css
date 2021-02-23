@@ -77,10 +77,10 @@ footer{
     }
     .tab .tabMenu li{
         display: inline-block; cursor: pointer; 
-        font-size: 16px; padding-bottom: 8px; 
+        font-size: 16px;
     }
     .tab .tabMenu li:not(:first-child){
-        margin-left: 6%;
+        margin-left: 10%;
     }
     .tab .tabMenu li.active{
         background: url('../images/hoverLine.png') no-repeat bottom;
