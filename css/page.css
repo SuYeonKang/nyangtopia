@@ -881,10 +881,6 @@
     .stayByCat img{
         width: 100%; margin-bottom: 10px;
     }
-    /* .helloCat div,
-    .stayByCat div{
-        width: 50%; margin: 0 auto;
-    } */
     .helloCat div h2{
         font-size: 25px; margin-bottom: 30px;
     }
@@ -898,7 +894,7 @@
     .helloCat div ul li,
     .stayByCat div ul li{
         background: url('../images/logo_mini.png') no-repeat left;
-        background-size: 10%;
+        background-size: 12%;
         padding-left: 15%; line-height: 25px;
         margin-bottom: 10px;
     }
