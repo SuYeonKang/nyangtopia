@@ -107,7 +107,6 @@
     .shop h2,
     .shop img,
     .applyNotice > a,
-    .cart h2,
     .cart ul,
     .deliver h2,
     .deliver ul{
@@ -122,7 +121,8 @@
     .stickerandTape h2,
     .postandMemo h2,
     .etcProduct h2,
-    .shopDetail > article{
+    .shopDetail > article,
+    .cart h2{
         margin-bottom: 50px;
     }
     .introduce,
@@ -927,15 +927,11 @@
         margin-bottom: 50px;
     }
     .notice ul li,
-    .FAQ ul li,
-    .cart ul li,
-    .deliver ul li{
+    .FAQ ul li{
         border-bottom: 2px solid #343333;
     }
     .notice ul li:first-of-type,
-    .FAQ ul li:first-of-type,
-    .cart ul li:first-of-type,
-    .deliver ul li:first-of-type{
+    .FAQ ul li:first-of-type{
         border-top: 2px solid #343333;
     }
 
@@ -1167,35 +1163,24 @@
     .cart ul,
     .deliver ul{
         margin-bottom: 300px;
+        border: 1px solid #343434; padding: 5%;
     }
     .cart ul li{
-        display: flex; flex-wrap: nowrap;
-        align-items: center; text-align: center;
+        text-align: center;
     }
     .cart ul li:first-of-type{
-        padding: 30px 6% 30px 2.5%;; background-color: #f8f3ed;
-        font-size: 16px; color: #222222;
+        font-size: 16px; color: #222222; width: 28%;
+        float: left;
     }
+    .cart ul li:first-of-type span{
+        background-color: #f8f3ed;
+    }
+    .cart ul li:first-of-type span:last-of-type,
     .cart ul li input[type='checkbox']{
-        width: 5%;
+        display: none;
     }
-    .cart ul li span:nth-child(2){
-        width: 45%;
-    }
-    .cart ul li span:nth-child(3){
-        width: 7%;
-    }
-    .cart ul li span:nth-child(4){
-        width: 15%;
-    }
-    .cart ul li span:nth-child(5){
-        width: 20%;
-    }
-    .cart ul li span:last-child{
-        width: 10%;
-    }
-    .cart ul li:last-of-type{
-        padding: 30px 6% 30px 2.5%;
+    .cart ul li span{
+        display: block; margin-bottom: 30px;
     }
     .cart ul li:nth-of-type(2) span:nth-child(2){
         font-size: 14px;
@@ -1204,13 +1189,13 @@
         font-size: 16px;
     }
     .cart ul li:nth-of-type(2) span input[type='text']{
-        border: none; padding-left: 30%;
+        border: none; text-align: center;
         font-size: 16px;
     }
     .cart ul li:nth-of-type(2) span:last-of-type input{
         display: block; margin: 0 auto;
         border: 1px solid #222222;
-        width: 100%; height: 30px; cursor: pointer;
+        width: 50%; height: 30px; cursor: pointer;
     }
     .cart ul li:nth-of-type(2) span input[type='button']{
         background-color: #343333; color: #fff;
